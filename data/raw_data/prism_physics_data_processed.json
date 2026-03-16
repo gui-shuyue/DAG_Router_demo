@@ -231,7 +231,7 @@
     "problem_id": "1050",
     "subject": "physics",
     "problem": "Question: An ion interacts with a neutral atom at separations r larger than contact via the central potential energy V(r) = -C r^{-4}, where C = e^{2} P_{a}^{2} / 2, e is the elementary charge, and P_{a} is the polarizability of the atom. Let m be the ion mass, L the ion's angular momentum about the atom, E the total energy, v_{0} the ion's initial speed far from the atom, b the impact parameter, V_{eff}(r) the effective potential energy, V_{0} the maximum of V_{eff}(r), r_{min} the distance of closest approach determined by the radial turning point, theta the polar angle, theta_{1} the angular displacement from infinity to r_{min}, and sigma the classical cross section for the ion to reach r = 0. Assume the atom is so massive that it remains at rest.",
-    "answer": "\\\\sigma = \\\\frac{2 \\\\pi}{v_{0}} \\\\sqrt{\\\\frac{2 C}{m}}"
+    "answer": "\\sigma = \\frac{2 \\pi}{v_{0}} \\sqrt{\\frac{2 C}{m}}"
   },
   {
     "problem_id": "1052",
@@ -303,7 +303,7 @@
     "problem_id": "1066",
     "subject": "physics",
     "problem": "Question: Pretend that the Sun is surrounded by a dust cloud extending out at least as far as the Earth's orbital radius. The Sun produces the gravitational potential energy V_g = - G M m / r, and the dust adds a small potential energy term V_d = k r^2 / 2. The Earth revolves in a nearly circular ellipse of average radius r_0. The effect of the dust may cause the ellipse to precess slowly. Find an approximate expression (to first order in k) for the apsidal precession rate and determine its sense compared to the direction of revolution. Hint: Consider small oscillations about r_0.\n\nDefinitions and notation:\n- G is the gravitational constant\n- M is the mass of the Sun\n- m is the mass of the Earth\n- r is the Earth–Sun separation\n- k is a small constant associated with the dust potential term\n- r_0 is the average orbital radius about which small radial oscillations occur\n- L is the orbital angular momentum magnitude about the Sun\n- U(r) is the effective potential energy\n- x is the small radial displacement defined by x = r - r_0\n- C is a constant of motion (the energy associated with small radial oscillations)\n- ω_0 is the mean angular velocity of orbital revolution for the near-circular orbit\n- ω_r is the angular frequency of small radial oscillations about r_0\n- ω_p is the apsidal precession rate to be given as the final answer in the form ω_p = ...\n- The sense of precession should be stated relative to the direction of orbital revolution",
-    "answer": "\\\\omega_p = \\\\frac{3 k}{2 m \\\\omega_0}"
+    "answer": "\\omega_p = \\frac{3 k}{2 m \\omega_0}"
   },
   {
     "problem_id": "1067",
@@ -597,13 +597,13 @@
     "problem_id": "1129",
     "subject": "physics",
     "problem": "Question: A rocket is projected straight up and explodes into three equally massive fragments just as it reaches the top of its flight (Fig. 1.101). Neglect air resistance and assume a uniform gravitational field with constant acceleration g directed downward. The explosion occurs at height h above the ground. Choose a vertical axis with origin at the explosion point and positive direction downward, so the ground is at y = h. Immediately after the burst, the fragments have velocity vectors u_1, u_2, u_3, with vertical components u_{1y}, u_{2y}, u_{3y} (positive downward). The fragment masses are m_1, m_2, m_3 and they are equal. Fragment 1 moves straight down and reaches the ground after time t_1 measured from the burst. Fragments 2 and 3 both reach the ground after the same time t_2 measured from the burst. Let v_1 denote the positive downward vertical speed of fragment 1 immediately after the burst, so u_{1y} = v_1. Find the height in the form h(t_1,t_2)=..., where h(t_1,t_2) is the height of the fragmentation above the ground.",
-    "answer": "h(t_1,t_2) = \\x0crac{g t_1 t_2 (t_1 + 2 t_2)}{2 (2 t_1 + t_2)}"
+    "answer": "h(t_1,t_2) = \\frac{g t_1 t_2 (t_1 + 2 t_2)}{2 (2 t_1 + t_2)}"
   },
   {
     "problem_id": "1130",
     "subject": "physics",
     "problem": "Question: A satellite of mass m moves in a circular orbit of radius R with speed v about the Earth. The mass of the Earth is M and the gravitational constant is G. The satellite abruptly absorbs a small mass δm that was stationary relative to Earth before the collision. During the brief capture, neglect external torques and assume the new post-collision orbit is approximately circular. Let E and E' denote the total mechanical energy (kinetic plus gravitational potential) just before and just after the capture, respectively. Let v' be the immediate post-capture speed and R' the radius of the new circular orbit. Let the change in total energy be ΔE = E' - E. Find ΔE and R'.",
-    "answer": "\\nR' = \\left(\\frac{m + \\\\delta m}{m}\\right)^2 R\\n"
+    "answer": "R' = \\left(\\frac{m + \\delta m}{m}\\right)^2 R"
   },
   {
     "problem_id": "1131",
@@ -735,7 +735,7 @@
     "problem_id": "1156",
     "subject": "physics",
     "problem": "Question: Model the leg as a uniform rigid rod of length l and mass m that swings about the hip as a fixed pivot, neglecting the knee joint. Let g be the gravitational acceleration, θ(t) the small angular displacement from the vertical, I the moment of inertia about the hip, ω the angular frequency of small oscillations, and ν the oscillation frequency in hertz. Using the small-angle approximation, estimate the natural swing frequency ν that sets the comfortable walking cadence, and state which characteristic of the leg it depends on.",
-    "answer": "\\nu \\approx 1 \\unit{s^{-1}}"
+    "answer": "u \\approx 1 \\unit{s^{-1}}"
   },
   {
     "problem_id": "1157",
@@ -747,7 +747,7 @@
     "problem_id": "1158",
     "subject": "physics",
     "problem": "Question: A uniform hoop of mass M and radius R hangs in a vertical plane supported by a knife edge at one point on the inside circumference. Let g be the gravitational acceleration in \\unit{m/s^2}. Let I be the moment of inertia of the hoop about the knife-edge support. Let t be time in \\unit{s} and let \\theta(t) be the small angular displacement from the stable equilibrium position. Let \\omega be the angular frequency of small oscillations and let \\nu be the natural frequency defined by \\nu=\\omega/(2\\pi). Calculate the natural frequency \\nu of small oscillations.",
-    "answer": "\\nu = \\frac{1}{2 \\pi} \\sqrt{\\frac{g}{2 R}}"
+    "answer": "u = \\frac{1}{2 \\pi} \\sqrt{\\frac{g}{2 R}}"
   },
   {
     "problem_id": "1159",
@@ -885,7 +885,7 @@
     "problem_id": "1187",
     "subject": "physics",
     "problem": "Question: A flat uniform disc lies on a frictionless horizontal table. The disc has mass m = 9/5\\unit{kg} and radius r = 1/5\\unit{m}. A string wound around the cylindrical rim of the disc exerts a horizontal force f = 3\\unit{N} directed toward the north (see Fig. 1.156). Use a for the magnitude of the acceleration of the center of mass and specify its direction. Use alpha for the angular acceleration about the center of mass and specify its sense. Use I for the moment of inertia of the disc about its center, defined by\n$$\nI = \\frac{m r^2}{2}\n$$\nFind the magnitude and direction of a and alpha. Determine whether the relation\n$$\na = r \\alpha\n$$\nholds, and explain.",
-    "answer": "a \\neq r \\alpha"
+    "answer": "a eq r \\alpha"
   },
   {
     "problem_id": "1188",
@@ -1161,13 +1161,13 @@
     "problem_id": "1251",
     "subject": "physics",
     "problem": "Question: The velocity of blood flow in an artery can be measured using Doppler-shifted ultrasound. Assume the ultrasound beam is incident at a very small angle to the blood flow, so the flow can be treated as directly along the beam away from the transducer (see Fig. 1.229). Let nu be the incident ultrasound frequency, c be the speed of sound in tissue, v be the blood speed along the beam (away from the transducer), nu'' be the frequency of the wave after reflection back to the transducer, and Delta nu=nu''-nu be the required frequency shift. Given nu=1.5\\times 10^6\\unit{Hz}, v=1\\unit{m/s}, and c=1500\\unit{m/s}, calculate Delta nu.",
-    "answer": "\\Delta\\nu\\approx-\\2\\times 10^3\\unit{Hz}"
+    "answer": "\\Deltau\\approx-2\\times 10^3\\unit{Hz}"
   },
   {
     "problem_id": "1252",
     "subject": "physics",
     "problem": "Question: A car has forward- and backward-directed speakers mounted on its roof and drives toward a stationary observer with speed 50\\unit{ft/s}, as shown in Fig. 1.230. Both speakers are driven by an oscillator of frequency 1000\\unit{Hz}. A brick building is located behind the car and reflects the backward-emitted sound toward the observer. Take the speed of sound to be 1000\\unit{ft/s}. Define c as the speed of sound, v as the car speed, \\nu as the oscillator frequency, \\nu_f as the frequency of the direct sound from the front-directed speaker received by the observer, \\nu_b as the frequency of the echo from the backward-directed speaker received by the observer, and \\nu_{beat} as the beat frequency heard by the observer. Find \\nu_{beat} between the direct sound and the echo.",
-    "answer": "\\nu_{beat}\\approx100\\unit{Hz}"
+    "answer": "u_{beat}\\approx100\\unit{Hz}"
   },
   {
     "problem_id": "1254",
@@ -1455,7 +1455,7 @@
     "problem_id": "2039",
     "subject": "physics",
     "problem": "Question: A rectangular plate of mass M, length a, and width b is supported at each of its four corners by identical vertical springs, each with spring constant k, as shown in Fig. 2.36. The springs are constrained to move only in the vertical direction. For small amplitudes, find the normal modes of vibration and their angular frequencies, and describe each mode. Use a Cartesian coordinate system with origin at the center c of the plate in its equilibrium configuration, the z-axis vertically upward, and the x- and y-axes along the symmetry axes in the plane of the plate, as in Fig. 2.37. Let z be the vertical displacement of c, and let the small angles of rotation about the x- and y-axes be φ and θ, respectively. Label the corners A, B, D, and E as in Fig. 2.37, and denote their vertical displacements by z_A, z_B, z_D, and z_E. Let g be the magnitude of the gravitational acceleration. When needed, let ω denote the temporal angular frequency of small oscillations. In the final answer, report the three normal-mode angular frequencies ω1, ω2, ω3, and describe the corresponding modal shapes.",
-    "answer": "z_0' = 0, \\, \\varphi_0 = 0, \\, \\theta_0 \\neq 0"
+    "answer": "z_0' = 0, \\, \\varphi_0 = 0, \\, \\theta_0 eq 0"
   },
   {
     "problem_id": "2040",
@@ -1671,7 +1671,7 @@
     "problem_id": "3009",
     "subject": "physics",
     "problem": "Question: Consider two inertial frames \\Sigma and \\Sigma' with parallel axes. The frame \\Sigma' moves with constant velocity v=\\beta c along the +x direction relative to \\Sigma, and the origins coincide at t=t'=0. Use c for the speed of light and \\gamma=1/\\sqrt{1-\\beta^2}. The position 4-vector is x^\\alpha=(x,y,z,ct). The momentum 4-vector is p^\\alpha=(p_x c,p_y c,p_z c,E), where m denotes the relativistic mass so that E=m c^2 and (p_x,p_y,p_z) is the 3-momentum. The wave 4-vector is k^\\alpha=(k_x c,k_y c,k_z c,\\omega), with angular frequency \\omega and frequency \\nu related by \\omega=2\\pi\\nu. In part (b), take \\Sigma' as the rest frame of the source and \\Sigma as the observer's frame. Let \\beta_0 be the relative speed of the source with respect to the observer divided by c. Approaching corresponds to \\beta=-\\beta_0, receding corresponds to \\beta=\\beta_0, and the transverse case corresponds to the source-observer line of sight being perpendicular at the instant of closest approach.",
-    "answer": "\\nu=\\frac{\\nu_0}{\\sqrt{1-\\beta^2}}"
+    "answer": "u=\\frac{u_0}{\\sqrt{1-\\beta^2}}"
   },
   {
     "problem_id": "3010",
@@ -1701,7 +1701,7 @@
     "problem_id": "3014",
     "subject": "physics",
     "problem": "Question: Consider monochromatic radiation emitted at the Sun with frequency \\nu_s in \\unit{Hz} and received at the Earth with frequency \\nu_e in \\unit{Hz}. Work in a static, weak gravitational field described by the metric components\n\n$$\ng_{00}=1+\\frac{2\\Phi}{c^2}\n$$\n\n$$\ng_{11}=-1\n$$\n\n$$\ng_{22}=-1\n$$\n\n$$\ng_{33}=-1\n$$\n\n$$\ng_{\\mu\\neq\\nu}=0\n$$\n\nHere c is the speed of light in \\unit{m/s}, and \\Phi(r) is the gravitational potential energy per unit mass at position r. Let r_s denote a point on the Sun where the light is emitted and r_e denote a point on the Earth where the light is received. Let P_1 be the emission point and P_2 be the reception point, both at rest in the static field. Let t_0 be the coordinate time of emission of the first crest at P_1, t be the coordinate period between successive emitted crests, and T be the coordinate propagation time from P_1 to P_2. Let \\tau be the proper period at P_1 measured by a standard clock co-moving with P_1, and let \\tau' be the proper period at P_2 measured by a standard clock co-moving with P_2. Let \\nu be the emitted frequency measured locally at P_1 and \\nu' be the received frequency measured locally at P_2. Assume the field is static so that T is constant. Using this metric, derive the gravitational redshift, expressed as the fractional frequency shift (\\nu_e-\\nu_s)/\\nu_s, as a function of the difference of gravitational potentials at the Sun and Earth.",
-    "answer": "\\frac{\\nu_e-\\nu_s}{\\nu_s}\\approx\\frac{\\Phi(r_s)-\\Phi(r_e)}{c^2}"
+    "answer": "\\frac{u_e-u_s}{u_s}\\approx\\frac{\\Phi(r_s)-\\Phi(r_e)}{c^2}"
   },
   {
     "problem_id": "3015",
@@ -1803,7 +1803,7 @@
     "problem_id": "3033",
     "subject": "physics",
     "problem": "Question: High-energy weak interactions can be probed using neutrino beams produced by meson decays in flight. Consider a laboratory frame Σ in which a charged pion beam with momentum 200\\unit{GeV/c} decays via the two-body process \\pi \\to \\mu + \\nu. The pion rest frame is denoted by Σ'. The speed of light is c. The pion rest lifetime in its rest frame is \\tau_\\pi = 2.60\\times 10^{-8}\\unit{s}. The rest energies are m_\\pi c^2 = 139.6\\unit{MeV} and m_\\mu c^2 = 105.7\\unit{MeV}. The neutrino is massless, so E_\\nu = p_\\nu c in any frame. For the boost from Σ' to Σ, define \\beta = v_\\pi/c and \\gamma = 1/\\sqrt{1-\\beta^2}. Let p_\\pi be the pion momentum in Σ with p_\\pi = 200\\unit{GeV/c}. Define \\theta as the muon emission angle in Σ relative to the pion direction and \\theta' as the muon emission angle in Σ' relative to the boost axis. In Σ' denote the muon energy and momentum by E_\\mu' and p_\\mu', and the neutrino energy and momentum by E_\\nu' and p_\\nu'. In Σ denote the muon and neutrino momenta by p_\\mu and p_\\nu. Let \\tau_{lab} be the dilated pion lifetime in Σ and d_{mean} = c \\tau_{lab} the mean decay distance. Let \\theta_{max} be the maximum possible \\theta in Σ. Let p_{\\nu,min} and p_{\\nu,max} be the minimum and maximum possible p_\\nu in Σ. Report final numerical values for d_{mean}, \\theta_{max}, p_{\\nu,min}, and p_{\\nu,max}.",
-    "answer": "p_{\\nu,min} = 1.04 \\times 10^{-2}\\unit{MeV/c}"
+    "answer": "p_{u,min} = 1.04 \\times 10^{-2}\\unit{MeV/c}"
   },
   {
     "problem_id": "3034",
@@ -1875,7 +1875,7 @@
     "problem_id": "3046",
     "subject": "physics",
     "problem": "Question: A particle of charge e, rest mass m, and total energy E has velocity vector u and moves in the magnetic field generated by a magnetic dipole of moment vector M located at the origin and directed along the +z-axis. Use spherical coordinates (r, theta, varphi) with unit vectors i_r, i_theta, and i_varphi. The electromagnetic scalar potential is Phi and the vector potential is A. The vacuum permeability is mu_0 and the speed of light is c. The Lorentz factor is gamma. Initially the particle is in the xy-plane at radius r = R, moving radially outward so that at t = 0 we have r = R, theta = pi/2, dot r > 0, and dot varphi = 0. Let v denote the initial speed, i.e., v is the magnitude of u at t = 0. Assume the magnetic force confines the motion to the xy-plane and the orbit is bounded. Let p_varphi = partial L / partial dot varphi denote the conjugate momentum to varphi. Define alpha = (mu_0 / 4 pi) e M / (m gamma v). Let r_min and r_max denote the minimum and maximum radii attained by the particle. Find r_min and r_max.",
-    "answer": "r_{\\\\min} = \\\\frac{\\\\alpha}{2 R} \\\\left( - 1 \\\\sqrt{1 + \\\\frac{4 R^2}{\\\\alpha}} \\\\right)"
+    "answer": "r_{\\min} = \\frac{\\alpha}{2 R} \\left( - 1 \\sqrt{1 + \\frac{4 R^2}{\\alpha}} \\right)"
   },
   {
     "problem_id": "3047",

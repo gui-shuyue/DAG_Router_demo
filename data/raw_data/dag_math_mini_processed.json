@@ -25,7 +25,7 @@
     "subject": "Mathematics -> Geometry -> Plane Geometry -> Triangulations",
     "level": "3.5",
     "problem": "Question: In triangle $A B C, A C=3 A B$. Let $A D$ bisect angle $A$ with $D$ lying on $B C$, and let $E$ be the foot of the perpendicular from $C$ to $A D$. Find $[A B D] /[C D E]$.",
-    "answer": "\\tfrac{1"
+    "answer": "\\tfrac{1}{3}"
   },
   {
     "problem_id": "4",
@@ -53,14 +53,14 @@
     "subject": "Mathematics -> Number Theory -> Other",
     "level": "5.5",
     "problem": "Question: Are there integers $a$ and $b$ such that $a^5b+3$ and $ab^5+3$ are both perfect cubes of integers?",
-    "answer": "\\text{no such integers"
+    "answer": "\\text{no such integers}"
   },
   {
     "problem_id": "9",
     "subject": "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Counting Methods -> Combinations",
     "level": "4.5",
     "problem": "Question: Let $\\pi$ be a randomly chosen permutation of the numbers from 1 through 2012. Find the probability that $\\pi(\\pi(2012))=2012$.",
-    "answer": "\\frac{1"
+    "answer": "\\frac{1}{1006}"
   },
   {
     "problem_id": "10",
@@ -158,7 +158,7 @@
     "subject": "Mathematics -> Geometry -> Plane Geometry -> Polygons",
     "level": "4.0",
     "problem": "Question: Regular hexagon $A B C D E F$ has side length 2. A laser beam is fired inside the hexagon from point $A$ and hits $\\overline{B C}$ at point $G$. The laser then reflects off $\\overline{B C}$ and hits the midpoint of $\\overline{D E}$. Find $B G$.",
-    "answer": "\\frac{2"
+    "answer": "\\frac{2}{5}"
   },
   {
     "problem_id": "24",
@@ -172,7 +172,7 @@
     "subject": "Mathematics -> Geometry -> Plane Geometry -> Triangulations",
     "level": "5.0",
     "problem": "Question: $A B C D$ is a cyclic quadrilateral in which $A B=3, B C=5, C D=6$, and $A D=10 . M, I$, and $T$ are the feet of the perpendiculars from $D$ to lines $A B, A C$, and $B C$ respectively. Determine the value of $M I / I T$.",
-    "answer": "\\frac{25"
+    "answer": "\\frac{25}{9}"
   },
   {
     "problem_id": "26",
@@ -186,21 +186,21 @@
     "subject": "Mathematics -> Algebra -> Intermediate Algebra -> Systems of Equations -> Other",
     "level": "3.5",
     "problem": "Question: Let $a, b$, and $c$ be real numbers. Consider the system of simultaneous equations in variables $x$ and $y:$ $a x+b y =c-1$ and $(a+5) x+(b+3) y =c+1$. Determine the value(s) of $c$ in terms of $a$ such that the system always has a solution for any $a$ and $b$.",
-    "answer": "c = \\frac{2a"
+    "answer": "c = \\frac{2a}{5} + 1"
   },
   {
     "problem_id": "28",
     "subject": "Mathematics -> Applied Mathematics -> Statistics -> Probability -> Other",
     "level": "4.5",
     "problem": "Question: Allen and Brian are playing a game in which they roll a 6-sided die until one of them wins. Allen wins if two consecutive rolls are equal and at most 3. Brian wins if two consecutive rolls add up to 7 and the latter is at most 3. What is the probability that Allen wins?",
-    "answer": "\\frac{5"
+    "answer": "\\frac{5}{12}"
   },
   {
     "problem_id": "29",
     "subject": "Mathematics -> Number Theory -> Other",
     "level": "5.0",
     "problem": "Question: Find all positive integers $n$ such that the decimal representation of $n^2$ consists of odd digits only.",
-    "answer": "\\{1,3\\"
+    "answer": "\\{1,3\\}"
   },
   {
     "problem_id": "30",
