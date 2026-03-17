@@ -1,0 +1,30 @@
+# 核心深度学习框架 
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# 图论工具 (用于管理和调度任务的 DAG 结构)
+networkx>=3.0
+
+# 文本向量化 (用于将子任务描述转为上下文向量 x)
+sentence-transformers>=2.2.0
+tiktoken
+
+# LLM 交互与评估 (用于调用选中的 LLM 和 Grader 模型)
+openai>=1.0.0
+google-genai
+
+# 机器学习辅助与数据处理
+scikit-learn
+pandas
+tqdm
+
+# 实验可视化 (用于绘制 Regret 曲线和准确率对比图)
+matplotlib
+seaborn
+
+# 开发环境辅助
+ipykernel
+python-dotenv
