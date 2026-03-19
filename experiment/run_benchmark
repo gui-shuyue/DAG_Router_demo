@@ -1,0 +1,198 @@
+import json
+import asyncio
+import os
+from openai import AsyncOpenAI
+from tqdm.asyncio import tqdm
+
+# ================= 配置区域 =================
+OPENROUTER_API_KEY = "sk-or-xx-xx"  # 替换为你的真实 API Key
+
+# 测试题目数量限制 (填入 None 表示全量跑满 500 题，填入数字如 5 表示只测前 5 题)
+TEST_LIMIT = None
+
+# 被测模型及其成本 (单位: 美元 / 1M tokens)
+MODELS_CONFIG = {
+    "qwen/qwen-2.5-7b-instruct": {"input_cost": 0.04, "output_cost": 0.10},
+    "meta-llama/llama-3.1-8b-instruct": {"input_cost": 0.02, "output_cost": 0.05},
+    "mistralai/mistral-small-3.2-24b-instruct": {"input_cost": 0.06, "output_cost": 0.18},
+    "google/gemma-3-27b-it": {"input_cost": 0.03, "output_cost": 0.11},
+    "meta-llama/llama-3.3-70b-instruct": {"input_cost": 0.10, "output_cost": 0.32},
+    "qwen/qwen3.5-122b-a10b": {"input_cost": 0.26, "output_cost": 2.08},
+    "mistralai/mixtral-8x22b-instruct": {"input_cost": 2.00, "output_cost": 6.00},
+}
+
+# 判分模型 (Judge) 配置：DeepSeek V3
+JUDGE_MODEL = "google/gemini-2.5-flash-lite-preview-09-2025"
+JUDGE_COST = {"input_cost": 0.1, "output_cost": 0.4}
+
+# 并发数设置 (取消了实时打印，可以适当调高并发加速跑)
+CONCURRENCY_LIMIT = 20
+
+# 输入文件
+INPUT_DATASET = "final_evaluation_dataset_500.json"
+# ============================================
+
+# 初始化异步客户端
+client = AsyncOpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=OPENROUTER_API_KEY,
+)
+
+async def get_model_response(model_name, prompt, sem):
+    """获取答题模型的输出及 Token 消耗"""
+    async with sem:
+        try:
+            response = await client.chat.completions.create(
+                model=model_name,
+                messages=[
+                    # 🌟 核心修改：极其严格的 System Prompt，禁止任何废话和推理
+                    {
+                        "role": "system", 
+                        "content": "You are a direct answering assistant. Solve the problem and output ONLY the final answer. Do not include any reasoning, step-by-step explanations, conversational filler, or additional text. Just the answer."
+                    },
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.1, 
+                # 因为只输出答案，可以把 max_tokens 调小一点以防万一（原来是 2048，现在 256 足够了）
+                max_tokens=256 
+            )
+            content = response.choices[0].message.content
+            usage = response.usage
+            return content, usage.prompt_tokens, usage.completion_tokens
+        except Exception as e:
+            return f"[Error] {str(e)}", 0, 0
+
+async def judge_response(question, ground_truth, model_answer, sem):
+    """LLM-as-a-Judge 智能判分及 Token 消耗"""
+    judge_prompt = f"""You are an expert evaluator. Your task is to evaluate if a student's answer is correct based on the ground truth.
+
+Question:
+{question}
+
+Ground Truth:
+{ground_truth}
+
+Student's Answer:
+{model_answer}
+
+Compare the student's answer to the ground truth. Ignore formatting differences, LaTeX syntax, or additional reasoning, as long as the final mathematical/physical/factual conclusion is completely equivalent to the ground truth.
+Respond with ONLY ONE WORD: "CORRECT" if it matches, or "INCORRECT" if it does not. Do not provide any other text."""
+
+    async with sem:
+        try:
+            response = await client.chat.completions.create(
+                model=JUDGE_MODEL,
+                messages=[{"role": "user", "content": judge_prompt}],
+                temperature=0.0,
+                max_tokens=10
+            )
+            content = response.choices[0].message.content.strip().upper()
+            usage = response.usage
+            is_correct = 1 if "CORRECT" in content and "INCORRECT" not in content else 0
+            return is_correct, content, usage.prompt_tokens, usage.completion_tokens
+        except Exception as e:
+            return 0, f"[Error] {str(e)}", 0, 0
+
+def calc_cost(prompt_tokens, completion_tokens, costs):
+    """计算单个请求的花费 (单位: 美元)"""
+    return (prompt_tokens / 1_000_000) * costs["input_cost"] + (completion_tokens / 1_000_000) * costs["output_cost"]
+
+async def evaluate_single_task(task, model_name, sem):
+    """处理单道题的完整流程"""
+    question = task["problem_description"]
+    ground_truth = task["problem_answer"]
+    
+    # 1. 答题模型生成答案
+    model_answer, m_p_tok, m_c_tok = await get_model_response(model_name, question, sem)
+    model_cost = calc_cost(m_p_tok, m_c_tok, MODELS_CONFIG[model_name])
+    
+    # 2. Judge 模型判分
+    is_correct, judge_raw, j_p_tok, j_c_tok = await judge_response(question, ground_truth, model_answer, sem)
+    judge_cost = calc_cost(j_p_tok, j_c_tok, JUDGE_COST)
+    
+    return {
+        "problem_id": task["problem_id"],
+        "model_answer": model_answer,
+        "is_correct": is_correct,
+        "judge_reasoning": judge_raw,
+        "model_cost": model_cost,
+        "judge_cost": judge_cost,
+        "total_task_cost": model_cost + judge_cost
+    }
+
+async def evaluate_model(model_name, dataset, sem):
+    """评估单个模型并生成其专属报告对象"""
+    print(f"\n🚀 开始评估模型: {model_name}")
+    
+    results = []
+    total_model_cost = 0.0
+    total_judge_cost = 0.0
+    correct_count = 0
+
+    tasks = [evaluate_single_task(task, model_name, sem) for task in dataset]
+    
+    # 静默运行，只显示 tqdm 进度条
+    for completed_task in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc=model_name):
+        res = await completed_task
+        results.append(res)
+        
+        total_model_cost += res["model_cost"]
+        total_judge_cost += res["judge_cost"]
+        correct_count += res["is_correct"]
+
+    total_tasks = len(results)
+    accuracy = correct_count / total_tasks if total_tasks > 0 else 0
+    
+    avg_model_cost = total_model_cost / total_tasks if total_tasks > 0 else 0
+    avg_judge_cost = total_judge_cost / total_tasks if total_tasks > 0 else 0
+    avg_total_cost = avg_model_cost + avg_judge_cost
+
+    # 组装这个模型的专属独立报告
+    report_data = {
+        "model_name": model_name,
+        "summary": {
+            "total_questions": total_tasks,
+            "accuracy": accuracy,
+            "avg_model_cost_usd": avg_model_cost,
+            "avg_judge_cost_usd": avg_judge_cost,
+            "avg_total_cost_per_question_usd": avg_total_cost,
+            "total_model_run_cost_usd": total_model_cost + total_judge_cost
+        },
+        "details": results  # 把明细挂在 details 下
+    }
+
+    # 以模型名字命名保存报告 (替换掉路径中的 /)
+    safe_model_name = model_name.replace("/", "_")
+    report_filename = f"report_{safe_model_name}.json"
+    
+    with open(report_filename, 'w', encoding='utf-8') as f:
+        json.dump(report_data, f, ensure_ascii=False, indent=4)
+        
+    print(f"✅ [{model_name}] 评估完成！正确率: {accuracy*100:.2f}%。专属报告已保存至 -> {report_filename}")
+
+    return report_data
+
+async def main():
+    # 1. 加载数据集
+    with open(INPUT_DATASET, 'r', encoding='utf-8') as f:
+        full_dataset = json.load(f)
+
+    if TEST_LIMIT is not None:
+        dataset = full_dataset[:TEST_LIMIT]
+        print(f"⚠️  试水模式：已限制只评测前 {TEST_LIMIT} 道题")
+    else:
+        dataset = full_dataset
+        print(f"🔥 全量模式：将评测全部 {len(dataset)} 道题")
+
+    sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
+
+    # 2. 遍历测试每个模型
+    for model_name in MODELS_CONFIG.keys():
+        await evaluate_model(model_name, dataset, sem)
+
+    print("\n" + "="*50)
+    print("🎉 所有模型基准测试已全部完成！")
+    print("文件夹中已生成各个模型的专属 report_xxx.json 报告文件。")
+
+if __name__ == "__main__":
+    asyncio.run(main())
