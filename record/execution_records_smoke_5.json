@@ -2,61 +2,61 @@
   "1": {
     "question": "Question: Blinding Edge Pictures produced which 2000 film starring Bruce Willis?",
     "answers": "Unbreakable",
-    "final_status": "success",
+    "final_status": "failure",
     "steps_taken": 2,
     "attempts": [
       {
         "step": 1,
         "node_id": "1",
         "predecessor_node_ids": [],
-        "task_desc": "Find the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output ONLY the film title. Output a concise answer to the question, with no explanation.",
+        "task_desc": "Identify the film production company 'Blinding Edge Pictures' and recall the film it produced in the year 2000 that starred actor Bruce Willis. Output a concise answer to the question, with no explanation.",
         "chosen_model": "qwen/qwen-2.5-7b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.2037,
-            "bonus": 0.2904999852180481,
-            "total_ucb": 0.4941999912261963
+            "pred_score": 0.1556,
+            "bonus": 0.3158000111579895,
+            "total_ucb": 0.4713999927043915
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0002,
-            "bonus": 0.1906999945640564,
-            "total_ucb": 0.19059999287128448
+            "pred_score": -0.0027,
+            "bonus": 0.31290000677108765,
+            "total_ucb": 0.3102000057697296
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0289,
-            "bonus": 0.26840001344680786,
-            "total_ucb": 0.2393999993801117
+            "pred_score": -0.0302,
+            "bonus": 0.27730000019073486,
+            "total_ucb": 0.24709999561309814
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.1143,
-            "bonus": 0.301800012588501,
-            "total_ucb": 0.41609999537467957
+            "pred_score": -0.4405,
+            "bonus": 0.36410000920295715,
+            "total_ucb": -0.07639999687671661
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.1168,
-            "bonus": 0.23420000076293945,
-            "total_ucb": 0.11739999800920486
+            "pred_score": 0.0006,
+            "bonus": 0.29269999265670776,
+            "total_ucb": 0.29339998960494995
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.1531,
-            "bonus": 0.25839999318122864,
-            "total_ucb": 0.4115999937057495
+            "pred_score": -0.2262,
+            "bonus": 0.24199999868869781,
+            "total_ucb": 0.015799999237060547
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0574,
-            "bonus": 0.18770000338554382,
-            "total_ucb": 0.13030000030994415
+            "pred_score": -0.0926,
+            "bonus": 0.2558000087738037,
+            "total_ucb": 0.16329999268054962
           }
         },
-        "output": "Unluckily",
+        "output": "Striking Distance",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: Blinding Edge Pictures produced which 2000 film starring Bruce Willis?\n\nCurrent Node Task: Find the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output ONLY the film title. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Identify the film production company 'Blinding Edge Pictures' and recall the film it produced in the year 2000 that starred actor Bruce Willis. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: Blinding Edge Pictures produced which 2000 film starring Bruce Willis?\n\nCurrent Node Task: Find the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output ONLY the film title. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
+        "vector_source_text": "Current Node Task: Identify the film production company 'Blinding Edge Pictures' and recall the film it produced in the year 2000 that starred actor Bruce Willis. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.0
       },
       {
         "step": 2,
@@ -64,53 +64,53 @@
         "predecessor_node_ids": [
           "1"
         ],
-        "task_desc": "Output the film title identified in Node 1. Output ONLY the final answer as a short entity/phrase (no extra text, no prefix). Output a concise answer to the question, with no explanation.",
+        "task_desc": "Based on the information retrieved in Node 1, state the title of the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output a concise answer to the question, with no explanation.",
         "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.398,
-            "bonus": 0.32359999418258667,
-            "total_ucb": -0.07450000196695328
+            "pred_score": 0.0687,
+            "bonus": 0.2700999975204468,
+            "total_ucb": 0.33880001306533813
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.1978,
-            "bonus": 0.289900004863739,
-            "total_ucb": 0.4876999855041504
+            "pred_score": -0.0767,
+            "bonus": 0.2752000093460083,
+            "total_ucb": 0.19850000739097595
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0129,
-            "bonus": 0.28940001130104065,
-            "total_ucb": 0.27649998664855957
+            "pred_score": -0.2447,
+            "bonus": 0.3061000108718872,
+            "total_ucb": 0.061500001698732376
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.2693,
-            "bonus": 0.31279999017715454,
-            "total_ucb": 0.582099974155426
+            "pred_score": 0.1299,
+            "bonus": 0.37790000438690186,
+            "total_ucb": 0.5077999830245972
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0398,
-            "bonus": 0.3127000033855438,
-            "total_ucb": 0.2727999985218048
+            "pred_score": -0.1791,
+            "bonus": 0.29339998960494995,
+            "total_ucb": 0.1143999993801117
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.2023,
-            "bonus": 0.25999999046325684,
-            "total_ucb": 0.46230000257492065
+            "pred_score": -0.0172,
+            "bonus": 0.28189998865127563,
+            "total_ucb": 0.2646999955177307
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.1409,
-            "bonus": 0.26350000500679016,
-            "total_ucb": 0.4043999910354614
+            "pred_score": 0.1158,
+            "bonus": 0.262800008058548,
+            "total_ucb": 0.3785000145435333
           }
         },
-        "output": "Unbreakable",
+        "output": "Striking Distance",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: Blinding Edge Pictures produced which 2000 film starring Bruce Willis?\n\nCurrent Node Task: Output the film title identified in Node 1. Output ONLY the final answer as a short entity/phrase (no extra text, no prefix). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Find the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output ONLY the film title. Output a concise answer to the question, with no explanation.\nAnswer: Unluckily\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Based on the information retrieved in Node 1, state the title of the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Identify the film production company 'Blinding Edge Pictures' and recall the film it produced in the year 2000 that starred actor Bruce Willis. Output a concise answer to the question, with no explanation.\nAnswer: Striking Distance\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: Blinding Edge Pictures produced which 2000 film starring Bruce Willis?\n\nCurrent Node Task: Output the film title identified in Node 1. Output ONLY the final answer as a short entity/phrase (no extra text, no prefix). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Find the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output ONLY the film title. Output a concise answer to the question, with no explanation.\nAnswer: Unluckily\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Based on the information retrieved in Node 1, state the title of the 2000 film starring Bruce Willis that was produced by Blinding Edge Pictures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Identify the film production company 'Blinding Edge Pictures' and recall the film it produced in the year 2000 that starred actor Bruce Willis. Output a concise answer to the question, with no explanation.\nAnswer: Striking Distance\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       }
     ]
@@ -119,223 +119,114 @@
     "question": "Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n",
     "answers": "A",
     "final_status": "success",
-    "steps_taken": 4,
+    "steps_taken": 2,
     "attempts": [
       {
         "step": 1,
         "node_id": "1",
         "predecessor_node_ids": [],
-        "task_desc": "Recall Coulomb's law formula for the force between two point charges in a vacuum/air: F = k * |q1 * q2| / r^2. Identify the constant k (Coulomb's constant) in appropriate units (N·m²/C²). Output a concise answer to the question, with no explanation.",
+        "task_desc": "Given: Charge 1 (q1) = -10^-6 C, Charge 2 (q2) = -10^-4 C, distance between charges (r) = 50 cm = 0.5 m, medium is air (so permittivity ε ≈ ε0 = 8.854 × 10^-12 F/m). Calculate the magnitude of the electrostatic force using Coulomb's law: F = (1/(4πε0)) * (|q1 * q2| / r^2). Output a concise answer to the question, with no explanation.",
         "chosen_model": "meta-llama/llama-3.3-70b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.2229,
-            "bonus": 0.2433999925851822,
-            "total_ucb": 0.46630001068115234
+            "pred_score": -0.12,
+            "bonus": 0.23250000178813934,
+            "total_ucb": 0.11249999701976776
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.0482,
-            "bonus": 0.2897000014781952,
-            "total_ucb": 0.33799999952316284
+            "pred_score": 0.0389,
+            "bonus": 0.29499998688697815,
+            "total_ucb": 0.33390000462532043
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.1159,
-            "bonus": 0.29019999504089355,
-            "total_ucb": 0.40610000491142273
+            "pred_score": -0.0147,
+            "bonus": 0.24150000512599945,
+            "total_ucb": 0.22679999470710754
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.0157,
-            "bonus": 0.33090001344680786,
-            "total_ucb": 0.31520000100135803
+            "pred_score": 0.0085,
+            "bonus": 0.34850001335144043,
+            "total_ucb": 0.3571000099182129
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.447,
-            "bonus": 0.3116999864578247,
-            "total_ucb": 0.7585999965667725
+            "pred_score": 0.2426,
+            "bonus": 0.2687999904155731,
+            "total_ucb": 0.5113999843597412
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.1969,
-            "bonus": 0.2565999925136566,
-            "total_ucb": 0.4535999894142151
+            "pred_score": -0.043,
+            "bonus": 0.2492000013589859,
+            "total_ucb": 0.20630000531673431
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.0011,
-            "bonus": 0.24150000512599945,
-            "total_ucb": 0.24269999563694
+            "pred_score": -0.0596,
+            "bonus": 0.1891999989748001,
+            "total_ucb": 0.12960000336170197
           }
         },
-        "output": "k = 8.99 * 10^9 N·m²/C²",
+        "output": "F = (1/(4π * 8.854 × 10^-12)) * (|-10^-6 * -10^-4| / 0.5^2) = (1/(4π * 8.854 × 10^-12)) * (10^-10 / 0.25) = (1/(4π * 8.854 × 10^-12)) * (4 × 10^-10) = (9 × 10^9) * (4 × 10^-10) = 36 × 10^-1 = 3.6 N",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Recall Coulomb's law formula for the force between two point charges in a vacuum/air: F = k * |q1 * q2| / r^2. Identify the constant k (Coulomb's constant) in appropriate units (N·m²/C²). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Given: Charge 1 (q1) = -10^-6 C, Charge 2 (q2) = -10^-4 C, distance between charges (r) = 50 cm = 0.5 m, medium is air (so permittivity ε ≈ ε0 = 8.854 × 10^-12 F/m). Calculate the magnitude of the electrostatic force using Coulomb's law: F = (1/(4πε0)) * (|q1 * q2| / r^2). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Recall Coulomb's law formula for the force between two point charges in a vacuum/air: F = k * |q1 * q2| / r^2. Identify the constant k (Coulomb's constant) in appropriate units (N·m²/C²). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Given: Charge 1 (q1) = -10^-6 C, Charge 2 (q2) = -10^-4 C, distance between charges (r) = 50 cm = 0.5 m, medium is air (so permittivity ε ≈ ε0 = 8.854 × 10^-12 F/m). Calculate the magnitude of the electrostatic force using Coulomb's law: F = (1/(4πε0)) * (|q1 * q2| / r^2). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
         "step": 2,
         "node_id": "2",
-        "predecessor_node_ids": [],
-        "task_desc": "Extract the given values from the problem: q1 = -10^-6 C, q2 = -10^-4 C, distance r = 50 cm. Convert r to meters. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "google/gemma-3-27b-it",
-        "ucb_scores": {
-          "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.2704,
-            "bonus": 0.26249998807907104,
-            "total_ucb": -0.007899999618530273
-          },
-          "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.1183,
-            "bonus": 0.2827000021934509,
-            "total_ucb": 0.4009999930858612
-          },
-          "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.1963,
-            "bonus": 0.2892000079154968,
-            "total_ucb": 0.09290000051259995
-          },
-          "google/gemma-3-27b-it": {
-            "pred_score": 0.2213,
-            "bonus": 0.3508000075817108,
-            "total_ucb": 0.5722000002861023
-          },
-          "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0116,
-            "bonus": 0.32260000705718994,
-            "total_ucb": 0.3109999895095825
-          },
-          "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.1058,
-            "bonus": 0.22660000622272491,
-            "total_ucb": 0.12080000340938568
-          },
-          "mistralai/mistral-nemo": {
-            "pred_score": -0.0721,
-            "bonus": 0.19539999961853027,
-            "total_ucb": 0.12330000102519989
-          }
-        },
-        "output": "q1 = -10^-6 C, q2 = -10^-4 C, r = 0.5 m",
-        "llm_input_messages": [
-          {
-            "role": "user",
-            "content": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Extract the given values from the problem: q1 = -10^-6 C, q2 = -10^-4 C, distance r = 50 cm. Convert r to meters. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
-          }
-        ],
-        "vector_source_text": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Extract the given values from the problem: q1 = -10^-6 C, q2 = -10^-4 C, distance r = 50 cm. Convert r to meters. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
-      },
-      {
-        "step": 3,
-        "node_id": "3",
         "predecessor_node_ids": [
-          "1",
-          "2"
+          "1"
         ],
-        "task_desc": "Calculate the magnitude of the force using Coulomb's law: F = k * |q1 * q2| / r^2. Use k = 8.99e9 N·m²/C² (approx 9e9 is acceptable). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "google/gemma-3-27b-it",
+        "task_desc": "Compare the calculated force magnitude from Node 1 with the provided options (A. 3.6 newtons, B. 3.2 newtons, C. 1.2 newtons, D. 1.6 newtons, E. 2.0 newtons, F. 4.0 newtons, G. 0.36 newtons, H. 5.6 newtons, I. 4.6 newtons, J. 2.6 newtons). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen3.5-flash-02-23",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.1629,
-            "bonus": 0.2468000054359436,
-            "total_ucb": 0.4097000062465668
+            "pred_score": 0.1217,
+            "bonus": 0.22599999606609344,
+            "total_ucb": 0.34769999980926514
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.0131,
-            "bonus": 0.24799999594688416,
-            "total_ucb": 0.26109999418258667
+            "pred_score": 0.0243,
+            "bonus": 0.263700008392334,
+            "total_ucb": 0.28790000081062317
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0438,
-            "bonus": 0.26269999146461487,
-            "total_ucb": 0.21889999508857727
+            "pred_score": 0.0015,
+            "bonus": 0.24040000140666962,
+            "total_ucb": 0.2418999969959259
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.1126,
-            "bonus": 0.35109999775886536,
-            "total_ucb": 0.46369999647140503
+            "pred_score": 0.038,
+            "bonus": 0.3273000121116638,
+            "total_ucb": 0.3652999997138977
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.0937,
-            "bonus": 0.28679999709129333,
-            "total_ucb": 0.3804999887943268
+            "pred_score": 0.0312,
+            "bonus": 0.23849999904632568,
+            "total_ucb": 0.26969999074935913
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.0187,
-            "bonus": 0.28029999136924744,
-            "total_ucb": 0.29899999499320984
+            "pred_score": 0.2177,
+            "bonus": 0.2906000018119812,
+            "total_ucb": 0.508400022983551
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.059,
-            "bonus": 0.2797999978065491,
-            "total_ucb": 0.2207999974489212
-          }
-        },
-        "output": "3.6 newtons",
-        "llm_input_messages": [
-          {
-            "role": "user",
-            "content": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Calculate the magnitude of the force using Coulomb's law: F = k * |q1 * q2| / r^2. Use k = 8.99e9 N·m²/C² (approx 9e9 is acceptable). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall Coulomb's law formula for the force between two point charges in a vacuum/air: F = k * |q1 * q2| / r^2. Identify the constant k (Coulomb's constant) in appropriate units (N·m²/C²). Output a concise answer to the question, with no explanation.\nAnswer: k = 8.99 * 10^9 N·m²/C²\n\nPredecessor Node 2\nQuestion: Extract the given values from the problem: q1 = -10^-6 C, q2 = -10^-4 C, distance r = 50 cm. Convert r to meters. Output a concise answer to the question, with no explanation.\nAnswer: q1 = -10^-6 C, q2 = -10^-4 C, r = 0.5 m\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
-          }
-        ],
-        "vector_source_text": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Calculate the magnitude of the force using Coulomb's law: F = k * |q1 * q2| / r^2. Use k = 8.99e9 N·m²/C² (approx 9e9 is acceptable). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall Coulomb's law formula for the force between two point charges in a vacuum/air: F = k * |q1 * q2| / r^2. Identify the constant k (Coulomb's constant) in appropriate units (N·m²/C²). Output a concise answer to the question, with no explanation.\nAnswer: k = 8.99 * 10^9 N·m²/C²\n\nPredecessor Node 2\nQuestion: Extract the given values from the problem: q1 = -10^-6 C, q2 = -10^-4 C, distance r = 50 cm. Convert r to meters. Output a concise answer to the question, with no explanation.\nAnswer: q1 = -10^-6 C, q2 = -10^-4 C, r = 0.5 m\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
-      },
-      {
-        "step": 4,
-        "node_id": "4",
-        "predecessor_node_ids": [
-          "3"
-        ],
-        "task_desc": "Compare the computed force magnitude with the provided options and output ONLY the correct option letter (e.g., 'A', 'B', etc.). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "google/gemma-3-27b-it",
-        "ucb_scores": {
-          "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.2211,
-            "bonus": 0.27300000190734863,
-            "total_ucb": 0.051899999380111694
-          },
-          "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.3229,
-            "bonus": 0.30880001187324524,
-            "total_ucb": -0.014100000262260437
-          },
-          "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.0529,
-            "bonus": 0.2786000072956085,
-            "total_ucb": 0.33149999380111694
-          },
-          "google/gemma-3-27b-it": {
-            "pred_score": 0.342,
-            "bonus": 0.34769999980926514,
-            "total_ucb": 0.6895999908447266
-          },
-          "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.2933,
-            "bonus": 0.3107999861240387,
-            "total_ucb": 0.6040999889373779
-          },
-          "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.1898,
-            "bonus": 0.26980000734329224,
-            "total_ucb": 0.4596000015735626
-          },
-          "mistralai/mistral-nemo": {
-            "pred_score": 0.2337,
-            "bonus": 0.2563000023365021,
-            "total_ucb": 0.49000000953674316
+            "pred_score": 0.0806,
+            "bonus": 0.2451999932527542,
+            "total_ucb": 0.32580000162124634
           }
         },
         "output": "A",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Compare the computed force magnitude with the provided options and output ONLY the correct option letter (e.g., 'A', 'B', etc.). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Calculate the magnitude of the force using Coulomb's law: F = k * |q1 * q2| / r^2. Use k = 8.99e9 N·m²/C² (approx 9e9 is acceptable). Output a concise answer to the question, with no explanation.\nAnswer: 3.6 newtons\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Compare the calculated force magnitude from Node 1 with the provided options (A. 3.6 newtons, B. 3.2 newtons, C. 1.2 newtons, D. 1.6 newtons, E. 2.0 newtons, F. 4.0 newtons, G. 0.36 newtons, H. 5.6 newtons, I. 4.6 newtons, J. 2.6 newtons). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given: Charge 1 (q1) = -10^-6 C, Charge 2 (q2) = -10^-4 C, distance between charges (r) = 50 cm = 0.5 m, medium is air (so permittivity ε ≈ ε0 = 8.854 × 10^-12 F/m). Calculate the magnitude of the electrostatic force using Coulomb's law: F = (1/(4πε0)) * (|q1 * q2| / r^2). Output a concise answer to the question, with no explanation.\nAnswer: F = (1/(4π * 8.854 × 10^-12)) * (|-10^-6 * -10^-4| / 0.5^2) = (1/(4π * 8.854 × 10^-12)) * (10^-10 / 0.25) = (1/(4π * 8.854 × 10^-12)) * (4 × 10^-10) = (9 × 10^9) * (4 × 10^-10) = 36 × 10^-1 = 3.6 N\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: A negative point charge of 10^-6 coulomb is situated in air at theorigin of a rectangular coordinate system. A second negativepoint charge of 10^-4 coulomb is situated on the positivex axis at a distance of 50 cm from the origin. Whatis theforce on the second charge?\nOptions:\nA. 3.6newtons\nB. 3.2 newtons\nC. 1.2 newtons\nD. 1.6newtons\nE. 2.0 newtons\nF. 4.0 newtons\nG. 0.36 newtons\nH. 5.6 newtons\nI. 4.6newtons\nJ. 2.6newtons\n\n\n\nCurrent Node Task: Compare the computed force magnitude with the provided options and output ONLY the correct option letter (e.g., 'A', 'B', etc.). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Calculate the magnitude of the force using Coulomb's law: F = k * |q1 * q2| / r^2. Use k = 8.99e9 N·m²/C² (approx 9e9 is acceptable). Output a concise answer to the question, with no explanation.\nAnswer: 3.6 newtons\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Compare the calculated force magnitude from Node 1 with the provided options (A. 3.6 newtons, B. 3.2 newtons, C. 1.2 newtons, D. 1.6 newtons, E. 2.0 newtons, F. 4.0 newtons, G. 0.36 newtons, H. 5.6 newtons, I. 4.6 newtons, J. 2.6 newtons). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given: Charge 1 (q1) = -10^-6 C, Charge 2 (q2) = -10^-4 C, distance between charges (r) = 50 cm = 0.5 m, medium is air (so permittivity ε ≈ ε0 = 8.854 × 10^-12 F/m). Calculate the magnitude of the electrostatic force using Coulomb's law: F = (1/(4πε0)) * (|q1 * q2| / r^2). Output a concise answer to the question, with no explanation.\nAnswer: F = (1/(4π * 8.854 × 10^-12)) * (|-10^-6 * -10^-4| / 0.5^2) = (1/(4π * 8.854 × 10^-12)) * (10^-10 / 0.25) = (1/(4π * 8.854 × 10^-12)) * (4 × 10^-10) = (9 × 10^9) * (4 × 10^-10) = 36 × 10^-1 = 3.6 N\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       }
     ]
@@ -343,60 +234,60 @@
   "3": {
     "question": "Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n",
     "answers": "J",
-    "final_status": "success",
-    "steps_taken": 6,
+    "final_status": "failure",
+    "steps_taken": 4,
     "attempts": [
       {
         "step": 1,
         "node_id": "1",
         "predecessor_node_ids": [],
-        "task_desc": "Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "meta-llama/llama-3.3-70b-instruct",
+        "task_desc": "Recall the definition of a group: a set G with a binary operation * that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in G. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "mistralai/mistral-small-3.2-24b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.1073,
-            "bonus": 0.2370000034570694,
-            "total_ucb": 0.3441999852657318
+            "pred_score": 0.1473,
+            "bonus": 0.2840000092983246,
+            "total_ucb": 0.43130001425743103
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.1,
-            "bonus": 0.2750999927520752,
-            "total_ucb": 0.17509999871253967
+            "pred_score": -0.0875,
+            "bonus": 0.2648000121116638,
+            "total_ucb": 0.17739999294281006
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.011,
-            "bonus": 0.2515000104904175,
-            "total_ucb": 0.24050000309944153
+            "pred_score": 0.1828,
+            "bonus": 0.2777999937534332,
+            "total_ucb": 0.46050000190734863
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.0883,
-            "bonus": 0.28790000081062317,
-            "total_ucb": 0.1995999962091446
+            "pred_score": -0.0365,
+            "bonus": 0.3743000030517578,
+            "total_ucb": 0.3377000093460083
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.1466,
-            "bonus": 0.2809999883174896,
-            "total_ucb": 0.4275999963283539
+            "pred_score": -0.2546,
+            "bonus": 0.25130000710487366,
+            "total_ucb": -0.0032999999821186066
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.0263,
-            "bonus": 0.2777000069618225,
-            "total_ucb": 0.25130000710487366
+            "pred_score": -0.3491,
+            "bonus": 0.27410000562667847,
+            "total_ucb": -0.07500000298023224
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.1806,
-            "bonus": 0.2678999900817871,
-            "total_ucb": 0.08730000257492065
+            "pred_score": 0.0408,
+            "bonus": 0.2978000044822693,
+            "total_ucb": 0.3386000096797943
           }
         },
-        "output": "Closure, Associativity, Identity, Inverses",
+        "output": "A group is a set \\( G \\) with a binary operation \\( * \\) that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in \\( G \\).",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Recall the definition of a group: a set G with a binary operation * that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in G. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Recall the definition of a group: a set G with a binary operation * that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in G. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
@@ -405,277 +296,164 @@
         "predecessor_node_ids": [
           "1"
         ],
-        "task_desc": "Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is a binary operation on ℝ (closure). Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.",
+        "task_desc": "Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check each group axiom: Is multiplication a binary operation on ℝ? Is it associative? Is there an identity element? Does every element have an inverse? Is the set closed under multiplication? Output a concise answer to the question, with no explanation.",
         "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.1144,
-            "bonus": 0.3050999939441681,
-            "total_ucb": 0.1907999962568283
+            "pred_score": -0.3159,
+            "bonus": 0.29589998722076416,
+            "total_ucb": -0.019999999552965164
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0474,
-            "bonus": 0.2281000018119812,
-            "total_ucb": 0.18070000410079956
+            "pred_score": 0.0546,
+            "bonus": 0.26330000162124634,
+            "total_ucb": 0.31790000200271606
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0131,
-            "bonus": 0.25679999589920044,
-            "total_ucb": 0.24379999935626984
+            "pred_score": 0.1436,
+            "bonus": 0.25200000405311584,
+            "total_ucb": 0.39559999108314514
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.3116,
-            "bonus": 0.37310001254081726,
-            "total_ucb": 0.6847000122070312
+            "pred_score": 0.0919,
+            "bonus": 0.3677999973297119,
+            "total_ucb": 0.45969998836517334
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.1813,
-            "bonus": 0.3206999897956848,
-            "total_ucb": 0.13940000534057617
+            "pred_score": 0.2102,
+            "bonus": 0.24140000343322754,
+            "total_ucb": 0.45159998536109924
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.1048,
-            "bonus": 0.23149999976158142,
-            "total_ucb": 0.1266999989748001
+            "pred_score": -0.0235,
+            "bonus": 0.24529999494552612,
+            "total_ucb": 0.22179999947547913
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0172,
-            "bonus": 0.2354000061750412,
-            "total_ucb": 0.21819999814033508
+            "pred_score": -0.0631,
+            "bonus": 0.24799999594688416,
+            "total_ucb": 0.18490000069141388
           }
         },
-        "output": "Yes",
+        "output": "️\nYes, yes, yes, yes, yes.",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is a binary operation on ℝ (closure). Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check each group axiom: Is multiplication a binary operation on ℝ? Is it associative? Is there an identity element? Does every element have an inverse? Is the set closed under multiplication? Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group: a set G with a binary operation * that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in G. Output a concise answer to the question, with no explanation.\nAnswer: A group is a set \\( G \\) with a binary operation \\( * \\) that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in \\( G \\).\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is a binary operation on ℝ (closure). Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
+        "vector_source_text": "Current Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check each group axiom: Is multiplication a binary operation on ℝ? Is it associative? Is there an identity element? Does every element have an inverse? Is the set closed under multiplication? Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group: a set G with a binary operation * that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in G. Output a concise answer to the question, with no explanation.\nAnswer: A group is a set \\( G \\) with a binary operation \\( * \\) that satisfies closure, associativity, identity element existence, and inverse element existence for all elements in \\( G \\).\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.0
       },
       {
         "step": 3,
         "node_id": "3",
         "predecessor_node_ids": [
-          "1"
+          "2"
         ],
-        "task_desc": "Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is associative. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "qwen/qwen-2.5-7b-instruct",
+        "task_desc": "Identify which group axiom fails for the set of all real numbers under multiplication. Specifically, check the existence of inverses for all elements. Note that the real number 0 is included in the set. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.2039,
-            "bonus": 0.25760000944137573,
-            "total_ucb": 0.46149998903274536
+            "pred_score": -0.0431,
+            "bonus": 0.27649998664855957,
+            "total_ucb": 0.23340000212192535
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.161,
-            "bonus": 0.25060001015663147,
-            "total_ucb": 0.4115999937057495
+            "pred_score": -0.0857,
+            "bonus": 0.26269999146461487,
+            "total_ucb": 0.1770000010728836
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.1818,
-            "bonus": 0.2160000056028366,
-            "total_ucb": 0.03420000150799751
+            "pred_score": -0.2501,
+            "bonus": 0.259799987077713,
+            "total_ucb": 0.009800000116229057
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.123,
-            "bonus": 0.35760000348091125,
-            "total_ucb": 0.2345999926328659
+            "pred_score": 0.2607,
+            "bonus": 0.3465999960899353,
+            "total_ucb": 0.6072999835014343
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.0209,
-            "bonus": 0.2989000082015991,
-            "total_ucb": 0.3197999894618988
+            "pred_score": 0.091,
+            "bonus": 0.295199990272522,
+            "total_ucb": 0.3862999975681305
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.0853,
-            "bonus": 0.2583000063896179,
-            "total_ucb": 0.34360000491142273
+            "pred_score": 0.2285,
+            "bonus": 0.2685999870300293,
+            "total_ucb": 0.49720001220703125
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.1226,
-            "bonus": 0.19949999451637268,
-            "total_ucb": 0.3221000134944916
+            "pred_score": -0.046,
+            "bonus": 0.27379998564720154,
+            "total_ucb": 0.22779999673366547
           }
         },
-        "output": "No",
+        "output": "Inverses do not exist for all elements.",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is associative. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Identify which group axiom fails for the set of all real numbers under multiplication. Specifically, check the existence of inverses for all elements. Note that the real number 0 is included in the set. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check each group axiom: Is multiplication a binary operation on ℝ? Is it associative? Is there an identity element? Does every element have an inverse? Is the set closed under multiplication? Output a concise answer to the question, with no explanation.\nAnswer: ️\nYes, yes, yes, yes, yes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is associative. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
+        "vector_source_text": "Current Node Task: Identify which group axiom fails for the set of all real numbers under multiplication. Specifically, check the existence of inverses for all elements. Note that the real number 0 is included in the set. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check each group axiom: Is multiplication a binary operation on ℝ? Is it associative? Is there an identity element? Does every element have an inverse? Is the set closed under multiplication? Output a concise answer to the question, with no explanation.\nAnswer: ️\nYes, yes, yes, yes, yes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.0
       },
       {
         "step": 4,
         "node_id": "4",
         "predecessor_node_ids": [
-          "1"
+          "3"
         ],
-        "task_desc": "Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if an identity element exists. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "mistralai/mistral-small-3.2-24b-instruct",
-        "ucb_scores": {
-          "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.0174,
-            "bonus": 0.2549000084400177,
-            "total_ucb": 0.27239999175071716
-          },
-          "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0878,
-            "bonus": 0.30630001425743103,
-            "total_ucb": 0.21860000491142273
-          },
-          "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.1834,
-            "bonus": 0.27250000834465027,
-            "total_ucb": 0.45590001344680786
-          },
-          "google/gemma-3-27b-it": {
-            "pred_score": -0.4307,
-            "bonus": 0.3027999997138977,
-            "total_ucb": -0.12790000438690186
-          },
-          "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.0093,
-            "bonus": 0.30660000443458557,
-            "total_ucb": 0.3158999979496002
-          },
-          "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.0265,
-            "bonus": 0.28290000557899475,
-            "total_ucb": 0.2563999891281128
-          },
-          "mistralai/mistral-nemo": {
-            "pred_score": 0.0082,
-            "bonus": 0.22609999775886536,
-            "total_ucb": 0.23430000245571136
-          }
-        },
-        "output": "Yes",
-        "llm_input_messages": [
-          {
-            "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if an identity element exists. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
-          }
-        ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if an identity element exists. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
-      },
-      {
-        "step": 5,
-        "node_id": "5",
-        "predecessor_node_ids": [
-          "1"
-        ],
-        "task_desc": "Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if every element has a multiplicative inverse within ℝ. Specifically, check the element 0. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.",
+        "task_desc": "Based on the identified failing axiom from Node 3, select the matching option from the provided list: A. multiplication is not associative, B. negative numbers have no inverse, C. the set of all real numbers is not finite, D. multiplication is not a binary operation, E. the distributive property does not hold, F. identity element does not exist, G. the set is not closed under multiplication, H. multiplication is not commutative, I. the operation is not well-defined, J. zero has no inverse. Output ONLY the option letter. Output a concise answer to the question, with no explanation.",
         "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.1829,
-            "bonus": 0.3018999993801117,
-            "total_ucb": 0.11890000104904175
+            "pred_score": 0.0122,
+            "bonus": 0.22059999406337738,
+            "total_ucb": 0.23280000686645508
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0779,
-            "bonus": 0.23250000178813934,
-            "total_ucb": 0.15469999611377716
+            "pred_score": 0.0469,
+            "bonus": 0.271699994802475,
+            "total_ucb": 0.31869998574256897
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0369,
-            "bonus": 0.30390000343322754,
-            "total_ucb": 0.2671000063419342
+            "pred_score": -0.097,
+            "bonus": 0.2517000138759613,
+            "total_ucb": 0.15479999780654907
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.1774,
-            "bonus": 0.3384000062942505,
-            "total_ucb": 0.5156999826431274
+            "pred_score": 0.3872,
+            "bonus": 0.349700003862381,
+            "total_ucb": 0.7368999719619751
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.0366,
-            "bonus": 0.28929999470710754,
-            "total_ucb": 0.32589998841285706
+            "pred_score": -0.0535,
+            "bonus": 0.2567000091075897,
+            "total_ucb": 0.20309999585151672
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.0389,
-            "bonus": 0.24879999458789825,
-            "total_ucb": 0.20990000665187836
+            "pred_score": -0.163,
+            "bonus": 0.25619998574256897,
+            "total_ucb": 0.09319999814033508
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0113,
-            "bonus": 0.243599995970726,
-            "total_ucb": 0.23229999840259552
+            "pred_score": -0.0549,
+            "bonus": 0.2386000007390976,
+            "total_ucb": 0.18369999527931213
           }
         },
-        "output": "No",
+        "output": "B",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if every element has a multiplicative inverse within ℝ. Specifically, check the element 0. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Based on the identified failing axiom from Node 3, select the matching option from the provided list: A. multiplication is not associative, B. negative numbers have no inverse, C. the set of all real numbers is not finite, D. multiplication is not a binary operation, E. the distributive property does not hold, F. identity element does not exist, G. the set is not closed under multiplication, H. multiplication is not commutative, I. the operation is not well-defined, J. zero has no inverse. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Identify which group axiom fails for the set of all real numbers under multiplication. Specifically, check the existence of inverses for all elements. Note that the real number 0 is included in the set. Output a concise answer to the question, with no explanation.\nAnswer: Inverses do not exist for all elements.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if every element has a multiplicative inverse within ℝ. Specifically, check the element 0. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the definition of a group in abstract algebra. A group is a set equipped with a binary operation that is associative, has an identity element, and every element has an inverse. Output ONLY the four key properties (closure, associativity, identity, inverses). Output a concise answer to the question, with no explanation.\nAnswer: Closure, Associativity, Identity, Inverses\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
-      },
-      {
-        "step": 6,
-        "node_id": "6",
-        "predecessor_node_ids": [
-          "2",
-          "3",
-          "4",
-          "5"
-        ],
-        "task_desc": "Using the results from nodes 2, 3, 4, and 5, determine which group axiom fails for (ℝ, ×). Compare this failure to the provided options (A-J). Output ONLY the correct option letter (e.g., 'J'). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "meta-llama/llama-3.1-8b-instruct",
-        "ucb_scores": {
-          "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.0013,
-            "bonus": 0.2529999911785126,
-            "total_ucb": 0.25440001487731934
-          },
-          "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.0635,
-            "bonus": 0.27070000767707825,
-            "total_ucb": 0.334199994802475
-          },
-          "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.1233,
-            "bonus": 0.260699987411499,
-            "total_ucb": 0.13740000128746033
-          },
-          "google/gemma-3-27b-it": {
-            "pred_score": -0.2575,
-            "bonus": 0.3206000030040741,
-            "total_ucb": 0.06310000270605087
-          },
-          "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0918,
-            "bonus": 0.3296000063419342,
-            "total_ucb": 0.2378000020980835
-          },
-          "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.0627,
-            "bonus": 0.25769999623298645,
-            "total_ucb": 0.32030001282691956
-          },
-          "mistralai/mistral-nemo": {
-            "pred_score": -0.0371,
-            "bonus": 0.2621000111103058,
-            "total_ucb": 0.22499999403953552
-          }
-        },
-        "output": "J",
-        "llm_input_messages": [
-          {
-            "role": "user",
-            "content": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Using the results from nodes 2, 3, 4, and 5, determine which group axiom fails for (ℝ, ×). Compare this failure to the provided options (A-J). Output ONLY the correct option letter (e.g., 'J'). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is a binary operation on ℝ (closure). Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: Yes\n\nPredecessor Node 3\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is associative. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: No\n\nPredecessor Node 4\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if an identity element exists. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: Yes\n\nPredecessor Node 5\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if every element has a multiplicative inverse within ℝ. Specifically, check the element 0. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: No\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
-          }
-        ],
-        "vector_source_text": "Overall Problem: Question: The set of all real numbers under the usual multiplication operation is not a group since\nOptions:\nA. multiplication is not associative\nB. negative numbers have no inverse\nC. the set of all real numbers is not finite\nD. multiplication is not a binary operation\nE. the distributive property does not hold\nF. identity element does not exist\nG. the set is not closed under multiplication\nH. multiplication is not commutative\nI. the operation is not well-defined\nJ. zero has no inverse\n\n\n\nCurrent Node Task: Using the results from nodes 2, 3, 4, and 5, determine which group axiom fails for (ℝ, ×). Compare this failure to the provided options (A-J). Output ONLY the correct option letter (e.g., 'J'). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is a binary operation on ℝ (closure). Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: Yes\n\nPredecessor Node 3\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if the operation is associative. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: No\n\nPredecessor Node 4\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if an identity element exists. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: Yes\n\nPredecessor Node 5\nQuestion: Analyze the set of all real numbers (ℝ) under the usual multiplication operation. Check if every element has a multiplicative inverse within ℝ. Specifically, check the element 0. Output ONLY 'Yes' or 'No'. Output a concise answer to the question, with no explanation.\nAnswer: No\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 1.0
+        "vector_source_text": "Current Node Task: Based on the identified failing axiom from Node 3, select the matching option from the provided list: A. multiplication is not associative, B. negative numbers have no inverse, C. the set of all real numbers is not finite, D. multiplication is not a binary operation, E. the distributive property does not hold, F. identity element does not exist, G. the set is not closed under multiplication, H. multiplication is not commutative, I. the operation is not well-defined, J. zero has no inverse. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Identify which group axiom fails for the set of all real numbers under multiplication. Specifically, check the existence of inverses for all elements. Note that the real number 0 is included in the set. Output a concise answer to the question, with no explanation.\nAnswer: Inverses do not exist for all elements.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.5
       }
     ]
   },
@@ -683,59 +461,59 @@
     "question": "Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n",
     "answers": "E",
     "final_status": "success",
-    "steps_taken": 6,
+    "steps_taken": 3,
     "attempts": [
       {
         "step": 1,
         "node_id": "1",
         "predecessor_node_ids": [],
-        "task_desc": "Recall the formula for Signal-to-Noise Ratio (SNR) when given peak voltage values. SNR (linear) = (V_signal_peak / V_noise_peak)^2. Given V_signal_peak / V_noise_peak = 20. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "google/gemma-3-27b-it",
+        "task_desc": "Given the peak voltage of the signal (Vs) is 20 times the peak voltage of the noise (Vn), i.e., Vs = 20 * Vn. Calculate the Signal-to-Noise Ratio (SNR) in linear scale using the power ratio formula: SNR_linear = (Vs / Vn)^2. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen-2.5-7b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.195,
-            "bonus": 0.2614000141620636,
-            "total_ucb": 0.06650000065565109
+            "pred_score": 0.2448,
+            "bonus": 0.2678999900817871,
+            "total_ucb": 0.5126000046730042
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.0241,
-            "bonus": 0.2547000050544739,
-            "total_ucb": 0.27880001068115234
+            "pred_score": 0.1527,
+            "bonus": 0.2667999863624573,
+            "total_ucb": 0.4194999933242798
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.0419,
-            "bonus": 0.2485000044107437,
-            "total_ucb": 0.2903999984264374
+            "pred_score": 0.0552,
+            "bonus": 0.26510000228881836,
+            "total_ucb": 0.3203999996185303
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.1113,
-            "bonus": 0.310699999332428,
-            "total_ucb": 0.421999990940094
+            "pred_score": 0.0357,
+            "bonus": 0.35899999737739563,
+            "total_ucb": 0.39469999074935913
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.1302,
-            "bonus": 0.29109999537467957,
-            "total_ucb": 0.16089999675750732
+            "pred_score": -0.3013,
+            "bonus": 0.2632000148296356,
+            "total_ucb": -0.038100000470876694
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.1655,
-            "bonus": 0.31439998745918274,
-            "total_ucb": 0.14900000393390656
+            "pred_score": -0.0758,
+            "bonus": 0.24729999899864197,
+            "total_ucb": 0.17149999737739563
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.0247,
-            "bonus": 0.24210000038146973,
-            "total_ucb": 0.2667999863624573
+            "pred_score": -0.2105,
+            "bonus": 0.25049999356269836,
+            "total_ucb": 0.039900001138448715
           }
         },
-        "output": "400\n34.0",
+        "output": "400",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Recall the formula for Signal-to-Noise Ratio (SNR) when given peak voltage values. SNR (linear) = (V_signal_peak / V_noise_peak)^2. Given V_signal_peak / V_noise_peak = 20. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Given the peak voltage of the signal (Vs) is 20 times the peak voltage of the noise (Vn), i.e., Vs = 20 * Vn. Calculate the Signal-to-Noise Ratio (SNR) in linear scale using the power ratio formula: SNR_linear = (Vs / Vn)^2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Recall the formula for Signal-to-Noise Ratio (SNR) when given peak voltage values. SNR (linear) = (V_signal_peak / V_noise_peak)^2. Given V_signal_peak / V_noise_peak = 20. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Given the peak voltage of the signal (Vs) is 20 times the peak voltage of the noise (Vn), i.e., Vs = 20 * Vn. Calculate the Signal-to-Noise Ratio (SNR) in linear scale using the power ratio formula: SNR_linear = (Vs / Vn)^2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
@@ -744,53 +522,53 @@
         "predecessor_node_ids": [
           "1"
         ],
-        "task_desc": "Calculate the linear SNR value using the ratio from Node 1. SNR_linear = 20^2. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "meta-llama/llama-3.3-70b-instruct",
+        "task_desc": "Using the linear SNR value from Node 1, calculate the SNR in decibels using the formula: SNR_dB = 10 * log10(SNR_linear). Round the result to three significant figures. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.0445,
-            "bonus": 0.2329999953508377,
-            "total_ucb": 0.18850000202655792
+            "pred_score": -0.0353,
+            "bonus": 0.24770000576972961,
+            "total_ucb": 0.21240000426769257
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0779,
-            "bonus": 0.2476000040769577,
-            "total_ucb": 0.1696999967098236
+            "pred_score": 0.0049,
+            "bonus": 0.2639000117778778,
+            "total_ucb": 0.2687999904155731
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0416,
-            "bonus": 0.23639999330043793,
-            "total_ucb": 0.19480000436306
+            "pred_score": -0.0478,
+            "bonus": 0.28119999170303345,
+            "total_ucb": 0.23340000212192535
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.0437,
-            "bonus": 0.2978000044822693,
-            "total_ucb": 0.2540999948978424
+            "pred_score": 0.1643,
+            "bonus": 0.3425000011920929,
+            "total_ucb": 0.5067999958992004
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.3415,
-            "bonus": 0.29409998655319214,
-            "total_ucb": 0.6355999708175659
+            "pred_score": 0.1833,
+            "bonus": 0.21649999916553497,
+            "total_ucb": 0.39980000257492065
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.0528,
-            "bonus": 0.2354000061750412,
-            "total_ucb": 0.1826000064611435
+            "pred_score": -0.2085,
+            "bonus": 0.2451999932527542,
+            "total_ucb": 0.03669999912381172
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.2011,
-            "bonus": 0.26080000400543213,
-            "total_ucb": 0.059700001031160355
+            "pred_score": -0.0226,
+            "bonus": 0.24549999833106995,
+            "total_ucb": 0.22300000488758087
           }
         },
-        "output": "400, 26.0",
+        "output": "26.0 dB",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Calculate the linear SNR value using the ratio from Node 1. SNR_linear = 20^2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the formula for Signal-to-Noise Ratio (SNR) when given peak voltage values. SNR (linear) = (V_signal_peak / V_noise_peak)^2. Given V_signal_peak / V_noise_peak = 20. Output a concise answer to the question, with no explanation.\nAnswer: 400\n34.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Using the linear SNR value from Node 1, calculate the SNR in decibels using the formula: SNR_dB = 10 * log10(SNR_linear). Round the result to three significant figures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the peak voltage of the signal (Vs) is 20 times the peak voltage of the noise (Vn), i.e., Vs = 20 * Vn. Calculate the Signal-to-Noise Ratio (SNR) in linear scale using the power ratio formula: SNR_linear = (Vs / Vn)^2. Output a concise answer to the question, with no explanation.\nAnswer: 400\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Calculate the linear SNR value using the ratio from Node 1. SNR_linear = 20^2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Recall the formula for Signal-to-Noise Ratio (SNR) when given peak voltage values. SNR (linear) = (V_signal_peak / V_noise_peak)^2. Given V_signal_peak / V_noise_peak = 20. Output a concise answer to the question, with no explanation.\nAnswer: 400\n34.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Using the linear SNR value from Node 1, calculate the SNR in decibels using the formula: SNR_dB = 10 * log10(SNR_linear). Round the result to three significant figures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the peak voltage of the signal (Vs) is 20 times the peak voltage of the noise (Vn), i.e., Vs = 20 * Vn. Calculate the Signal-to-Noise Ratio (SNR) in linear scale using the power ratio formula: SNR_linear = (Vs / Vn)^2. Output a concise answer to the question, with no explanation.\nAnswer: 400\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
@@ -799,53 +577,570 @@
         "predecessor_node_ids": [
           "2"
         ],
-        "task_desc": "Recall the formula for SNR in decibels: SNR_dB = 10 * log10(SNR_linear). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "meta-llama/llama-3.3-70b-instruct",
+        "task_desc": "Compare the SNR_dB value (rounded to three significant figures) from Node 2 with the provided options (A. 15.0, B. 13.0, C. 30.0, D. 34.0, E. 26.0, F. 40.0, G. 18.0, H. 24.0, I. 20.0, J. 10.0). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen3.5-flash-02-23",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.0057,
-            "bonus": 0.2648000121116638,
-            "total_ucb": 0.2590999901294708
+            "pred_score": 0.1345,
+            "bonus": 0.251800000667572,
+            "total_ucb": 0.3862999975681305
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0185,
-            "bonus": 0.2549999952316284,
-            "total_ucb": 0.23659999668598175
+            "pred_score": 0.0879,
+            "bonus": 0.2919999957084656,
+            "total_ucb": 0.3799000084400177
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.2062,
-            "bonus": 0.26260000467300415,
-            "total_ucb": 0.46889999508857727
+            "pred_score": 0.07,
+            "bonus": 0.2542000114917755,
+            "total_ucb": 0.32420000433921814
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.0005,
-            "bonus": 0.2621999979019165,
-            "total_ucb": 0.26170000433921814
+            "pred_score": -0.2198,
+            "bonus": 0.34439998865127563,
+            "total_ucb": 0.12460000067949295
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.2232,
-            "bonus": 0.2623000144958496,
-            "total_ucb": 0.4855000078678131
+            "pred_score": -0.0372,
+            "bonus": 0.26440000534057617,
+            "total_ucb": 0.2272000014781952
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.1045,
-            "bonus": 0.28060001134872437,
-            "total_ucb": 0.38499999046325684
+            "pred_score": 0.2136,
+            "bonus": 0.24869999289512634,
+            "total_ucb": 0.46230000257492065
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.0774,
-            "bonus": 0.2498999983072281,
-            "total_ucb": 0.32739999890327454
+            "pred_score": 0.1128,
+            "bonus": 0.2667999863624573,
+            "total_ucb": 0.37959998846054077
           }
         },
-        "output": "26.0",
+        "output": "E",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Recall the formula for SNR in decibels: SNR_dB = 10 * log10(SNR_linear). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Calculate the linear SNR value using the ratio from Node 1. SNR_linear = 20^2. Output a concise answer to the question, with no explanation.\nAnswer: 400, 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Compare the SNR_dB value (rounded to three significant figures) from Node 2 with the provided options (A. 15.0, B. 13.0, C. 30.0, D. 34.0, E. 26.0, F. 40.0, G. 18.0, H. 24.0, I. 20.0, J. 10.0). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the linear SNR value from Node 1, calculate the SNR in decibels using the formula: SNR_dB = 10 * log10(SNR_linear). Round the result to three significant figures. Output a concise answer to the question, with no explanation.\nAnswer: 26.0 dB\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Recall the formula for SNR in decibels: SNR_dB = 10 * log10(SNR_linear). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Calculate the linear SNR value using the ratio from Node 1. SNR_linear = 20^2. Output a concise answer to the question, with no explanation.\nAnswer: 400, 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Compare the SNR_dB value (rounded to three significant figures) from Node 2 with the provided options (A. 15.0, B. 13.0, C. 30.0, D. 34.0, E. 26.0, F. 40.0, G. 18.0, H. 24.0, I. 20.0, J. 10.0). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the linear SNR value from Node 1, calculate the SNR in decibels using the formula: SNR_dB = 10 * log10(SNR_linear). Round the result to three significant figures. Output a concise answer to the question, with no explanation.\nAnswer: 26.0 dB\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      }
+    ]
+  },
+  "5": {
+    "question": "Question: Who was born first Am Rong or Ava DuVernay ?",
+    "answers": "Am Rong",
+    "final_status": "success",
+    "steps_taken": 3,
+    "attempts": [
+      {
+        "step": 1,
+        "node_id": "1",
+        "predecessor_node_ids": [],
+        "task_desc": "Given the names 'Am Rong' and 'Ava DuVernay', retrieve their birth dates from a reliable knowledge source. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen3.5-flash-02-23",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.0121,
+            "bonus": 0.24860000610351562,
+            "total_ucb": 0.26080000400543213
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": 0.0388,
+            "bonus": 0.2775000035762787,
+            "total_ucb": 0.31630000472068787
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": -0.026,
+            "bonus": 0.24199999868869781,
+            "total_ucb": 0.2160000056028366
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": 0.0121,
+            "bonus": 0.36739999055862427,
+            "total_ucb": 0.37950000166893005
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": 0.0657,
+            "bonus": 0.3111000061035156,
+            "total_ucb": 0.3767000138759613
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.2791,
+            "bonus": 0.2766000032424927,
+            "total_ucb": 0.5557000041007996
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.1092,
+            "bonus": 0.24539999663829803,
+            "total_ucb": 0.3546000123023987
+          }
+        },
+        "output": "Am Rong: Unknown; Ava DuVernay: August 24, 1972",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Given the names 'Am Rong' and 'Ava DuVernay', retrieve their birth dates from a reliable knowledge source. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Given the names 'Am Rong' and 'Ava DuVernay', retrieve their birth dates from a reliable knowledge source. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 2,
+        "node_id": "2",
+        "predecessor_node_ids": [
+          "1"
+        ],
+        "task_desc": "Using the birth dates retrieved in Node 1, compare the two dates to determine which individual was born earlier. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen-2.5-7b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.2051,
+            "bonus": 0.27709999680519104,
+            "total_ucb": 0.4821000099182129
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.142,
+            "bonus": 0.29760000109672546,
+            "total_ucb": 0.15569999814033508
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": -0.2367,
+            "bonus": 0.2863999903202057,
+            "total_ucb": 0.04969999939203262
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.1043,
+            "bonus": 0.33559998869895935,
+            "total_ucb": 0.2312999963760376
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": 0.0444,
+            "bonus": 0.2240000069141388,
+            "total_ucb": 0.26829999685287476
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.027,
+            "bonus": 0.25440001487731934,
+            "total_ucb": 0.2273000031709671
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": -0.0006,
+            "bonus": 0.2930999994277954,
+            "total_ucb": 0.29260000586509705
+          }
+        },
+        "output": "Am Rong: Unknown; Ava DuVernay: August 24, 1972; Therefore, Am Rong was born earlier (if applicable).",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Using the birth dates retrieved in Node 1, compare the two dates to determine which individual was born earlier. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the names 'Am Rong' and 'Ava DuVernay', retrieve their birth dates from a reliable knowledge source. Output a concise answer to the question, with no explanation.\nAnswer: Am Rong: Unknown; Ava DuVernay: August 24, 1972\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Using the birth dates retrieved in Node 1, compare the two dates to determine which individual was born earlier. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the names 'Am Rong' and 'Ava DuVernay', retrieve their birth dates from a reliable knowledge source. Output a concise answer to the question, with no explanation.\nAnswer: Am Rong: Unknown; Ava DuVernay: August 24, 1972\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 3,
+        "node_id": "3",
+        "predecessor_node_ids": [
+          "2"
+        ],
+        "task_desc": "Based on the comparison in Node 2, output the name of the person who was born first: either 'Am Rong' or 'Ava DuVernay'. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "google/gemma-3-27b-it",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.0792,
+            "bonus": 0.2549000084400177,
+            "total_ucb": 0.33410000801086426
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.0982,
+            "bonus": 0.2540999948978424,
+            "total_ucb": 0.1559000015258789
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.0171,
+            "bonus": 0.2581000030040741,
+            "total_ucb": 0.2752000093460083
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": 0.0341,
+            "bonus": 0.358599990606308,
+            "total_ucb": 0.39259999990463257
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": 0.0086,
+            "bonus": 0.2676999866962433,
+            "total_ucb": 0.27630001306533813
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.0829,
+            "bonus": 0.24060000479221344,
+            "total_ucb": 0.32350000739097595
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": -0.0944,
+            "bonus": 0.22190000116825104,
+            "total_ucb": 0.1274999976158142
+          }
+        },
+        "output": "Am Rong",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Based on the comparison in Node 2, output the name of the person who was born first: either 'Am Rong' or 'Ava DuVernay'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the birth dates retrieved in Node 1, compare the two dates to determine which individual was born earlier. Output a concise answer to the question, with no explanation.\nAnswer: Am Rong: Unknown; Ava DuVernay: August 24, 1972; Therefore, Am Rong was born earlier (if applicable).\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Based on the comparison in Node 2, output the name of the person who was born first: either 'Am Rong' or 'Ava DuVernay'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the birth dates retrieved in Node 1, compare the two dates to determine which individual was born earlier. Output a concise answer to the question, with no explanation.\nAnswer: Am Rong: Unknown; Ava DuVernay: August 24, 1972; Therefore, Am Rong was born earlier (if applicable).\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      }
+    ]
+  },
+  "6": {
+    "question": "Question: Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+    "answers": "San Luis Obispo, California",
+    "final_status": "failure",
+    "steps_taken": 2,
+    "attempts": [
+      {
+        "step": 1,
+        "node_id": "1",
+        "predecessor_node_ids": [],
+        "task_desc": "Identify the location of Bubblegum Alley in California, given that it is similar to the Gum Wall. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "meta-llama/llama-3.1-8b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.0713,
+            "bonus": 0.2833999991416931,
+            "total_ucb": 0.3546999990940094
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": 0.2431,
+            "bonus": 0.23170000314712524,
+            "total_ucb": 0.4747999906539917
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.0388,
+            "bonus": 0.2757999897003174,
+            "total_ucb": 0.31459999084472656
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": 0.0638,
+            "bonus": 0.30720001459121704,
+            "total_ucb": 0.3709999918937683
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.0166,
+            "bonus": 0.31439998745918274,
+            "total_ucb": 0.2978000044822693
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.0461,
+            "bonus": 0.2556999921798706,
+            "total_ucb": 0.301800012588501
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.0122,
+            "bonus": 0.2231999933719635,
+            "total_ucb": 0.2354000061750412
+          }
+        },
+        "output": "Paso Robles, California",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Identify the location of Bubblegum Alley in California, given that it is similar to the Gum Wall. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Identify the location of Bubblegum Alley in California, given that it is similar to the Gum Wall. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 2,
+        "node_id": "2",
+        "predecessor_node_ids": [
+          "1"
+        ],
+        "task_desc": "Based on the location information retrieved in Node 1, provide the specific city or place in California where Bubblegum Alley is located. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "google/gemma-3-27b-it",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": -0.3331,
+            "bonus": 0.2757999897003174,
+            "total_ucb": -0.05730000138282776
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.1226,
+            "bonus": 0.23690000176429749,
+            "total_ucb": 0.11429999768733978
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.0207,
+            "bonus": 0.26660001277923584,
+            "total_ucb": 0.2872999906539917
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": 0.1943,
+            "bonus": 0.27219998836517334,
+            "total_ucb": 0.46650001406669617
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": 0.1044,
+            "bonus": 0.3061000108718872,
+            "total_ucb": 0.4104999899864197
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.0002,
+            "bonus": 0.25529998540878296,
+            "total_ucb": 0.2554999887943268
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.1971,
+            "bonus": 0.24269999563694,
+            "total_ucb": 0.4397999942302704
+          }
+        },
+        "output": "Paso Robles, California",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Based on the location information retrieved in Node 1, provide the specific city or place in California where Bubblegum Alley is located. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Identify the location of Bubblegum Alley in California, given that it is similar to the Gum Wall. Output a concise answer to the question, with no explanation.\nAnswer: Paso Robles, California\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Based on the location information retrieved in Node 1, provide the specific city or place in California where Bubblegum Alley is located. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Identify the location of Bubblegum Alley in California, given that it is similar to the Gum Wall. Output a concise answer to the question, with no explanation.\nAnswer: Paso Robles, California\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      }
+    ]
+  },
+  "7": {
+    "question": "A muon has rest mass m such that m c^2 ≈ 100 \\unit{MeV} and proper lifetime at rest \\tau_0 ≈ 2 \\unit{\\mu s}. Assume the Earth’s magnetic field could, in principle, bend the muon into a circular path around the Earth of radius R ≈ 6.4\\times 10^6 \\unit{m}. Use the speed of light c ≈ 3\\times 10^8 \\unit{m/s}, the elementary charge e ≈ 1.6\\times 10^{-19} \\unit{C}, and the conversion 1 \\unit{MeV} = 1.6\\times 10^{-13} \\unit{J}. Also use 1 \\unit{G} = 10^{-4} \\unit{T}. Let v be the muon speed, define \\beta = v/c and \\gamma = (1 - \\beta^2)^{-\\frac{1}{2}}. Let p denote the relativistic momentum magnitude, E the total energy, and B the magnetic flux density. Define E_{min} as the minimum total energy such that the time-dilated lifetime is at least the travel time for one circumnavigation, p_{min} as the corresponding minimum momentum, and B_{min} as the minimum magnetic field needed to keep the muon in a circular orbit of radius R. A \"fair chance\" means the time-dilated lifetime \\gamma \\tau_0 is at least the travel time 2\\pi R/v. Compute E_{min} and B_{min}, and decide whether the Earth’s surface field (about 0.25 to 0.65 \\unit{G}) is sufficient to keep the muon in orbit.",
+    "answers": "$$\nB_{min} \\approx 35 \\unit{G}\n$$",
+    "final_status": "failure",
+    "steps_taken": 1,
+    "attempts": [
+      {
+        "step": 1,
+        "node_id": "fallback_node",
+        "predecessor_node_ids": [],
+        "task_desc": "Answer the following question directly: A muon has rest mass m such that m c^2 ≈ 100 \\unit{MeV} and proper lifetime at rest \\tau_0 ≈ 2 \\unit{\\mu s}. Assume the Earth’s magnetic field could, in principle, bend the muon into a circular path around the Earth of radius R ≈ 6.4\\times 10^6 \\unit{m}. Use the speed of light c ≈ 3\\times 10^8 \\unit{m/s}, the elementary charge e ≈ 1.6\\times 10^{-19} \\unit{C}, and the conversion 1 \\unit{MeV} = 1.6\\times 10^{-13} \\unit{J}. Also use 1 \\unit{G} = 10^{-4} \\unit{T}. Let v be the muon speed, define \\beta = v/c and \\gamma = (1 - \\beta^2)^{-\\frac{1}{2}}. Let p denote the relativistic momentum magnitude, E the total energy, and B the magnetic flux density. Define E_{min} as the minimum total energy such that the time-dilated lifetime is at least the travel time for one circumnavigation, p_{min} as the corresponding minimum momentum, and B_{min} as the minimum magnetic field needed to keep the muon in a circular orbit of radius R. A \"fair chance\" means the time-dilated lifetime \\gamma \\tau_0 is at least the travel time 2\\pi R/v. Compute E_{min} and B_{min}, and decide whether the Earth’s surface field (about 0.25 to 0.65 \\unit{G}) is sufficient to keep the muon in orbit. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen3.5-flash-02-23",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": -0.0925,
+            "bonus": 0.2273000031709671,
+            "total_ucb": 0.1347000002861023
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.0088,
+            "bonus": 0.2881999909877777,
+            "total_ucb": 0.2793000042438507
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.1004,
+            "bonus": 0.24690000712871552,
+            "total_ucb": 0.3472999930381775
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.2896,
+            "bonus": 0.3086000084877014,
+            "total_ucb": 0.01899999938905239
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.1824,
+            "bonus": 0.28519999980926514,
+            "total_ucb": 0.10279999673366547
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.1579,
+            "bonus": 0.25220000743865967,
+            "total_ucb": 0.4101000130176544
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.0202,
+            "bonus": 0.25850000977516174,
+            "total_ucb": 0.27869999408721924
+          }
+        },
+        "output": "$E_{min} \\approx 6.7 \\times 10^6 \\text{ MeV}$, $B_{min} \\approx 35 \\text{ G}$, Earth's surface field is not sufficient.",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Answer the following question directly: A muon has rest mass m such that m c^2 ≈ 100 \\unit{MeV} and proper lifetime at rest \\tau_0 ≈ 2 \\unit{\\mu s}. Assume the Earth’s magnetic field could, in principle, bend the muon into a circular path around the Earth of radius R ≈ 6.4\\times 10^6 \\unit{m}. Use the speed of light c ≈ 3\\times 10^8 \\unit{m/s}, the elementary charge e ≈ 1.6\\times 10^{-19} \\unit{C}, and the conversion 1 \\unit{MeV} = 1.6\\times 10^{-13} \\unit{J}. Also use 1 \\unit{G} = 10^{-4} \\unit{T}. Let v be the muon speed, define \\beta = v/c and \\gamma = (1 - \\beta^2)^{-\\frac{1}{2}}. Let p denote the relativistic momentum magnitude, E the total energy, and B the magnetic flux density. Define E_{min} as the minimum total energy such that the time-dilated lifetime is at least the travel time for one circumnavigation, p_{min} as the corresponding minimum momentum, and B_{min} as the minimum magnetic field needed to keep the muon in a circular orbit of radius R. A \"fair chance\" means the time-dilated lifetime \\gamma \\tau_0 is at least the travel time 2\\pi R/v. Compute E_{min} and B_{min}, and decide whether the Earth’s surface field (about 0.25 to 0.65 \\unit{G}) is sufficient to keep the muon in orbit. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Answer the following question directly: A muon has rest mass m such that m c^2 ≈ 100 \\unit{MeV} and proper lifetime at rest \\tau_0 ≈ 2 \\unit{\\mu s}. Assume the Earth’s magnetic field could, in principle, bend the muon into a circular path around the Earth of radius R ≈ 6.4\\times 10^6 \\unit{m}. Use the speed of light c ≈ 3\\times 10^8 \\unit{m/s}, the elementary charge e ≈ 1.6\\times 10^{-19} \\unit{C}, and the conversion 1 \\unit{MeV} = 1.6\\times 10^{-13} \\unit{J}. Also use 1 \\unit{G} = 10^{-4} \\unit{T}. Let v be the muon speed, define \\beta = v/c and \\gamma = (1 - \\beta^2)^{-\\frac{1}{2}}. Let p denote the relativistic momentum magnitude, E the total energy, and B the magnetic flux density. Define E_{min} as the minimum total energy such that the time-dilated lifetime is at least the travel time for one circumnavigation, p_{min} as the corresponding minimum momentum, and B_{min} as the minimum magnetic field needed to keep the muon in a circular orbit of radius R. A \"fair chance\" means the time-dilated lifetime \\gamma \\tau_0 is at least the travel time 2\\pi R/v. Compute E_{min} and B_{min}, and decide whether the Earth’s surface field (about 0.25 to 0.65 \\unit{G}) is sufficient to keep the muon in orbit. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.0
+      }
+    ]
+  },
+  "8": {
+    "question": "Question: Suppose the government seeks to achieve a balanced budgetby levying taxes of $100 billion and making expendituresof $100 billion. How will this affect NNP if MPC = 0.8?\nOptions:\nA. Decrease of $500 billion in NNP\nB. Increase of $500 billion in NNP\nC. Decrease of $100 billion in NNP\nD. No change in NNP because taxes cancel out expenditures\nE. Increase of $200 billion in NNP\nF. Decrease of $80 billion in NNP\nG. Increase of $100 billion in NNP\nH. Increase of $50 billion in NNP\nI. No change in NNP\nJ. Decrease of $20 billion in NNP\n\n",
+    "answers": "G",
+    "final_status": "success",
+    "steps_taken": 6,
+    "attempts": [
+      {
+        "step": 1,
+        "node_id": "1",
+        "predecessor_node_ids": [],
+        "task_desc": "Given the government levies taxes of $100 billion and makes expenditures of $100 billion, with MPC = 0.8, calculate the tax multiplier. The tax multiplier formula is -MPC/(1-MPC). Output a concise answer to the question, with no explanation.",
+        "chosen_model": "meta-llama/llama-3.1-8b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.0019,
+            "bonus": 0.26019999384880066,
+            "total_ucb": 0.2621999979019165
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": 0.2801,
+            "bonus": 0.30570000410079956,
+            "total_ucb": 0.5856999754905701
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": -0.0289,
+            "bonus": 0.22869999706745148,
+            "total_ucb": 0.19979999959468842
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.102,
+            "bonus": 0.34470000863075256,
+            "total_ucb": 0.2425999939441681
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.1663,
+            "bonus": 0.27410000562667847,
+            "total_ucb": 0.10769999772310257
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.1175,
+            "bonus": 0.24729999899864197,
+            "total_ucb": 0.1298000067472458
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": -0.0294,
+            "bonus": 0.2176000028848648,
+            "total_ucb": 0.1881999969482422
+          }
+        },
+        "output": "-0.8/(1-0.8) = -0.8/0.2 = -4",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Given the government levies taxes of $100 billion and makes expenditures of $100 billion, with MPC = 0.8, calculate the tax multiplier. The tax multiplier formula is -MPC/(1-MPC). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Given the government levies taxes of $100 billion and makes expenditures of $100 billion, with MPC = 0.8, calculate the tax multiplier. The tax multiplier formula is -MPC/(1-MPC). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 2,
+        "node_id": "3",
+        "predecessor_node_ids": [],
+        "task_desc": "Given the government makes expenditures of $100 billion, with MPC = 0.8, calculate the government spending multiplier. The government spending multiplier formula is 1/(1-MPC). Output a concise answer to the question, with no explanation.",
+        "chosen_model": "meta-llama/llama-3.1-8b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": -0.0235,
+            "bonus": 0.27889999747276306,
+            "total_ucb": 0.25540000200271606
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": 0.0287,
+            "bonus": 0.2615000009536743,
+            "total_ucb": 0.29010000824928284
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.0403,
+            "bonus": 0.24500000476837158,
+            "total_ucb": 0.28529998660087585
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.1696,
+            "bonus": 0.29989999532699585,
+            "total_ucb": 0.13030000030994415
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.0628,
+            "bonus": 0.27160000801086426,
+            "total_ucb": 0.20880000293254852
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.2185,
+            "bonus": 0.28189998865127563,
+            "total_ucb": 0.06340000033378601
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": -0.1887,
+            "bonus": 0.25189998745918274,
+            "total_ucb": 0.06319999694824219
+          }
+        },
+        "output": "1/(1-0.8) = 5",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Given the government makes expenditures of $100 billion, with MPC = 0.8, calculate the government spending multiplier. The government spending multiplier formula is 1/(1-MPC). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Given the government makes expenditures of $100 billion, with MPC = 0.8, calculate the government spending multiplier. The government spending multiplier formula is 1/(1-MPC). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 3,
+        "node_id": "2",
+        "predecessor_node_ids": [
+          "1"
+        ],
+        "task_desc": "Using the tax multiplier from Node 1, calculate the change in NNP due to the $100 billion tax increase. The change in NNP from taxes = tax multiplier * tax change. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "mistralai/mistral-small-3.2-24b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.1765,
+            "bonus": 0.2475000023841858,
+            "total_ucb": 0.42399999499320984
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.0124,
+            "bonus": 0.2775999903678894,
+            "total_ucb": 0.2651999890804291
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.2312,
+            "bonus": 0.2671999931335449,
+            "total_ucb": 0.4984999895095825
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.2737,
+            "bonus": 0.31459999084472656,
+            "total_ucb": 0.04089999943971634
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.0586,
+            "bonus": 0.2581999897956848,
+            "total_ucb": 0.1995999962091446
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.0563,
+            "bonus": 0.27630001306533813,
+            "total_ucb": 0.22010000050067902
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.0608,
+            "bonus": 0.22550000250339508,
+            "total_ucb": 0.28630000352859497
+          }
+        },
+        "output": "-4 * $100 billion = -$400 billion",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Using the tax multiplier from Node 1, calculate the change in NNP due to the $100 billion tax increase. The change in NNP from taxes = tax multiplier * tax change. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the government levies taxes of $100 billion and makes expenditures of $100 billion, with MPC = 0.8, calculate the tax multiplier. The tax multiplier formula is -MPC/(1-MPC). Output a concise answer to the question, with no explanation.\nAnswer: -0.8/(1-0.8) = -0.8/0.2 = -4\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Using the tax multiplier from Node 1, calculate the change in NNP due to the $100 billion tax increase. The change in NNP from taxes = tax multiplier * tax change. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the government levies taxes of $100 billion and makes expenditures of $100 billion, with MPC = 0.8, calculate the tax multiplier. The tax multiplier formula is -MPC/(1-MPC). Output a concise answer to the question, with no explanation.\nAnswer: -0.8/(1-0.8) = -0.8/0.2 = -4\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
@@ -854,108 +1149,109 @@
         "predecessor_node_ids": [
           "3"
         ],
-        "task_desc": "Calculate SNR_dB using the result from Node 2 and the formula from Node 3. SNR_dB = 10 * log10(400). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "qwen/qwen3.5-flash-02-23",
+        "task_desc": "Using the government spending multiplier from Node 3, calculate the change in NNP due to the $100 billion government expenditure. The change in NNP from spending = spending multiplier * spending change. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "mistralai/mistral-small-3.2-24b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.0978,
-            "bonus": 0.2919999957084656,
-            "total_ucb": 0.19419999420642853
+            "pred_score": -0.0187,
+            "bonus": 0.27889999747276306,
+            "total_ucb": 0.26019999384880066
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": 0.0078,
-            "bonus": 0.29190000891685486,
-            "total_ucb": 0.299699991941452
+            "pred_score": -0.0461,
+            "bonus": 0.29660001397132874,
+            "total_ucb": 0.25060001015663147
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.064,
-            "bonus": 0.2768999934196472,
-            "total_ucb": 0.3409000039100647
+            "pred_score": 0.181,
+            "bonus": 0.2761000096797943,
+            "total_ucb": 0.4571000039577484
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.0322,
-            "bonus": 0.35910001397132874,
-            "total_ucb": 0.32690000534057617
+            "pred_score": -0.1686,
+            "bonus": 0.2930999994277954,
+            "total_ucb": 0.12449999898672104
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.0273,
-            "bonus": 0.27880001068115234,
-            "total_ucb": 0.3061000108718872
+            "pred_score": -0.0261,
+            "bonus": 0.2924000024795532,
+            "total_ucb": 0.2662000060081482
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.109,
-            "bonus": 0.2653000056743622,
-            "total_ucb": 0.37439998984336853
+            "pred_score": 0.0855,
+            "bonus": 0.3057999908924103,
+            "total_ucb": 0.3912999927997589
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0962,
-            "bonus": 0.22699999809265137,
-            "total_ucb": 0.13079999387264252
+            "pred_score": -0.0593,
+            "bonus": 0.2676999866962433,
+            "total_ucb": 0.20829999446868896
           }
         },
-        "output": "26.0",
+        "output": "5 * $100 billion = $500 billion",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Calculate SNR_dB using the result from Node 2 and the formula from Node 3. SNR_dB = 10 * log10(400). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Recall the formula for SNR in decibels: SNR_dB = 10 * log10(SNR_linear). Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Using the government spending multiplier from Node 3, calculate the change in NNP due to the $100 billion government expenditure. The change in NNP from spending = spending multiplier * spending change. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Given the government makes expenditures of $100 billion, with MPC = 0.8, calculate the government spending multiplier. The government spending multiplier formula is 1/(1-MPC). Output a concise answer to the question, with no explanation.\nAnswer: 1/(1-0.8) = 5\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Calculate SNR_dB using the result from Node 2 and the formula from Node 3. SNR_dB = 10 * log10(400). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Recall the formula for SNR in decibels: SNR_dB = 10 * log10(SNR_linear). Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Using the government spending multiplier from Node 3, calculate the change in NNP due to the $100 billion government expenditure. The change in NNP from spending = spending multiplier * spending change. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 3\nQuestion: Given the government makes expenditures of $100 billion, with MPC = 0.8, calculate the government spending multiplier. The government spending multiplier formula is 1/(1-MPC). Output a concise answer to the question, with no explanation.\nAnswer: 1/(1-0.8) = 5\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
         "step": 5,
         "node_id": "5",
         "predecessor_node_ids": [
+          "2",
           "4"
         ],
-        "task_desc": "Compute the numerical value of SNR_dB to three significant figures. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "qwen/qwen-2.5-7b-instruct",
+        "task_desc": "Combine the changes in NNP from Node 2 (tax effect) and Node 4 (spending effect) to find the net change in NNP from the balanced budget policy. Net change = change from spending + change from taxes. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.2347,
-            "bonus": 0.3192000091075897,
-            "total_ucb": 0.5539000034332275
+            "pred_score": 0.2659,
+            "bonus": 0.2856999933719635,
+            "total_ucb": 0.5515999794006348
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0588,
-            "bonus": 0.21170000731945038,
-            "total_ucb": 0.15289999544620514
+            "pred_score": 0.0681,
+            "bonus": 0.2563999891281128,
+            "total_ucb": 0.3244999945163727
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.1761,
-            "bonus": 0.28780001401901245,
-            "total_ucb": 0.46389999985694885
+            "pred_score": -0.0618,
+            "bonus": 0.2903999984264374,
+            "total_ucb": 0.22859999537467957
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.2282,
-            "bonus": 0.31619998812675476,
-            "total_ucb": 0.08789999783039093
+            "pred_score": 0.4015,
+            "bonus": 0.33309999108314514,
+            "total_ucb": 0.7347000241279602
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0113,
-            "bonus": 0.3050000071525574,
-            "total_ucb": 0.2937000095844269
+            "pred_score": -0.0696,
+            "bonus": 0.3140000104904175,
+            "total_ucb": 0.2443999946117401
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": -0.1506,
-            "bonus": 0.26589998602867126,
-            "total_ucb": 0.1152999997138977
+            "pred_score": 0.0337,
+            "bonus": 0.24860000610351562,
+            "total_ucb": 0.2822999954223633
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.1715,
-            "bonus": 0.25589999556541443,
-            "total_ucb": 0.08429999649524689
+            "pred_score": 0.3482,
+            "bonus": 0.24089999496936798,
+            "total_ucb": 0.5892000198364258
           }
         },
-        "output": "26.0",
+        "output": "$100 billion",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Compute the numerical value of SNR_dB to three significant figures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 4\nQuestion: Calculate SNR_dB using the result from Node 2 and the formula from Node 3. SNR_dB = 10 * log10(400). Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Combine the changes in NNP from Node 2 (tax effect) and Node 4 (spending effect) to find the net change in NNP from the balanced budget policy. Net change = change from spending + change from taxes. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the tax multiplier from Node 1, calculate the change in NNP due to the $100 billion tax increase. The change in NNP from taxes = tax multiplier * tax change. Output a concise answer to the question, with no explanation.\nAnswer: -4 * $100 billion = -$400 billion\n\nPredecessor Node 4\nQuestion: Using the government spending multiplier from Node 3, calculate the change in NNP due to the $100 billion government expenditure. The change in NNP from spending = spending multiplier * spending change. Output a concise answer to the question, with no explanation.\nAnswer: 5 * $100 billion = $500 billion\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Compute the numerical value of SNR_dB to three significant figures. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 4\nQuestion: Calculate SNR_dB using the result from Node 2 and the formula from Node 3. SNR_dB = 10 * log10(400). Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Combine the changes in NNP from Node 2 (tax effect) and Node 4 (spending effect) to find the net change in NNP from the balanced budget policy. Net change = change from spending + change from taxes. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the tax multiplier from Node 1, calculate the change in NNP due to the $100 billion tax increase. The change in NNP from taxes = tax multiplier * tax change. Output a concise answer to the question, with no explanation.\nAnswer: -4 * $100 billion = -$400 billion\n\nPredecessor Node 4\nQuestion: Using the government spending multiplier from Node 3, calculate the change in NNP due to the $100 billion government expenditure. The change in NNP from spending = spending multiplier * spending change. Output a concise answer to the question, with no explanation.\nAnswer: 5 * $100 billion = $500 billion\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       },
       {
@@ -964,60 +1260,60 @@
         "predecessor_node_ids": [
           "5"
         ],
-        "task_desc": "Match the computed SNR_dB value (from Node 5) to the closest option from the provided list (A-J). Output ONLY the option letter (e.g., 'H'). Output a concise answer to the question, with no explanation.",
-        "chosen_model": "meta-llama/llama-3.3-70b-instruct",
+        "task_desc": "Compare the net change in NNP from Node 5 with the provided options (A. Decrease of $500 billion in NNP, B. Increase of $500 billion in NNP, C. Decrease of $100 billion in NNP, D. No change in NNP because taxes cancel out expenditures, E. Increase of $200 billion in NNP, F. Decrease of $80 billion in NNP, G. Increase of $100 billion in NNP, H. Increase of $50 billion in NNP, I. No change in NNP, J. Decrease of $20 billion in NNP). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen-2.5-7b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.0097,
-            "bonus": 0.2980000078678131,
-            "total_ucb": 0.2883000075817108
+            "pred_score": 0.1578,
+            "bonus": 0.299699991941452,
+            "total_ucb": 0.45750001072883606
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0608,
-            "bonus": 0.2953000068664551,
-            "total_ucb": 0.2345000058412552
+            "pred_score": -0.054,
+            "bonus": 0.2989000082015991,
+            "total_ucb": 0.24490000307559967
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.1547,
-            "bonus": 0.26100000739097595,
-            "total_ucb": 0.4156999886035919
+            "pred_score": -0.2957,
+            "bonus": 0.2736000120639801,
+            "total_ucb": -0.02199999988079071
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.1151,
-            "bonus": 0.33640000224113464,
-            "total_ucb": 0.4514999985694885
+            "pred_score": -0.0311,
+            "bonus": 0.32839998602867126,
+            "total_ucb": 0.2973000109195709
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": 0.191,
-            "bonus": 0.2800999879837036,
-            "total_ucb": 0.47110000252723694
+            "pred_score": -0.1769,
+            "bonus": 0.243599995970726,
+            "total_ucb": 0.06669999659061432
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.0624,
-            "bonus": 0.2272000014781952,
-            "total_ucb": 0.2896000146865845
+            "pred_score": -0.0099,
+            "bonus": 0.2676999866962433,
+            "total_ucb": 0.25780001282691956
           },
           "mistralai/mistral-nemo": {
-            "pred_score": 0.1317,
-            "bonus": 0.23770000040531158,
-            "total_ucb": 0.3695000112056732
+            "pred_score": 0.1174,
+            "bonus": 0.24070000648498535,
+            "total_ucb": 0.3580999970436096
           }
         },
-        "output": "E",
+        "output": "G",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Match the computed SNR_dB value (from Node 5) to the closest option from the provided list (A-J). Output ONLY the option letter (e.g., 'H'). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 5\nQuestion: Compute the numerical value of SNR_dB to three significant figures. Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Compare the net change in NNP from Node 5 with the provided options (A. Decrease of $500 billion in NNP, B. Increase of $500 billion in NNP, C. Decrease of $100 billion in NNP, D. No change in NNP because taxes cancel out expenditures, E. Increase of $200 billion in NNP, F. Decrease of $80 billion in NNP, G. Increase of $100 billion in NNP, H. Increase of $50 billion in NNP, I. No change in NNP, J. Decrease of $20 billion in NNP). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 5\nQuestion: Combine the changes in NNP from Node 2 (tax effect) and Node 4 (spending effect) to find the net change in NNP from the balanced budget policy. Net change = change from spending + change from taxes. Output a concise answer to the question, with no explanation.\nAnswer: $100 billion\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: If the peak voltage value of a signal is 20 times the peak voltage value of the noise, what is the SNR? What is the $\\mathrm{SNR}_{\\mathrm{dB}}$ (in 3 sig.fig.)?\nOptions:\nA. 15.0\nB. 13.0\nC. 30.0\nD. 34.0\nE. 26.0\nF. 40.0\nG. 18.0\nH. 24.0\nI. 20.0\nJ. 10.0\n\n\n\nCurrent Node Task: Match the computed SNR_dB value (from Node 5) to the closest option from the provided list (A-J). Output ONLY the option letter (e.g., 'H'). Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 5\nQuestion: Compute the numerical value of SNR_dB to three significant figures. Output a concise answer to the question, with no explanation.\nAnswer: 26.0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: Compare the net change in NNP from Node 5 with the provided options (A. Decrease of $500 billion in NNP, B. Increase of $500 billion in NNP, C. Decrease of $100 billion in NNP, D. No change in NNP because taxes cancel out expenditures, E. Increase of $200 billion in NNP, F. Decrease of $80 billion in NNP, G. Increase of $100 billion in NNP, H. Increase of $50 billion in NNP, I. No change in NNP, J. Decrease of $20 billion in NNP). Select the matching option. Output ONLY the option letter. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 5\nQuestion: Combine the changes in NNP from Node 2 (tax effect) and Node 4 (spending effect) to find the net change in NNP from the balanced budget policy. Net change = change from spending + change from taxes. Output a concise answer to the question, with no explanation.\nAnswer: $100 billion\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 1.0
       }
     ]
   },
-  "5": {
-    "question": "Question: Who was born first Am Rong or Ava DuVernay ?",
-    "answers": "Am Rong",
+  "9": {
+    "question": "If $x=1$ is a solution of the equation $x^{2} + ax + 1 = 0$, what is the value of $a$?",
+    "answers": "\\boxed{-2}.",
     "final_status": "failure",
     "steps_taken": 3,
     "attempts": [
@@ -1025,163 +1321,335 @@
         "step": 1,
         "node_id": "1",
         "predecessor_node_ids": [],
-        "task_desc": "Find the birth year of Am Rong. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.",
+        "task_desc": "Given that x = 1 is a solution to the equation x^2 + a*x + 1 = 0, substitute x = 1 into the equation. Output a concise answer to the question, with no explanation.",
         "chosen_model": "google/gemma-3-27b-it",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": -0.1344,
-            "bonus": 0.2944999933242798,
-            "total_ucb": 0.16009999811649323
+            "pred_score": 0.1627,
+            "bonus": 0.28610000014305115,
+            "total_ucb": 0.4487999975681305
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.0508,
-            "bonus": 0.2842000126838684,
-            "total_ucb": 0.23340000212192535
+            "pred_score": 0.0338,
+            "bonus": 0.23340000212192535,
+            "total_ucb": 0.2671999931335449
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0811,
-            "bonus": 0.2549000084400177,
-            "total_ucb": 0.1738000065088272
+            "pred_score": -0.0884,
+            "bonus": 0.2842999994754791,
+            "total_ucb": 0.19580000638961792
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.5229,
-            "bonus": 0.3653999865055084,
-            "total_ucb": 0.8883000016212463
+            "pred_score": 0.3999,
+            "bonus": 0.3790000081062317,
+            "total_ucb": 0.7789999842643738
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0438,
-            "bonus": 0.30059999227523804,
-            "total_ucb": 0.25679999589920044
+            "pred_score": 0.1731,
+            "bonus": 0.27250000834465027,
+            "total_ucb": 0.4456000030040741
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.1657,
-            "bonus": 0.2614000141620636,
-            "total_ucb": 0.42719998955726624
+            "pred_score": 0.0502,
+            "bonus": 0.26899999380111694,
+            "total_ucb": 0.31929999589920044
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.1716,
-            "bonus": 0.2784000039100647,
-            "total_ucb": 0.10679999738931656
+            "pred_score": -0.0355,
+            "bonus": 0.24879999458789825,
+            "total_ucb": 0.21330000460147858
           }
         },
-        "output": "1982",
+        "output": "1 + a + 1 = 0",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Find the birth year of Am Rong. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Given that x = 1 is a solution to the equation x^2 + a*x + 1 = 0, substitute x = 1 into the equation. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Find the birth year of Am Rong. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 0.0
+        "vector_source_text": "Current Node Task: Given that x = 1 is a solution to the equation x^2 + a*x + 1 = 0, substitute x = 1 into the equation. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 0.5
       },
       {
         "step": 2,
         "node_id": "2",
-        "predecessor_node_ids": [],
-        "task_desc": "Find the birth year of Ava DuVernay. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "google/gemma-3-27b-it",
+        "predecessor_node_ids": [
+          "1"
+        ],
+        "task_desc": "Using the substituted equation from Node 1, solve for the value of the constant a. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "meta-llama/llama-3.3-70b-instruct",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.1196,
-            "bonus": 0.26820001006126404,
-            "total_ucb": 0.387800008058548
+            "pred_score": -0.0796,
+            "bonus": 0.23019999265670776,
+            "total_ucb": 0.15060000121593475
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.2368,
-            "bonus": 0.2597000002861023,
-            "total_ucb": 0.023000000044703484
+            "pred_score": 0.1867,
+            "bonus": 0.2962000072002411,
+            "total_ucb": 0.4828000068664551
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": -0.0551,
-            "bonus": 0.30149999260902405,
-            "total_ucb": 0.24639999866485596
+            "pred_score": 0.0169,
+            "bonus": 0.24089999496936798,
+            "total_ucb": 0.2578999996185303
           },
           "google/gemma-3-27b-it": {
-            "pred_score": 0.4526,
-            "bonus": 0.37400001287460327,
-            "total_ucb": 0.8266000151634216
+            "pred_score": -0.1015,
+            "bonus": 0.36169999837875366,
+            "total_ucb": 0.26019999384880066
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.1833,
-            "bonus": 0.25,
-            "total_ucb": 0.06669999659061432
+            "pred_score": 0.2459,
+            "bonus": 0.25760000944137573,
+            "total_ucb": 0.5034999847412109
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.0262,
-            "bonus": 0.27619999647140503,
-            "total_ucb": 0.30239999294281006
+            "pred_score": -0.0439,
+            "bonus": 0.23070000112056732,
+            "total_ucb": 0.18690000474452972
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0548,
-            "bonus": 0.23499999940395355,
-            "total_ucb": 0.18019999563694
+            "pred_score": 0.0664,
+            "bonus": 0.27070000767707825,
+            "total_ucb": 0.33709999918937683
           }
         },
-        "output": "1972",
+        "output": "a = -2",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Find the birth year of Ava DuVernay. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: Using the substituted equation from Node 1, solve for the value of the constant a. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given that x = 1 is a solution to the equation x^2 + a*x + 1 = 0, substitute x = 1 into the equation. Output a concise answer to the question, with no explanation.\nAnswer: 1 + a + 1 = 0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Find the birth year of Ava DuVernay. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
-        "reward": 0.0
+        "vector_source_text": "Current Node Task: Using the substituted equation from Node 1, solve for the value of the constant a. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given that x = 1 is a solution to the equation x^2 + a*x + 1 = 0, substitute x = 1 into the equation. Output a concise answer to the question, with no explanation.\nAnswer: 1 + a + 1 = 0\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
       },
       {
         "step": 3,
         "node_id": "3",
         "predecessor_node_ids": [
-          "1",
           "2"
         ],
-        "task_desc": "Compare the birth years from Node 1 and Node 2. Determine which person has the earlier (smaller) birth year. Output ONLY the name of the person born first. Output a concise answer to the question, with no explanation.",
-        "chosen_model": "qwen/qwen-2.5-7b-instruct",
+        "task_desc": "State the numerical value of a found in Node 2. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "qwen/qwen3.5-flash-02-23",
         "ucb_scores": {
           "qwen/qwen-2.5-7b-instruct": {
-            "pred_score": 0.2355,
-            "bonus": 0.29580000042915344,
-            "total_ucb": 0.5313000082969666
+            "pred_score": -0.2479,
+            "bonus": 0.22949999570846558,
+            "total_ucb": -0.018400000408291817
           },
           "meta-llama/llama-3.1-8b-instruct": {
-            "pred_score": -0.3079,
-            "bonus": 0.2630999982357025,
-            "total_ucb": -0.04479999840259552
+            "pred_score": 0.0548,
+            "bonus": 0.25859999656677246,
+            "total_ucb": 0.313400000333786
           },
           "mistralai/mistral-small-3.2-24b-instruct": {
-            "pred_score": 0.0104,
-            "bonus": 0.2565999925136566,
-            "total_ucb": 0.2669999897480011
+            "pred_score": -0.0769,
+            "bonus": 0.272599995136261,
+            "total_ucb": 0.195700004696846
           },
           "google/gemma-3-27b-it": {
-            "pred_score": -0.1118,
-            "bonus": 0.2978000044822693,
-            "total_ucb": 0.18610000610351562
+            "pred_score": 0.0282,
+            "bonus": 0.37700000405311584,
+            "total_ucb": 0.4052000045776367
           },
           "meta-llama/llama-3.3-70b-instruct": {
-            "pred_score": -0.0093,
-            "bonus": 0.28519999980926514,
-            "total_ucb": 0.2759000062942505
+            "pred_score": -0.0234,
+            "bonus": 0.2808000147342682,
+            "total_ucb": 0.2574000060558319
           },
           "qwen/qwen3.5-flash-02-23": {
-            "pred_score": 0.2507,
-            "bonus": 0.2540999948978424,
-            "total_ucb": 0.504800021648407
+            "pred_score": 0.1741,
+            "bonus": 0.2378000020980835,
+            "total_ucb": 0.41190001368522644
           },
           "mistralai/mistral-nemo": {
-            "pred_score": -0.0583,
-            "bonus": 0.27160000801086426,
-            "total_ucb": 0.21330000460147858
+            "pred_score": 0.0875,
+            "bonus": 0.26409998536109924,
+            "total_ucb": 0.3515999913215637
           }
         },
-        "output": "Ava DuVernay",
+        "output": "</think>\n\na = -2",
         "llm_input_messages": [
           {
             "role": "user",
-            "content": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Compare the birth years from Node 1 and Node 2. Determine which person has the earlier (smaller) birth year. Output ONLY the name of the person born first. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Find the birth year of Am Rong. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\nAnswer: 1982\n\nPredecessor Node 2\nQuestion: Find the birth year of Ava DuVernay. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\nAnswer: 1972\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+            "content": "Current Node Task: State the numerical value of a found in Node 2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the substituted equation from Node 1, solve for the value of the constant a. Output a concise answer to the question, with no explanation.\nAnswer: a = -2\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
           }
         ],
-        "vector_source_text": "Overall Problem: Question: Who was born first Am Rong or Ava DuVernay ?\n\nCurrent Node Task: Compare the birth years from Node 1 and Node 2. Determine which person has the earlier (smaller) birth year. Output ONLY the name of the person born first. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Find the birth year of Am Rong. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\nAnswer: 1982\n\nPredecessor Node 2\nQuestion: Find the birth year of Ava DuVernay. Output ONLY the year as a number. Output a concise answer to the question, with no explanation.\nAnswer: 1972\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "vector_source_text": "Current Node Task: State the numerical value of a found in Node 2. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the substituted equation from Node 1, solve for the value of the constant a. Output a concise answer to the question, with no explanation.\nAnswer: a = -2\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
         "reward": 0.0
+      }
+    ]
+  },
+  "10": {
+    "question": "Question: Who had the best singles ranking, Roberta Vinci or Jorge Lozano?",
+    "answers": "Roberta Vinci",
+    "final_status": "success",
+    "steps_taken": 3,
+    "attempts": [
+      {
+        "step": 1,
+        "node_id": "1",
+        "predecessor_node_ids": [],
+        "task_desc": "Given the problem: 'Who had the best singles ranking, Roberta Vinci or Jorge Lozano?', identify the necessary data: the singles rankings for tennis players Roberta Vinci and Jorge Lozano. The problem does not provide these rankings, so they must be retrieved from external knowledge or a provided dataset. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "meta-llama/llama-3.1-8b-instruct",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": -0.0504,
+            "bonus": 0.2508000135421753,
+            "total_ucb": 0.2003999948501587
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": 0.1882,
+            "bonus": 0.2524000108242035,
+            "total_ucb": 0.4406000077724457
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": -0.0711,
+            "bonus": 0.2531999945640564,
+            "total_ucb": 0.18209999799728394
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.0958,
+            "bonus": 0.3813000023365021,
+            "total_ucb": 0.2854999899864197
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.2697,
+            "bonus": 0.259799987077713,
+            "total_ucb": -0.00989999994635582
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.059,
+            "bonus": 0.23010000586509705,
+            "total_ucb": 0.17110000550746918
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.0507,
+            "bonus": 0.2142000049352646,
+            "total_ucb": 0.26489999890327454
+          }
+        },
+        "output": "Roberta Vinci's highest singles ranking was world No. 1.",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Given the problem: 'Who had the best singles ranking, Roberta Vinci or Jorge Lozano?', identify the necessary data: the singles rankings for tennis players Roberta Vinci and Jorge Lozano. The problem does not provide these rankings, so they must be retrieved from external knowledge or a provided dataset. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Given the problem: 'Who had the best singles ranking, Roberta Vinci or Jorge Lozano?', identify the necessary data: the singles rankings for tennis players Roberta Vinci and Jorge Lozano. The problem does not provide these rankings, so they must be retrieved from external knowledge or a provided dataset. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nNo predecessor nodes.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 2,
+        "node_id": "2",
+        "predecessor_node_ids": [
+          "1"
+        ],
+        "task_desc": "Using the singles rankings for Roberta Vinci and Jorge Lozano from Node 1, compare their rankings. In tennis, a lower ranking number (e.g., world No. 1) is better than a higher number. Determine which player had the better (lower) singles ranking. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "mistralai/mistral-nemo",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": 0.0229,
+            "bonus": 0.27059999108314514,
+            "total_ucb": 0.29350000619888306
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.0839,
+            "bonus": 0.26649999618530273,
+            "total_ucb": 0.1826000064611435
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": -0.1075,
+            "bonus": 0.2639000117778778,
+            "total_ucb": 0.15639999508857727
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.0228,
+            "bonus": 0.3199000060558319,
+            "total_ucb": 0.2971000075340271
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.035,
+            "bonus": 0.2874999940395355,
+            "total_ucb": 0.2524000108242035
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": 0.0393,
+            "bonus": 0.29490000009536743,
+            "total_ucb": 0.334199994802475
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.2399,
+            "bonus": 0.24079999327659607,
+            "total_ucb": 0.48069998621940613
+          }
+        },
+        "output": "Roberta Vinci",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Using the singles rankings for Roberta Vinci and Jorge Lozano from Node 1, compare their rankings. In tennis, a lower ranking number (e.g., world No. 1) is better than a higher number. Determine which player had the better (lower) singles ranking. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the problem: 'Who had the best singles ranking, Roberta Vinci or Jorge Lozano?', identify the necessary data: the singles rankings for tennis players Roberta Vinci and Jorge Lozano. The problem does not provide these rankings, so they must be retrieved from external knowledge or a provided dataset. Output a concise answer to the question, with no explanation.\nAnswer: Roberta Vinci's highest singles ranking was world No. 1.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Using the singles rankings for Roberta Vinci and Jorge Lozano from Node 1, compare their rankings. In tennis, a lower ranking number (e.g., world No. 1) is better than a higher number. Determine which player had the better (lower) singles ranking. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 1\nQuestion: Given the problem: 'Who had the best singles ranking, Roberta Vinci or Jorge Lozano?', identify the necessary data: the singles rankings for tennis players Roberta Vinci and Jorge Lozano. The problem does not provide these rankings, so they must be retrieved from external knowledge or a provided dataset. Output a concise answer to the question, with no explanation.\nAnswer: Roberta Vinci's highest singles ranking was world No. 1.\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
+      },
+      {
+        "step": 3,
+        "node_id": "3",
+        "predecessor_node_ids": [
+          "2"
+        ],
+        "task_desc": "Based on the comparison from Node 2, output the name of the player who had the best singles ranking: either 'Roberta Vinci' or 'Jorge Lozano'. Output a concise answer to the question, with no explanation.",
+        "chosen_model": "mistralai/mistral-nemo",
+        "ucb_scores": {
+          "qwen/qwen-2.5-7b-instruct": {
+            "pred_score": -0.1833,
+            "bonus": 0.27390000224113464,
+            "total_ucb": 0.09049999713897705
+          },
+          "meta-llama/llama-3.1-8b-instruct": {
+            "pred_score": -0.1373,
+            "bonus": 0.27140000462532043,
+            "total_ucb": 0.13410000503063202
+          },
+          "mistralai/mistral-small-3.2-24b-instruct": {
+            "pred_score": 0.0918,
+            "bonus": 0.2694000005722046,
+            "total_ucb": 0.3612000048160553
+          },
+          "google/gemma-3-27b-it": {
+            "pred_score": -0.1207,
+            "bonus": 0.301800012588501,
+            "total_ucb": 0.1809999942779541
+          },
+          "meta-llama/llama-3.3-70b-instruct": {
+            "pred_score": -0.0961,
+            "bonus": 0.2883000075817108,
+            "total_ucb": 0.19220000505447388
+          },
+          "qwen/qwen3.5-flash-02-23": {
+            "pred_score": -0.122,
+            "bonus": 0.3019999861717224,
+            "total_ucb": 0.17990000545978546
+          },
+          "mistralai/mistral-nemo": {
+            "pred_score": 0.2573,
+            "bonus": 0.21289999783039093,
+            "total_ucb": 0.4702000021934509
+          }
+        },
+        "output": "Roberta Vinci",
+        "llm_input_messages": [
+          {
+            "role": "user",
+            "content": "Current Node Task: Based on the comparison from Node 2, output the name of the player who had the best singles ranking: either 'Roberta Vinci' or 'Jorge Lozano'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the singles rankings for Roberta Vinci and Jorge Lozano from Node 1, compare their rankings. In tennis, a lower ranking number (e.g., world No. 1) is better than a higher number. Determine which player had the better (lower) singles ranking. Output a concise answer to the question, with no explanation.\nAnswer: Roberta Vinci\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation."
+          }
+        ],
+        "vector_source_text": "Current Node Task: Based on the comparison from Node 2, output the name of the player who had the best singles ranking: either 'Roberta Vinci' or 'Jorge Lozano'. Output a concise answer to the question, with no explanation.\n\nPredecessor Q&A:\nPredecessor Node 2\nQuestion: Using the singles rankings for Roberta Vinci and Jorge Lozano from Node 1, compare their rankings. In tennis, a lower ranking number (e.g., world No. 1) is better than a higher number. Determine which player had the better (lower) singles ranking. Output a concise answer to the question, with no explanation.\nAnswer: Roberta Vinci\n\nPlease complete the current node task using only the information above. Output only a concise answer with no explanation.",
+        "reward": 1.0
       }
     ]
   }
