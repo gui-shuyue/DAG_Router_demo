@@ -5,21 +5,20 @@
     "use_previous_params": false,
     "state_file": "/home/guisy/MyExperiment/LLM_DAG_Routing_02/record/ucb_model_state_latest.pt",
     "raw_record_file": "/home/guisy/MyExperiment/LLM_DAG_Routing_02/record/execution_records_train_50.json",
-    "generated_at": "2026-03-21T01:44:37"
+    "generated_at": "2026-03-21T18:58:11"
   },
   "summary": {
     "total_questions": 200,
-    "correct_questions": 71,
-    "accuracy": 0.355
+    "correct_questions": 83,
+    "accuracy": 0.415
   },
   "per_question": [
     {
       "problem_id": "1",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 2,
@@ -28,97 +27,97 @@
     },
     {
       "problem_id": "2",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
       ],
       "steps_taken": 3,
       "expected_answer": "A",
-      "final_output": "A"
+      "final_output": "G"
     },
     {
       "problem_id": "3",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "J",
       "final_output": "J"
     },
     {
       "problem_id": "4",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 3,
-      "expected_answer": "E",
-      "final_output": "E"
-    },
-    {
-      "problem_id": "5",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
         "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
+      "expected_answer": "E",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "5",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 2,
       "expected_answer": "Am Rong",
-      "final_output": "Ava DuVernay."
+      "final_output": "Am Rong"
     },
     {
       "problem_id": "6",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct"
       ],
       "steps_taken": 2,
       "expected_answer": "San Luis Obispo, California",
-      "final_output": "San Luis Obispo"
+      "final_output": "Yes"
     },
     {
       "problem_id": "7",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 7,
+      "steps_taken": 9,
       "expected_answer": "$$\nB_{min} \\approx 35 \\unit{G}\n$$",
-      "final_output": "E_min ="
+      "final_output": "E_min ≈ 25900 MeV, B_min ≈ 135 G, Earth's field sufficient? No"
     },
     {
       "problem_id": "8",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 6,
+      "steps_taken": 3,
       "expected_answer": "G",
       "final_output": "G"
     },
@@ -126,12 +125,12 @@
       "problem_id": "9",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 2,
       "expected_answer": "\\boxed{-2}.",
       "final_output": "-2"
     },
@@ -139,42 +138,42 @@
       "problem_id": "10",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "Roberta Vinci",
       "final_output": "Roberta Vinci"
     },
     {
       "problem_id": "11",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "$\\boxed{8/17}$",
-      "final_output": "1/2"
+      "final_output": "8/17"
     },
     {
       "problem_id": "12",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "1964",
-      "final_output": "Selle v. Gibb"
+      "final_output": "Reynolds v. Sims"
     },
     {
       "problem_id": "13",
@@ -183,24 +182,25 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "Princess Jessica",
-      "final_output": "Role: Not found in provided cast list."
+      "final_output": "Princess Aurelia"
     },
     {
       "problem_id": "14",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 4,
       "expected_answer": "$$\n\\Delta_{max} = 3 \\times 10^{-4}\\unit{cm}\n$$",
-      "final_output": "3,125 nm"
+      "final_output": "3125 nm"
     },
     {
       "problem_id": "15",
@@ -209,43 +209,41 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Ann",
-      "final_output": "Sela"
+      "final_output": "Unknown"
     },
     {
       "problem_id": "16",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-nemo"
       ],
       "steps_taken": 3,
       "expected_answer": "A",
-      "final_output": "A"
+      "final_output": "H"
     },
     {
       "problem_id": "17",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "google/gemma-3-27b-it"
       ],
       "steps_taken": 1,
       "expected_answer": "$$E = \\frac{e \\hbar H_z}{2 m c}$$",
-      "final_output": "|ψ(T)⟩ = cos(θ/2) |+1/2⟩ + sin(θ/2) |-1/2⟩, where θ = (e ħ^{-1} m^{-1} c^{-1} H_x T)/2, and T ≫ (m c)/(e H_z)."
+      "final_output": ".\nHere's the solution to the problem, including reasoning and the final answer:\n\n**1. Hamiltonian and Time Evolution**\n\nThe Hamiltonian is given by:\n\nĤ = -μ · H = (e/mc) s · H = (e/mc) (s_x H_x + s_y H_y + s_z H_z)\n\nInitially, at t=0, the magnetic field is H = (0, 0, H_z). The Hamiltonian is then:\n\nĤ(0) = (e/mc) s_z H_z\n\nThe initial state is |ψ(0)⟩ = |+1/2⟩ (spin up).\n\nFor 0 ≤ t ≤ T, H_x increases linearly with time: H_x(t) = (H_x/T)t.  Thus, the Hamiltonian becomes:\n\nĤ(t) = (e/mc) [s_x (H_x/T)t + s_z H_z]\n\nWe want to find |ψ(T)⟩.  We can use time-dependent perturbation theory or directly solve the time-dependent Schrödinger equation. Since H_x/H_z ≪ 1, we can treat H_x as a perturbation.\n\n**2. Time Evolution Operator**\n\nThe time evolution operator U(t, 0) is given by:\n\nU(t, 0) = exp(-i/ħ ∫₀ᵗ Ĥ(t') dt')\n\nSince H_x is small, we can approximate the time evolution operator to first order:\n\nU(t, 0) ≈ 1 - (i/ħ) ∫₀ᵗ Ĥ(t') dt'\nU(t, 0) ≈ 1 - (i/ħ) ∫₀ᵗ (e/mc) [s_x (H_x/T)t' + s_z H_z] dt'\nU(t, 0) ≈ 1 - (ieH_x/mcħT) ∫₀ᵗ s_x t' dt' - (ieH_z/mcħ) ∫₀ᵗ s_z dt'\nU(t, 0) ≈ 1 - (ieH_x/mcħT) (t²/2) s_x - (ieH_z/mcħ) t s_z\n\nAt t = T:\n\nU(T, 0) ≈ 1 - (ieH_xT/2mcħ) s_x - (ieH_zT/mcħ) s_z\n\n**3. State at t = T**\n\n|ψ(T)⟩ = U(T, 0) |ψ(0)⟩ = U(T, 0) |+1/2⟩\n\n|ψ(T)⟩ ≈ [1 - (ieH_xT/2mcħ) s_x - (ieH_zT/mcħ) s_z] |+1/2⟩\n\nRecall s_x |+1/2⟩ = (ħ/2) |-1/2⟩ and s_z |+1/2⟩ = (ħ/2) |+1/2⟩.  Substituting:\n\n|ψ(T)⟩ ≈ |+1/2⟩ - (ieH_xT/2mcħ) (ħ/2) |-1/2⟩ - (ieH_zT/mcħ) (ħ/2) |+1/2⟩\n|ψ(T)⟩ ≈ |+1/2⟩ -"
     },
     {
       "problem_id": "18",
-      "is_correct": 1,
-      "final_status": "success",
+      "is_correct": 0,
+      "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
@@ -253,47 +251,48 @@
       ],
       "steps_taken": 2,
       "expected_answer": "C",
-      "final_output": "C"
+      "final_output": "I"
     },
     {
       "problem_id": "19",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen-2.5-7b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 6,
+      "steps_taken": 12,
       "expected_answer": "$\\boxed{41}$",
-      "final_output": "86"
+      "final_output": "65"
     },
     {
       "problem_id": "20",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 2,
       "expected_answer": "yes",
-      "final_output": "Yes."
+      "final_output": "Yes"
     },
     {
       "problem_id": "21",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "mistralai/mistral-nemo",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 7,
       "expected_answer": "\\boxed{6}",
       "final_output": "6"
     },
@@ -301,41 +300,45 @@
       "problem_id": "22",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 5,
       "expected_answer": "E",
-      "final_output": "H"
+      "final_output": "B"
     },
     {
       "problem_id": "23",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "I",
-      "final_output": "C"
+      "final_output": "A"
     },
     {
       "problem_id": "24",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 4,
       "expected_answer": "\\boxed{32}.",
-      "final_output": "9"
+      "final_output": "32"
     },
     {
       "problem_id": "25",
@@ -343,64 +346,64 @@
       "final_status": "failure",
       "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 1,
       "expected_answer": "$\\boxed{45/14}$",
-      "final_output": "4.21"
+      "final_output": "2.5"
     },
     {
       "problem_id": "26",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$\nans=10^{18}\n$$",
+      "final_output": "B"
+    },
+    {
+      "problem_id": "27",
       "is_correct": 1,
       "final_status": "success",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo"
+        "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
-      "expected_answer": "$$\nans=10^{18}\n$$",
-      "final_output": "10^18"
-    },
-    {
-      "problem_id": "27",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 8,
       "expected_answer": "A",
-      "final_output": "J"
+      "final_output": "A"
     },
     {
       "problem_id": "28",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-nemo"
       ],
-      "steps_taken": 1,
+      "steps_taken": 5,
       "expected_answer": "\\boxed{1076}",
-      "final_output": "144"
+      "final_output": "12"
     },
     {
       "problem_id": "29",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "E",
-      "final_output": "H"
+      "final_output": "E"
     },
     {
       "problem_id": "30",
@@ -409,24 +412,25 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo"
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 8,
+      "steps_taken": 4,
       "expected_answer": "$$E_b = \\frac{m V_0^2}{2 \\hbar^2}$$",
-      "final_output": "Eb = U₀²/2m"
+      "final_output": "E_b = mV_0^2/(2ħ^2)"
     },
     {
       "problem_id": "31",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it"
       ],
       "steps_taken": 2,
       "expected_answer": "C",
-      "final_output": "C, F"
+      "final_output": "C"
     },
     {
       "problem_id": "32",
@@ -437,7 +441,7 @@
         "google/gemma-3-27b-it",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Ogallala Aquifer",
       "final_output": "Ogallala Aquifer"
     },
@@ -445,41 +449,42 @@
       "problem_id": "33",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 1,
       "expected_answer": "$$\n[\\hat v_i, \\hat v_j] = \\frac{i \\hbar q}{m^2 c} \\sum_{k=1}^3 \\varepsilon_{i j k} B_k\n$$",
-      "final_output": "$[\\hat{v}_i, \\hat{v}_j] = \\frac{i}{mc} \\hbar \\sum_k \\varepsilon_{ijk} B_k$"
+      "final_output": "To determine the commutator $[\\hat{v}_i, \\hat{v}_j]$, we start with the definition of the velocity operator:\n$$ \\hat{v}_i = \\frac{1}{m} \\hat{p}_i - \\frac{q}{m c} A_i $$\nSubstituting this into the commutator expression:\n$$ [\\hat{v}_i, \\hat{v}_j] = \\left[ \\frac{1}{m} \\hat{p}_i - \\frac{q}{m c} A_i, \\frac{1}{m} \\hat{p}_j - \\frac{q}{m c} A_j \\right] $$\nUsing the linearity of the commutator and the fact that scalars commute with operators:\n$$ [\\hat{v}_i, \\hat{v}_j] = \\frac{1}{m^2} [\\hat{p}_i, \\hat{p}_j] - \\frac{q}{m^2 c} [\\hat{p}_i, A_j] - \\frac{q}{m^2 c} [A_i, \\hat{p}_j] + \\frac{q^2}{m^2 c^2} [A_i, A_j] $$\nWe evaluate the individual commutators:\n1.  $[\\hat{p}_i, \\hat{p}_j] = 0$ because partial derivatives commute.\n2.  $[A_i, A_j] = 0$ because multiplication of functions is commutative.\n3.  $[\\hat{p}_i, A_j] = -i\\hbar \\frac{\\partial A_j}{\\partial x_i}$ (derived from $\\hat{p}_i = -i\\hbar \\partial_i$).\n4.  $[A_i, \\hat{p}_j] = -[\\hat{p}_j, A_i] = -(-i\\hbar \\frac{\\partial A_i}{\\partial x_j}) = i\\hbar \\frac{\\partial A_i}{\\partial x_j}$.\n\nSubstituting these back into the expression:\n$$ [\\hat{v}_i, \\hat{v}_j] = 0 - \\frac{q}{m^2 c} \\left( -i\\hbar \\frac{\\partial A_j}{\\partial x_i} \\right) - \\frac{q}{m^2 c} \\left( i\\hbar \\frac{\\partial A_i}{\\partial x_j} \\right) + 0 $$\n$$ [\\hat{v}_i, \\hat{v}_j] = \\frac{i\\hbar q}{m^2 c} \\frac{\\partial A_j}{\\partial x_i} - \\frac{i\\hbar q}{m^2 c} \\frac{\\partial A_i}{\\partial x_j} $$\n$$ [\\hat{v}_i, \\hat{v}_j] = \\frac{i\\hbar q}{m^2 c} \\left( \\frac{\\partial A_j}{\\partial x_i} - \\frac{\\partial A_i}{\\partial x_j} \\right) $$\nWe use the given relation for the magnetic field components $B_k$:\n$$ B_k = \\sum_{\\alpha=1}^3 \\sum_{\\beta=1}^3 \\varepsilon_{k \\alpha \\beta} \\frac{\\partial A_\\beta}{\\partial x_\\alpha} $$\nUsing the identity $\\varepsilon_{ijk} B_k"
     },
     {
       "problem_id": "34",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{(1,1,1,1) \\text{ and } (-1,-1,-1,-1)}",
+      "final_output": "{(1,1,1,1), (-1,-1,-1,-1)}"
+    },
+    {
+      "problem_id": "35",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 5,
-      "expected_answer": "\\boxed{(1,1,1,1) \\text{ and } (-1,-1,-1,-1)}",
-      "final_output": "(1, 1, 1, 1)"
-    },
-    {
-      "problem_id": "35",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "steps_taken": 3,
       "expected_answer": "I",
-      "final_output": "E"
+      "final_output": "F"
     },
     {
       "problem_id": "36",
@@ -487,76 +492,75 @@
       "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "D",
-      "final_output": "J"
+      "final_output": "liable to both"
     },
     {
       "problem_id": "37",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 7,
+      "steps_taken": 3,
       "expected_answer": "$$c_1=\\frac{Nk\\ln 2}{1-\\ln 2}$$",
-      "final_output": "c_1 = N k ln(2) / (1 - ln(2))"
+      "final_output": "To solve for c_1, we need to isolate c_1 in the equation.\n\nGiven equation: N k ln(2) = c_1 [(2/T_1) ln(T1) - (1/T1) - (2/T_1) ln(T1/2) + (1/T1/2)]\n\nFirst, let's simplify the expression inside the brackets by combining like terms:\n\nN k ln(2) = c_1 [(2/T_1) ln(T1) - (2/T_1) ln(T1/2) - (1/T1) + (1/T1/2)]\n\nNow, let's use the logarithm property ln(a) - ln(b) = ln(a/b) to simplify the expression:\n\nN k ln(2) = c_1 [(2/T_1) ln(T1/T1/2) - (1/T1) + (1/T1/2)]\n\nSimplifying further, we get:\n\nN k ln(2) = c_1 [(2/T_1) ln(2) - (1/T1) + (1/T1/2)]\n\nNow, let's factor out the common term (1/T1) from the last two terms:\n\nN k ln(2) = c_1 [(2/T_1) ln(2) - (1/T1)(1 - 1/2)]\n\nSimplifying the expression inside the brackets, we get:\n\nN k ln(2) = c_1 [(2/T_1) ln(2) - (1/2T1)]\n\nNow, let's combine the terms inside the brackets:\n\nN k ln(2) = c_1 [(2/T_1) ln(2) - (1/2T1)]\n\nTo isolate c_1, we need to get rid of the terms inside the brackets. We can do this by multiplying both sides of the equation by the reciprocal of the coefficient of c_1, which is (1/(2/T_1) ln(2) - (1/2T1)):\n\nc_1 = N k ln(2) / [(2/T_1) ln(2) - (1/2T1)]\n\nNow, let's simplify the expression by combining the fractions:\n\nc_1 = N k ln(2) / [(2/T_1) ln(2) - (1/2T1)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1/2)]\n\nc_1 = N k ln(2) / [(2/T_1)(ln(2) - 1"
     },
     {
       "problem_id": "38",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Arrowhead Stadium",
-      "final_output": "Kansas City Municipal Stadium"
+      "final_output": "Arrowhead Stadium"
     },
     {
       "problem_id": "39",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{5}.",
-      "final_output": "n = 5"
+      "final_output": "5"
     },
     {
       "problem_id": "40",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Waimea Bay",
-      "final_output": "Unknown."
+      "final_output": "Ula'ula"
     },
     {
       "problem_id": "41",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{13}",
       "final_output": "13"
     },
@@ -564,152 +568,156 @@
       "problem_id": "42",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "signing free agent Chauncey Billups",
-      "final_output": "Scottie Pippen"
+      "final_output": "None"
     },
     {
       "problem_id": "43",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
       "steps_taken": 1,
       "expected_answer": "104",
-      "final_output": "1001"
+      "final_output": "To solve this problem, we can use a recursive approach to calculate the probability of 7 being the last number rolled.\n\n## Step 1: Define the problem and the approach\nWe need to find the probability that 7 is the last number rolled when Teresa rolls an 8-sided die until each of the numbers 1 through 7 appears at least once. We will use a recursive approach to calculate this probability.\n\n## Step 2: Identify the base cases\nThe base case is when the first 6 numbers have been rolled, and the last number is 7. In this case, the probability of 7 being the last number is 1.\n\n## Step 3: Define the recursive case\nIf the first 6 numbers have not been rolled, we need to consider the probability of rolling each of the remaining numbers (1 through 6) as the first number that has not been rolled yet. We will then recursively calculate the probability of 7 being the last number rolled in each of these cases.\n\n## Step 4: Calculate the probability of rolling each of the remaining numbers\nThe probability of rolling each of the remaining numbers (1 through 6) as the first number that has not been rolled yet is 1/7, since there are 7 possible outcomes and only one of them is the number that has not been rolled yet.\n\n## Step 5: Calculate the recursive probability\nWe will use the recursive formula P(n) = (1/7) * P(n-1) + (1/7) * P(n-2) + ... + (1/7) * P(1) + (1/7) * P(0), where P(n) is the probability of 7 being the last number rolled when the first n numbers have been rolled.\n\n## Step 6: Calculate P(0) and P(1)\nP(0) = 0, since the first number has not been rolled yet.\nP(1) = 1, since the first number is 7.\n\n## Step 7: Calculate P(2) to P(6)\nWe will use the recursive formula to calculate P(2) to P(6).\n\n## Step 8: Calculate P(2)\nP(2) = (1/7) * P(1) = (1/7) * 1 = 1/7\n\n## Step 9: Calculate P(3)\nP(3) = (1/7) * P(2) + (1/7) * P(1) = (1/7) * (1/7) + (1/7) * 1 = 2/49\n\n## Step 10: Calculate P(4)\nP(4) = (1/7) * P(3) + (1/7) * P(2) + (1/7) * P(1) = (1/7) * (2/49) + (1/7) * (1/7) + (1/7) * 1 = 9/343\n\n## Step 11: Calculate P(5)\nP(5) = (1/7) * P(4) + (1/7) * P(3) + (1/7) * P(2) + (1/7) * P(1) = (1/7) * (9/343) + (1/7) * (2/49) + (1/7) * (1/7) + (1/7) * 1 = 67/2401\n\n## Step 12: Calculate P(6)\nP(6) = (1/7) * P("
     },
     {
       "problem_id": "44",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 4,
       "expected_answer": "J",
-      "final_output": "A) 0101010, 0101011\nB) 1000111, 1001000\nC) 11111110, 11111111\nD) 01111, 10000\nE) 1111, 1110\n\nComparing the complements:\nAll complements match in option A."
+      "final_output": "a"
     },
     {
       "problem_id": "45",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 4,
       "expected_answer": "$$ v = 8\\times 10^{-5}\\unit{m/s}$$",
-      "final_output": "v = 80000 m/s"
+      "final_output": "8.0 × 10^{-5}"
     },
     {
       "problem_id": "46",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
       "expected_answer": "$$\n\\sigma = 100 \\unit{dyn/cm}\n$$",
-      "final_output": "sigma = 2.5 erg/cm^2"
+      "final_output": "100"
     },
     {
       "problem_id": "47",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "\\boxed{20}",
-      "final_output": "298"
-    },
-    {
-      "problem_id": "48",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "$$V_2 = \\frac{C_1}{C_2} V_1$$",
-      "final_output": "V2 = (C1/C2) * V1"
-    },
-    {
-      "problem_id": "49",
       "is_correct": 1,
       "final_status": "success",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{20}",
+      "final_output": "20"
+    },
+    {
+      "problem_id": "48",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
         "meta-llama/llama-3.1-8b-instruct",
         "mistralai/mistral-nemo"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
+      "expected_answer": "$$V_2 = \\frac{C_1}{C_2} V_1$$",
+      "final_output": "V_2 increases"
+    },
+    {
+      "problem_id": "49",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
       "expected_answer": "Tea Moderna",
-      "final_output": "Tea Moderna."
+      "final_output": "A"
     },
     {
       "problem_id": "50",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
+      "answer_model": [
+        "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-nemo"
       ],
-      "steps_taken": 4,
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 5,
       "expected_answer": "$$B = -\\frac{1}{\\sqrt{2}}$$",
-      "final_output": "⟨x⟩ is generally nonzero due to the 2ABc term. Maximizing: A = 1, B = 0, ⟨x⟩ = 0. Minimizing: A = 0, B = ±1, ⟨x⟩ = 0."
+      "final_output": "A = \\( \\pm \\frac{1}{\\sqrt{2}} \\), B = \\( \\pm \\frac{1}{\\sqrt{2}} \\)\nA = -B = -1/√2"
     },
     {
       "problem_id": "51",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 4,
       "expected_answer": "$$\nT\\approx5\\times10^3 \\unit{K}\n$$",
-      "final_output": "T = 5778 K"
+      "final_output": "To compute T numerically, we need to use the expression for T from Node 3 and the numerical values from Node 1.\n\nFrom Node 1, we have:\nS_E = 10 W/m²\nr_S = 7.0×10⁸ m\nr_SE = 1.5×10¹¹ m\nσ = 5.670374419×10⁻⁸ W·m⁻²·K⁻⁴\n\nFrom Node 3, we have the expression for T:\nT = (S_E × (r_SE² / r_S²) / σ)^(1/4)\n\nNow, we can plug in the numerical values:\nT = (10 W/m² × (1.5×10¹¹ m)² / (7.0×10⁸ m)² / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nFirst, let's compute the terms inside the parentheses:\n(1.5×10¹¹ m)² = 2.25×10²² m²\n(7.0×10⁸ m)² = 4.9×10¹⁷ m²\n(5.670374419×10⁻⁸ W·m⁻²·K⁻⁴) is already in the correct units\n\nNow, we can plug these values back into the expression:\nT = (10 W/m² × 2.25×10²² m² / 4.9×10¹⁷ m² / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nSimplifying the expression:\nT = (10 W/m² × 4.592×10⁴ / 4.9×10¹⁷ / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nNow, let's compute the terms inside the parentheses:\n4.592×10⁴ = 459200\n4.9×10¹⁷ = 4.9×10¹⁷\n(5.670374419×10⁻⁸ W·m⁻²·K⁻⁴) is already in the correct units\n\nNow, we can plug these values back into the expression:\nT = (10 W/m² × 459200 / 4.9×10¹⁷ / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nSimplifying the expression:\nT = (10 W/m² × 9.36×10⁻¹³ / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nNow, let's compute the terms inside the parentheses:\n9.36×10⁻¹³ = 9.36×10⁻¹³\n(5.670374419×10⁻⁸ W·m⁻²·K⁻⁴) is already in the correct units\n\nNow, we can plug these values back into the expression:\nT = (10 W/m² × 9.36×10⁻¹³ / (5.670374419×10⁻⁸ W·m⁻²·K⁻⁴))^(1/4)\n\nSimplifying the expression:\nT = (8.32×10⁻¹⁴ /"
     },
     {
       "problem_id": "52",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 6,
       "expected_answer": "$$B=2A$$",
-      "final_output": "B = A / 2, n = [value from Node 4]"
+      "final_output": "B = -\\frac{3A}{n}, \\quad n = n"
     },
     {
       "problem_id": "53",
@@ -718,124 +726,131 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 8,
+      "steps_taken": 3,
       "expected_answer": "$$\nR \\approx 4.2 \\times 10^4 \\unit{km}\n$$",
-      "final_output": "1.376×10^7 m"
+      "final_output": "4.22e7"
     },
     {
       "problem_id": "54",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 1,
       "expected_answer": "Nebo Zovyot",
-      "final_output": "Planeta Bur (Planet of Storms)"
+      "final_output": "Nebo Zovyot"
     },
     {
       "problem_id": "55",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$E_n=\\big[h\\alpha (\\beta+1) n E_0^{\\beta}\\big]^{\\frac{1}{1+\\beta}}$$",
+      "final_output": "E_n = C n^(1/(β+1))"
+    },
+    {
+      "problem_id": "56",
       "is_correct": 1,
       "final_status": "success",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
-      "expected_answer": "$$E_n=\\big[h\\alpha (\\beta+1) n E_0^{\\beta}\\big]^{\\frac{1}{1+\\beta}}$$",
-      "final_output": "E_n = [ (β+1) h α E_0^{β} n ]^{1/(β+1)}"
-    },
-    {
-      "problem_id": "56",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "steps_taken": 1,
+      "steps_taken": 3,
       "expected_answer": "$$\\left. \\frac{d\\sigma}{d\\Omega} \\right|_{\\theta = 0} = \\frac{A^2 m^2 e^2}{9 \\hbar^4}$$",
-      "final_output": "\\[\n\\frac{d\\sigma}{d\\Omega} \\bigg|_{\\theta=0} = \\frac{A e^2}{(2\\pi)^2 (2k)^2}\n\\]"
+      "final_output": "dσ/dΩ (θ=0) = (m² e² A²) / (9 ħ⁴)"
     },
     {
       "problem_id": "57",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "Canadian professional ice hockey centre",
-      "final_output": "</think>\n\nA"
+      "final_output": "Defenseman"
     },
     {
       "problem_id": "58",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 1,
+      "steps_taken": 3,
       "expected_answer": "$\\boxed{No}$",
       "final_output": "No"
     },
     {
       "problem_id": "59",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "steps_taken": 3,
-      "expected_answer": "I",
-      "final_output": "I"
-    },
-    {
-      "problem_id": "60",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen-2.5-7b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
+      "expected_answer": "I",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "60",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
       "expected_answer": "B",
-      "final_output": "B"
+      "final_output": "C"
     },
     {
       "problem_id": "61",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
         "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 7,
+      "steps_taken": 5,
       "expected_answer": "\\boxed{c}",
-      "final_output": "C"
+      "final_output": "c"
     },
     {
       "problem_id": "62",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "I",
       "final_output": "I"
     },
@@ -843,69 +858,63 @@
       "problem_id": "63",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "$$\n\\sigma = \\pi R^2 \\left(1 + \\frac{2 G M}{v_0^2 R}\\right)\n$$",
-      "final_output": "\\sigma = \\pi \\left( R^2 + \\frac{2 G M R}{v_0^2} \\right)"
+      "final_output": "\\sigma = \\pi \\left[ R^2 + \\frac{2 G M R}{v_0^2} \\right]\\"
     },
     {
       "problem_id": "64",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it"
       ],
-      "steps_taken": 9,
+      "steps_taken": 3,
       "expected_answer": "$$v_{\\text{roll}} = \\frac{5}{7} v_0$$",
-      "final_output": "v_roll = (3/11) * v_0"
+      "final_output": "v_roll = (5/7) v_0"
     },
     {
       "problem_id": "65",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "USS Essex",
-      "final_output": "USS Guadalcanal"
+      "final_output": "USS Sangamon (ACV-38)"
     },
     {
       "problem_id": "66",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it"
       ],
       "steps_taken": 1,
       "expected_answer": "$\\boxed{6}$",
-      "final_output": "5"
+      "final_output": "Let $v = (a, b, c, d)$ with $0 < a < b < c < d$ integers.\n$\\sigma(v)$ is the set of all permutations of $(a, b, c, d)$. There are $4! = 24$ such permutations.\nWe are given that there are exactly 3 vectors in $\\sigma(v)$ whose sum is of the form $(s, s, s, s)$ for some $s$.\nLet $(x_1, x_2, x_3, x_4)$ be a permutation of $(a, b, c, d)$. We want to find the number of permutations such that $x_1 + x_2 + x_3 + x_4 = 4s$ for some integer $s$.\nSince the sum of the coordinates is always $a+b+c+d$, we have $a+b+c+d = 4s$, so $s = \\frac{a+b+c+d}{4}$.\nWe are given that there are exactly 3 vectors in $\\sigma(v)$ such that $x_1 = x_2 = x_3 = x_4 = s$. This is impossible since $a, b, c, d$ are distinct.\nWe are looking for the number of permutations $(x_1, x_2, x_3, x_4)$ such that $x_1 + x_2 + x_3 + x_4 = a+b+c+d$ and $x_1 = x_2 = x_3 = x_4 = s$. This is impossible since $a, b, c, d$ are distinct.\nWe are given that there are 3 vectors in $\\sigma(v)$ whose coordinates are all equal. This means that there are 3 vectors $(x_1, x_2, x_3, x_4)$ such that $x_1 = x_2 = x_3 = x_4$. This is impossible since $a, b, c, d$ are distinct.\nThe problem states that there are 3 vectors in $\\sigma(v)$ whose sum is of the form $(s, s, s, s)$ for some $s$. This means that there are 3 permutations $(x_1, x_2, x_3, x_4)$ such that $x_1 + x_2 + x_3 + x_4 = 4s$ for some $s$. Since $x_1, x_2, x_3, x_4$ is a permutation of $a, b, c, d$, we have $x_1 + x_2 + x_3 + x_4 = a+b+c+d$. Thus, $a+b+c+d = 4s$, which means $a+b+c+d$ is divisible by 4.\nWe want to find the number of permutations $(x_1, x_2, x_3, x_4)$ such that $x_1 = x_2 = x_3 = x_4$. This is impossible since $a, b, c, d$ are distinct.\nWe are given that there are 3 vectors in $\\sigma(v)$ such that $x_1 + x_2 + x_3 + x_4 = a+b+c+d$ and $x_1 = x_2 = x_3 = x_4$. This is impossible.\nWe are looking for the number of permutations $(x_1, x_2, x"
     },
     {
       "problem_id": "67",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 9,
+      "steps_taken": 3,
       "expected_answer": "C",
       "final_output": "C"
     },
@@ -913,15 +922,14 @@
       "problem_id": "68",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
       "expected_answer": "B",
-      "final_output": "E"
+      "final_output": "C"
     },
     {
       "problem_id": "69",
@@ -930,10 +938,10 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "D",
       "final_output": "D"
     },
@@ -941,50 +949,54 @@
       "problem_id": "70",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 1,
+      "steps_taken": 2,
       "expected_answer": "\\frac{2^{n+1}+(-1)^{n}}{3}",
-      "final_output": "$F_{n+2}$"
+      "final_output": "(2^{n+1} - (-1)^{n+1})/3"
     },
     {
       "problem_id": "71",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
+        "meta-llama/llama-3.1-8b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "$$E_{\\text{shift}} = \\frac{\\mu_B B}{\\hbar} g_J J_z$$",
-      "final_output": "ΔE = [1 + (J(J+1) + S(S+1) - L(L+1))/(2J(J+1))] * (eħ/(2 m_e c)) * B * M_J"
+      "final_output": "ΔE = \\left(1 + \\frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}\\right) \\frac{e\\hbar}{2m_e c} B M_J"
     },
     {
       "problem_id": "72",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 4,
       "expected_answer": "2",
-      "final_output": "P(2) = 128"
+      "final_output": "4"
     },
     {
       "problem_id": "73",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 1,
+      "steps_taken": 8,
       "expected_answer": "\\boxed{6}",
       "final_output": "6"
     },
@@ -992,42 +1004,41 @@
       "problem_id": "74",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "\\boxed{2004}",
       "final_output": "2004"
     },
     {
       "problem_id": "75",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Royal Governor Lord Dunmore",
-      "final_output": "No information available."
+      "final_output": "Lord Dunmore"
     },
     {
       "problem_id": "76",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "J",
-      "final_output": "J. nextAvailableID"
+      "final_output": "E"
     },
     {
       "problem_id": "77",
@@ -1045,13 +1056,15 @@
       "problem_id": "78",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 1,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{3633}.",
-      "final_output": "</think>\n\n5000"
+      "final_output": "562"
     },
     {
       "problem_id": "79",
@@ -1060,19 +1073,21 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Erinsborough",
-      "final_output": "Springfield"
+      "final_output": "Salem"
     },
     {
       "problem_id": "80",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "Shanghai",
@@ -1082,84 +1097,82 @@
       "problem_id": "81",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 4,
       "expected_answer": "$\\boxed{\\frac{1}{2n}+\\frac{1}{3n}+\\frac{1}{6n}}$.",
-      "final_output": "Any unit fraction 1/n can be decomposed into other unit fractions, and decompositions are not unique; other methods include Egyptian fraction expansions."
+      "final_output": "Any unit fraction 1/n can be decomposed into other unit fractions via the identity 1/n = 1/(n+1) + 1/(n(n+1)), enabling recursive decomposition into sums of distinct unit fractions."
     },
     {
       "problem_id": "82",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
-      "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "Wendell Berry",
-      "final_output": "No author identified."
-    },
-    {
-      "problem_id": "83",
-      "is_correct": 0,
-      "final_status": "failure",
       "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
+      "steps_taken": 3,
+      "expected_answer": "Wendell Berry",
+      "final_output": "C"
+    },
+    {
+      "problem_id": "83",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
       "steps_taken": 4,
       "expected_answer": "\\boxed{9}",
-      "final_output": "11"
+      "final_output": "9"
     },
     {
       "problem_id": "84",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
         "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 8,
+      "steps_taken": 6,
       "expected_answer": "$\\boxed{96}$",
-      "final_output": "96"
+      "final_output": "72"
     },
     {
       "problem_id": "85",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "google/gemma-3-27b-it"
       ],
-      "steps_taken": 2,
+      "steps_taken": 1,
       "expected_answer": "Charmed",
       "final_output": "Charmed"
     },
     {
       "problem_id": "86",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "B",
-      "final_output": "**F**"
+      "final_output": "B"
     },
     {
       "problem_id": "87",
@@ -1168,24 +1181,27 @@
       "answer_model": "mistralai/mistral-nemo",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 9,
       "expected_answer": "D",
-      "final_output": "A"
+      "final_output": "C"
     },
     {
       "problem_id": "88",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "G",
-      "final_output": "C"
+      "final_output": "G"
     },
     {
       "problem_id": "89",
@@ -1194,39 +1210,37 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "44",
-      "final_output": "11"
+      "final_output": "80"
     },
     {
       "problem_id": "90",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 1,
       "expected_answer": "Pavel Sergeyevich Alexandrov",
-      "final_output": "Pavel Alexandrov."
+      "final_output": "Pavel Alexandrov"
     },
     {
       "problem_id": "91",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
         "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 3,
       "expected_answer": "A",
-      "final_output": "A, D"
+      "final_output": "A"
     },
     {
       "problem_id": "92",
@@ -1235,7 +1249,8 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "E",
@@ -1243,31 +1258,22 @@
     },
     {
       "problem_id": "93",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 7,
+      "steps_taken": 8,
       "expected_answer": "J",
-      "final_output": "$103.00\nJ"
+      "final_output": "J"
     },
     {
       "problem_id": "94",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
-      "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
-      ],
-      "steps_taken": 1,
-      "expected_answer": "\\boxed{\\frac{4035^{\\frac{1}{1024}}-1}{2}}",
-      "final_output": "## Step 1: Understand the sequence definition\nThe sequence is defined as $z_{0}=z$ and $z_{n+1}=2 z_{n}^{2}+2 z_{n}$ for $n \\geq 0$.\n\n## Step 2: Express $z_{n+1}$ in terms of $z_n$\n$z_{n+1} = 2z_n^2 + 2z_n = 2z_n(z_n + 1)$.\n\n## Step 3: Consider the relation between $z_n$ and $z_{n+1}$\nTo find the minimum possible value of $|z|$, given $z_{10} = 2017$, we need to work backwards from $z_{10}$ to $z_0$.\n\n## Step 4: Working backwards from $z_{10}$\nGiven $z_{10} = 2017$, we know $z_{10} = 2z_9(z_9 + 1)$. However, without a direct way to invert this process due to its quadratic nature, we look for patterns or specific values that could lead to $z_{10} = 2017$.\n\n## Step 5: Analyzing the quadratic relationship\nThe equation $z_{n+1} = 2z_n^2 + 2z_n$ can be rewritten as $z_{n+1} = 2z_n(z_n + 1)$, suggesting that if $z_n = -1$, then $z_{n+1} = 0$, and if $z_n = 0$, then $z_{n+1} = 0$. For non-zero, non-negative values, $z_{n+1}$ increases rapidly.\n\n## Step 6: Finding a pattern for $z_{10} = 2017$\nGiven the rapid growth of $z_n$, and knowing $z_{10}$, we can test simple values. Noting that $2017 = 2 \\times 1008 \\times 1009$, it suggests $z_9$ could be $1008$ or $1009$ if we were solving directly, but since we need to account for the $2z_n(z_n + 1)$ pattern, we look for a $z_n$ that when squared and added to itself, then multiplied by 2, gives us a clue on how to reach $2017$.\n\n## Step"
-    },
-    {
-      "problem_id": "95",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
@@ -1275,153 +1281,11 @@
         "google/gemma-3-27b-it"
       ],
       "steps_taken": 1,
-      "expected_answer": "$$x_{(1)}=A' \\sin(\\omega t)+\\frac{\\lambda A^2}{\\omega^2}\\left[\\frac{1}{2}-\\frac{2}{3} \\cos(\\omega t)+\\frac{1}{6} \\cos(2 \\omega t)\\right]$$",
-      "final_output": ":\n$$x_{(1)}(t) = A \\sin(\\omega t + \\varphi) + \\lambda \\left( -\\frac{A \\omega}{2} + \\frac{B}{m} + \\frac{C}{m} \\cos(2\\omega t) + D_1 \\sin(\\omega t) + D_2 \\cos(\\omega t) \\right)$$"
+      "expected_answer": "\\boxed{\\frac{4035^{\\frac{1}{1024}}-1}{2}}",
+      "final_output": "Let $z_0 = z$ and $z_{n+1} = 2z_n^2 + 2z_n = 2z_n(z_n+1)$ for $n \\geq 0$. We are given that $z_{10} = 2017$. We want to find the minimum possible value of $|z|$.\nWe have $z_{n+1} = 2z_n(z_n+1)$. Then $z_{n+1}+1 = 2z_n^2 + 2z_n + 1 = 2z_n(z_n+1) + 1$.\nLet $w_n = z_n + 1$. Then $z_n = w_n - 1$.\n$w_{n+1} - 1 = 2(w_n-1)(w_n-1+1) = 2(w_n-1)w_n = 2w_n^2 - 2w_n$.\n$w_{n+1} = 2w_n^2 - 2w_n + 1$.\nWe have $z_{10} = 2017$, so $w_{10} = z_{10} + 1 = 2018$.\nWe want to find $w_0 = z_0 + 1 = z+1$.\nWe have $w_{n+1} = 2w_n^2 - 2w_n + 1$.\n$w_{10} = 2018$.\n$w_9 = \\frac{2 \\pm \\sqrt{4 - 4(2-w_{10})}}{4} = \\frac{2 \\pm \\sqrt{4 - 8 + 4w_{10}}}{4} = \\frac{2 \\pm \\sqrt{4w_{10} - 4}}{4} = \\frac{2 \\pm 2\\sqrt{w_{10}-1}}{4} = \\frac{1 \\pm \\sqrt{w_{10}-1}}{2}$.\n$w_9 = \\frac{1 \\pm \\sqrt{2017}}{2}$.\nWe want to minimize $|z| = |w_0 - 1|$.\nWe want to find $w_0$ such that $w_{10} = 2018$.\nWe want to minimize $|w_0 - 1|$.\nLet $w_n = x$. Then $w_{n+1} = 2x^2 - 2x + 1$.\nIf $w_n = 1$, then $w_{n+1} = 2(1)^2 - 2(1) + 1 = 1$.\nIf $w_n = 0$, then $w_{n+1} = 1$.\nIf $w_n = -1$, then $w_{n+1} = 2(-1)^2 - 2(-1) + 1 = 2+2+1 = 5$.\nIf $w_n = 2$, then $w_{n+1} = 2(2^2) - 2(2) + 1 = 8-4+1 = 5$.\nIf $w_n = 3$, then $w_{n+1} = 2(3^2) - 2(3) + 1"
     },
     {
-      "problem_id": "96",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 6,
-      "expected_answer": "$$N_{attractive}=1$$",
-      "final_output": "N_repulsive = 3, N_attractive = 1"
-    },
-    {
-      "problem_id": "97",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "D",
-      "final_output": "D"
-    },
-    {
-      "problem_id": "98",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "E",
-      "final_output": "B"
-    },
-    {
-      "problem_id": "99",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "no",
-      "final_output": "No."
-    },
-    {
-      "problem_id": "100",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "A",
-      "final_output": "A"
-    },
-    {
-      "problem_id": "101",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
-      ],
-      "steps_taken": 3,
-      "expected_answer": "C",
-      "final_output": "None"
-    },
-    {
-      "problem_id": "102",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 11,
-      "expected_answer": "$$ r \\cosh \\Big( \\sqrt{ \\frac{m k}{b^2} - 1 } (\\theta - \\theta_0) \\Big) = r_0$$",
-      "final_output": "$\\alpha > 0$: $r [1 + \\varepsilon \\cos(\\sqrt{\\alpha} (\\theta - \\theta_0))] = r_0$\n$\\alpha = 0$: $r (\\theta - \\theta_0) = r_0$\n$\\alpha < 0$: $r \\cosh(\\sqrt{-\\alpha} (\\theta - \\theta_0)) = r_0$"
-    },
-    {
-      "problem_id": "103",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "Oregon",
-      "final_output": "Texas"
-    },
-    {
-      "problem_id": "104",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
-      "used_models": [
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "Awake",
-      "final_output": "Ark"
-    },
-    {
-      "problem_id": "105",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 6,
-      "expected_answer": "F",
-      "final_output": "F"
-    },
-    {
-      "problem_id": "106",
+      "problem_id": "95",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "qwen/qwen3.5-flash-02-23",
@@ -1429,35 +1293,188 @@
         "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 1,
-      "expected_answer": "\\boxed{\\frac{1}{3}}",
-      "final_output": "1/9"
+      "expected_answer": "$$x_{(1)}=A' \\sin(\\omega t)+\\frac{\\lambda A^2}{\\omega^2}\\left[\\frac{1}{2}-\\frac{2}{3} \\cos(\\omega t)+\\frac{1}{6} \\cos(2 \\omega t)\\right]$$",
+      "final_output": "The equation of motion is derived from the potential $U(x) = \\frac{k x^2}{2} - \\frac{m \\lambda x^3}{3}$:\n$$ m \\ddot{x} = -\\frac{dU}{dx} = -kx + m \\lambda x^2 $$\n$$ \\ddot{x} + \\frac{k}{m} x = \\lambda x^2 $$\nUsing $\\omega = \\sqrt{k/m}$, this becomes:\n$$ \\ddot{x} + \\omega^2 x = \\lambda x^2 $$\nSubstituting the perturbative expansion $x = x_{(0)} + \\lambda x_1$:\n$$ (\\ddot{x}_{(0)} + \\omega^2 x_{(0)}) + \\lambda (\\ddot{x}_1 + \\omega^2 x_1) = \\lambda (x_{(0)} + \\lambda x_1)^2 $$\nTo zeroth order: $\\ddot{x}_{(0)} + \\omega^2 x_{(0)} = 0$, with solution $x_{(0)} = A \\sin(\\omega t + \\varphi)$.\nTo first order: $\\ddot{x}_1 + \\omega^2 x_1 = x_{(0)}^2$.\nGiven the initial condition $x(0)=0$, we have $x_{(0)}(0) \\approx 0$, which implies $\\varphi = 0$. Thus $x_{(0)} = A \\sin(\\omega t)$.\nThe driving term is $x_{(0)}^2 = A^2 \\sin^2(\\omega t) = \\frac{A^2}{2} (1 - \\cos(2\\omega t))$.\nThe equation for $x_1$ is:\n$$ \\ddot{x}_1 + \\omega^2 x_1 = \\frac{A^2}{2} - \\frac{A^2}{2} \\cos(2\\omega t) $$\nUsing the ansatz $x_1 = B + C \\cos(2\\omega t) + D_1 \\sin(\\omega t) + D_2 \\cos(\\omega t)$:\nSubstituting the particular part $x_1^p = B + C \\cos(2\\omega t)$:\n$$ -4\\omega^2 C \\cos(2\\omega t) + \\omega^2 (B + C \\cos(2\\omega t)) = \\frac{A^2}{2} - \\frac{A^2}{2} \\cos(2\\omega t) $$\n$$ \\omega^2 B - 3\\omega^2 C \\cos(2\\omega t) = \\frac{A^2}{2} - \\frac{A^2}{2} \\cos(2\\omega t) $$\nMatching coefficients:\n$$ \\omega^2 B = \\frac{A^2}{2} \\implies B = \\frac{A^2}{2\\omega^2} $$\n$$ -3\\omega^2 C = -\\frac{A^2}{2} \\implies C = \\frac{A^2}{6\\omega^2} $$\nThe homogeneous part is $x_1^h = D_1 \\sin(\\omega t) + D_2 \\cos(\\omega t)$.\nThe full first-order solution is:\n$$ x_{(1)}(t) = x_{(0)} + \\lambda x_1 = A \\sin(\\omega t) + \\lambda"
     },
     {
-      "problem_id": "107",
+      "problem_id": "96",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "$$N_{attractive}=1$$",
+      "final_output": "N_attractive = 1, N_repulsive = 3"
+    },
+    {
+      "problem_id": "97",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "D",
+      "final_output": "B"
+    },
+    {
+      "problem_id": "98",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "E",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "99",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
+      "expected_answer": "no",
+      "final_output": "No"
+    },
+    {
+      "problem_id": "100",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "A",
+      "final_output": "G"
+    },
+    {
+      "problem_id": "101",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "C",
+      "final_output": "Option that matches all three definitions: Gene pool (total collection of genes in a population), balanced polymorphism (stable coexistence of multiple alleles, often due to heterozygote advantage), and genetic load (measure of deleterious alleles reducing fitness)."
+    },
+    {
+      "problem_id": "102",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 10,
+      "expected_answer": "$$ r \\cosh \\Big( \\sqrt{ \\frac{m k}{b^2} - 1 } (\\theta - \\theta_0) \\Big) = r_0$$",
+      "final_output": "For each distinct case identified in Node 9, the corresponding final orbit relation in the form \\( r f(\\theta) = r_0 \\) is as follows:\n\n1. **Case \\(\\alpha > 0\\)**: The orbit is bounded and typically elliptical.\n   \\[ r f(\\theta) = r_0 \\]\n   where \\( f(\\theta) = A \\cos(\\sqrt{\\alpha} \\theta) + B \\sin(\\sqrt{\\alpha} \\theta) \\) and \\(\\alpha = \\frac{k}{m} - \\frac{b^2}{m^2 r_0^3}\\).\n\n2. **Case \\(\\alpha = 0\\)**: The orbit can be a straight line or a circle, depending on the initial conditions.\n   \\[ r f(\\theta) = r_0 \\]\n   where \\( f(\\theta) = A \\cos(0 \\cdot \\theta) + B \\sin(0 \\cdot \\theta) = A + B \\theta \\) and \\(\\alpha = \\frac{k}{m} - \\frac{b^2}{m^2 r_0^3} = 0\\).\n\n3. **Case \\(\\alpha < 0\\)**: The orbit is unbounded and typically hyperbolic.\n   \\[ r f(\\theta) = r_0 \\]\n   where \\( f(\\theta) = A \\cosh(\\sqrt{-\\alpha} \\theta) + B \\sinh(\\sqrt{-\\alpha} \\theta) \\) and \\(\\alpha = \\frac{k}{m} - \\frac{b^2}{m^2 r_0^3} < 0\\)."
+    },
+    {
+      "problem_id": "103",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Oregon",
+      "final_output": "Oregon"
+    },
+    {
+      "problem_id": "104",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Awake",
+      "final_output": "Original Sin"
+    },
+    {
+      "problem_id": "105",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "F",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "106",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{\\frac{1}{3}}",
+      "final_output": "1/3"
+    },
+    {
+      "problem_id": "107",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 3,
       "expected_answer": "Bill Murray",
-      "final_output": "No younger brother."
+      "final_output": "I cannot provide information about the younger brother of the episode guest stars of The Hard Easy. Is there anything else I can help you with?"
     },
     {
       "problem_id": "108",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct"
       ],
       "steps_taken": 2,
       "expected_answer": "Mondelez International, Inc.",
-      "final_output": "Mars Inc."
+      "final_output": "Mondelēz International"
     },
     {
       "problem_id": "109",
@@ -1466,11 +1483,11 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{\\frac{1}{2}}.",
-      "final_output": "0.5"
+      "final_output": "1/2"
     },
     {
       "problem_id": "110",
@@ -1478,20 +1495,24 @@
       "final_status": "failure",
       "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 1,
+      "steps_taken": 8,
       "expected_answer": "$\\boxed{35}$.",
-      "final_output": "2008 cents"
+      "final_output": "54"
     },
     {
       "problem_id": "111",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "A",
@@ -1499,58 +1520,58 @@
     },
     {
       "problem_id": "112",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
       "steps_taken": 4,
       "expected_answer": "\\boxed{563}",
-      "final_output": "I"
+      "final_output": "563"
     },
     {
       "problem_id": "113",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-nemo"
       ],
       "steps_taken": 3,
       "expected_answer": "I",
-      "final_output": "I"
+      "final_output": "A"
     },
     {
       "problem_id": "114",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "Lush Ltd.",
-      "final_output": "None"
+      "final_output": ""
     },
     {
       "problem_id": "115",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 6,
       "expected_answer": "$$T=\\frac{27}{128}$$",
-      "final_output": "T = (I_3 * 3/4) / I_0"
+      "final_output": "T = \\frac{27}{128}"
     },
     {
       "problem_id": "116",
@@ -1559,39 +1580,41 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
       "steps_taken": 4,
       "expected_answer": "no",
-      "final_output": "No."
+      "final_output": "No"
     },
     {
       "problem_id": "117",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
-      ],
-      "steps_taken": 5,
-      "expected_answer": "$$P=\\frac{1}{2}$$",
-      "final_output": "P = (2/l) / (n^2 - (n/2)^2)^2 [cos(nπ)cos((n/2)π) - cos(nπ + (n/2)π)cos((n/2)π)]^2"
-    },
-    {
-      "problem_id": "118",
-      "is_correct": 0,
-      "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 6,
+      "expected_answer": "$$P=\\frac{1}{2}$$",
+      "final_output": "4"
+    },
+    {
+      "problem_id": "118",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
       "expected_answer": "The Conversation",
-      "final_output": "The Citizen"
+      "final_output": "The Conversation"
     },
     {
       "problem_id": "119",
@@ -1600,27 +1623,26 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "$$\nv_{max} \\approx 12.2 \\unit{m/s}\n$$",
-      "final_output": "12.25 m/s"
+      "final_output": "sqrt(150)"
     },
     {
       "problem_id": "120",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 6,
       "expected_answer": "J",
-      "final_output": "B"
+      "final_output": "F"
     },
     {
       "problem_id": "121",
@@ -1629,114 +1651,115 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
       "expected_answer": "Langston Hughes",
-      "final_output": "Ian McEwan"
+      "final_output": "Insufficient information"
     },
     {
       "problem_id": "122",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-nemo"
       ],
       "steps_taken": 4,
       "expected_answer": "$$\n\\sigma(\\theta) = \\frac{3 \\varepsilon_0 (\\varepsilon - \\varepsilon_0)}{\\varepsilon + 2 \\varepsilon_0} E_0 \\cos \\theta\n$$",
-      "final_output": "No, it does not produce a magnetic field."
+      "final_output": "Yes, concentric circular magnetic field lines around the wire."
     },
     {
       "problem_id": "123",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 5,
       "expected_answer": "$$E\\approx 1.92\\times 10^3\\unit{GeV}$$",
-      "final_output": "34.84"
+      "final_output": "1918 GeV"
     },
     {
       "problem_id": "124",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
         "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "Dan Lin, Roy Lee, Phil Lord and Christopher Miller",
-      "final_output": "Dan Lin, Phil Lord, Christopher Miller, Kurt Albrecht"
+      "final_output": "Producers cannot be determined."
     },
     {
       "problem_id": "125",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "a family member",
-      "final_output": "A family member."
+      "final_output": "a family member"
     },
     {
       "problem_id": "126",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "E",
-      "final_output": "E."
+      "final_output": "E"
     },
     {
       "problem_id": "127",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 7,
+      "steps_taken": 3,
       "expected_answer": "3",
-      "final_output": "12"
+      "final_output": "3"
     },
     {
       "problem_id": "128",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 1,
+      "steps_taken": 5,
       "expected_answer": "\\boxed{28}",
-      "final_output": "12"
+      "final_output": "28"
     },
     {
       "problem_id": "129",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
@@ -1748,10 +1771,10 @@
       "problem_id": "130",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
       "expected_answer": "D",
@@ -1763,12 +1786,9 @@
       "final_status": "success",
       "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 9,
+      "steps_taken": 1,
       "expected_answer": "$\\boxed{0}$",
       "final_output": "0"
     },
@@ -1776,40 +1796,37 @@
       "problem_id": "132",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 2,
       "expected_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
-      "final_output": "Max Martin, Ilya Salmanzadeh, Oscar Holter, Laleh Pourkarim, Carl Falk, Rami Yacoub, Ali Payami, Peter Svensson"
+      "final_output": "Greg Kurstin, Max Martin, Shellback, Savan Kotecha, Ali Payami, Ilya Salmanzadeh, Tove Lo, The Weeknd, Jesse Shatkin, Ben Lovett, Drew Brown"
     },
     {
       "problem_id": "133",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 8,
+      "steps_taken": 3,
       "expected_answer": "$$\\frac{p(0)}{p(R_0)} = \\exp\\left(-\\frac{M R_0 g}{2 R T}\\right)$$",
-      "final_output": "p(0) / p(R_0) = exp( - (M * g * R_0) / (2 * R * T) )"
+      "final_output": "e^{-\\frac{M g R_0}{2 R T}}"
     },
     {
       "problem_id": "134",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "José Echegaray y Eizaguirre",
       "final_output": "José Echegaray y Eizaguirre"
     },
@@ -1817,13 +1834,13 @@
       "problem_id": "135",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 7,
+      "steps_taken": 3,
       "expected_answer": "A",
       "final_output": "A"
     },
@@ -1831,87 +1848,81 @@
       "problem_id": "136",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{592/969}.",
-      "final_output": "</think>\n\n17A + 8B + 3C - D"
+      "final_output": "Given the partial fraction decomposition from Node 2:\n\\[\n\\frac{n^2 + n + 1}{n(n-1)(n+1)(n+2)} = -\\frac{1}{2n} + \\frac{1}{2(n-1)} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)}\n\\]\n\nWe need to compute the sum \\( S = \\sum_{n=2}^{17} \\left( -\\frac{1}{2n} + \\frac{1}{2(n-1)} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} \\right) \\).\n\nFirst, let's rewrite the sum:\n\\[\nS = \\sum_{n=2}^{17} \\left( -\\frac{1}{2n} + \\frac{1}{2(n-1)} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} \\right)\n\\]\n\nTo see the telescoping nature, we can shift indices and write out the first few terms:\n\\[\nS = \\left( -\\frac{1}{4} + \\frac{1}{2} + \\frac{1}{6} - \\frac{1}{8} \\right) + \\left( -\\frac{1}{6} + \\frac{1}{3} + \\frac{1}{8} - \\frac{1}{10} \\right) + \\cdots + \\left( -\\frac{1}{34} + \\frac{1}{16} + \\frac{1}{18} - \\frac{1}{19} \\right)\n\\]\n\nNotice that most terms will cancel out. The series telescopes as follows:\n\\[\nS = -\\frac{1}{4} + \\left( \\frac{1}{2} - \\frac{1}{6} \\right) + \\left( \\frac{1}{6} - \\frac{1}{8} \\right) + \\left( \\frac{1}{8} - \\frac{1}{10} \\right) + \\cdots + \\left( \\frac{1}{16} - \\frac{1}{18} \\right) + \\left( \\frac{1}{18} - \\frac{1}{19} \\right) - \\frac{1}{34}\n\\]\n\nAfter cancellation, we are left with:\n\\[\nS = -\\frac{1}{4} + \\frac{1}{2} - \\frac{1}{19} - \\frac{1}{34}\n\\]\n\nNow, compute the remaining terms:\n\\[\n-\\frac{1}{4} + \\frac{1}{2} = \\frac{1}{4}\n\\]\n\\[\n\\frac{1}{4} - \\frac{1}{19} - \\frac{1}{34} = \\frac{19 \\cdot 34 - 4 \\cdot 34 - 4 \\cdot 19}{4 \\cdot 19 \\cdot 34} = \\frac{646 - 136 - 76}{2584} = \\frac{434}{2584} = \\frac{217}{1292}\n\\]\n\nThus, the final answer is:\n\\[\n\\boxed{\\frac{217}{1292}}\n\\]"
     },
     {
       "problem_id": "137",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{5/9}",
       "final_output": "5/9"
     },
     {
       "problem_id": "138",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 3,
       "expected_answer": "4044",
-      "final_output": "11"
+      "final_output": "4044"
     },
     {
       "problem_id": "139",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
-      ],
-      "steps_taken": 4,
-      "expected_answer": "B",
-      "final_output": "A"
-    },
-    {
-      "problem_id": "140",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "B",
-      "final_output": "I"
+      "final_output": "B"
+    },
+    {
+      "problem_id": "140",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "B",
+      "final_output": "B"
     },
     {
       "problem_id": "141",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{26}.",
       "final_output": "26"
     },
@@ -1919,25 +1930,24 @@
       "problem_id": "142",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-nemo"
+        "google/gemma-3-27b-it"
       ],
       "steps_taken": 1,
       "expected_answer": "16",
-      "final_output": "The greatest possible average of all of the integers of $S$ is 12."
+      "final_output": "Let the 9 distinct positive integers in $S$ be $a_1 < a_2 < a_3 < a_4 < a_5 < a_6 < a_7 < a_8 < a_9$.\nThe average of the two smallest integers is 5, so $\\frac{a_1 + a_2}{2} = 5$, which means $a_1 + a_2 = 10$. Since $a_1$ and $a_2$ are distinct positive integers, we must have $a_1 < a_2$. The possible pairs $(a_1, a_2)$ are $(1, 9), (2, 8), (3, 7), (4, 6)$. To maximize the average of all integers in $S$, we want to maximize the integers in $S$. Thus, we choose $a_1 = 1$ and $a_2 = 9$.\nThe average of the two largest integers is 22, so $\\frac{a_8 + a_9}{2} = 22$, which means $a_8 + a_9 = 44$. Since $a_8 < a_9$, we want to maximize $a_8$ and $a_9$. The possible pairs $(a_8, a_9)$ are $(1, 43), (2, 42), \\dots, (21, 23)$. To maximize the integers in $S$, we choose $a_8 = 21$ and $a_9 = 23$.\nWe want to maximize the sum of the integers in $S$, so we want to choose $a_3, a_4, a_5, a_6, a_7$ to be as large as possible, while still being distinct and between $a_2$ and $a_8$. Thus, we choose $a_3 = 20, a_4 = 19, a_5 = 18, a_6 = 17, a_7 = 16$.\nThen the integers in $S$ are $1, 9, 16, 17, 18, 19, 20, 21, 23$.\nThe sum of the integers in $S$ is $1 + 9 + 16 + 17 + 18 + 19 + 20 + 21 + 23 = 144$.\nThe average of the integers in $S$ is $\\frac{144}{9} = 16$.\n\nHowever, we need to ensure that $a_2 < a_3 < a_4 < a_5 < a_6 < a_7 < a_8$.\nWe have $a_1 = 1, a_2 = 9$. We want to maximize $a_3, a_4, a_5, a_6, a_7$ such that $9 < a_3 < a_4 < a_5 < a_6 < a_7 < a_8$.\nWe have $a_8 + a_9 = 44$. To maximize the average, we want to maximize $a_8$ and $a_9$.\nLet $a_8 = 21$ and $a_9 = 23$. Then we can choose $a_3 = 10, a_4 = 11, a_5 = 12, a_6 ="
     },
     {
       "problem_id": "143",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Greenwich Village, New York City",
       "final_output": "New York City"
     },
@@ -1945,46 +1955,39 @@
       "problem_id": "144",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 8,
-      "expected_answer": "\\boxed{1,\\frac{1}{2}+\\frac{i\\sqrt{3}}{2},\\frac{1}{2}-\\frac{i\\sqrt{3}}{2},\\frac{3}{2}+\\frac{i\\sqrt{3}}{2},\\frac{3}{2}-\\frac{i\\sqrt{3}}{2}}",
-      "final_output": "1, -1.6 + 1.33i, -1.6 - 1.33i"
-    },
-    {
-      "problem_id": "145",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 7,
-      "expected_answer": "\\boxed{3025}",
-      "final_output": "3025"
-    },
-    {
-      "problem_id": "146",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
         "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 5,
+      "expected_answer": "\\boxed{1,\\frac{1}{2}+\\frac{i\\sqrt{3}}{2},\\frac{1}{2}-\\frac{i\\sqrt{3}}{2},\\frac{3}{2}+\\frac{i\\sqrt{3}}{2},\\frac{3}{2}-\\frac{i\\sqrt{3}}{2}}",
+      "final_output": "The roots are \\( r \\) (with multiplicity 1) and the solutions to the quadratic equation \\( ax^2 + bx + c = 0 \\), which are \\( \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\)."
+    },
+    {
+      "problem_id": "145",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "\\boxed{3025}",
+      "final_output": "## Step 1: Determine the number of permutations with all fixed points (k=0)\nFor k=0, all 9 elements are fixed points, which means there is only one possible permutation, the identity permutation.\n\n## Step 2: Determine the number of permutations with one 5-cycle and 4 fixed points (k=1)\nFor k=1, we need to choose 5 elements out of 9 to form the 5-cycle, which can be done in C(9,5) ways. For each set of 5 elements, there are (5-1)! = 4! = 24 distinct 5-cycles. The remaining 4 elements are fixed points, so the total number of permutations for this case is C(9,5) * 24.\n\n## Step 3: Calculate C(9,5)\nC(9,5) = 9! / (5! * (9-5)!) = 9! / (5! * 4!) = (9*8*7*6*5) / (5*4*3*2*1) = 126.\n\n## Step 4: Calculate the total number of permutations for k=1\nTotal number of permutations for k=1 = C(9,5) * 24 = 126 * 24 = 3024.\n\n## Step 5: Calculate the total number of permutations\nTotal number of permutations = number of permutations for k=0 + number of permutations for k=1 = 1 + 3024 = 3025.\n\nThe final answer is: $\\boxed{3025}$"
+    },
+    {
+      "problem_id": "146",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 4,
       "expected_answer": "$$\\omega_f=\\frac{\\omega_i}{3\\sqrt{2}}$$",
-      "final_output": "ω_f = ω_i"
+      "final_output": "ω_f = ω_i / 2^(1/3)"
     },
     {
       "problem_id": "147",
@@ -1994,21 +1997,20 @@
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "Richmond",
-      "final_output": "Casino"
+      "final_output": "Richmond River"
     },
     {
       "problem_id": "148",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "google/gemma-3-27b-it",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 4,
       "expected_answer": "\\boxed{256}",
@@ -2018,52 +2020,52 @@
       "problem_id": "149",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
       "expected_answer": "Sonic",
-      "final_output": "No information available."
+      "final_output": "A"
     },
     {
       "problem_id": "150",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
         "mistralai/mistral-nemo"
       ],
       "steps_taken": 3,
       "expected_answer": "$$T_m=3500\\unit{^\\circ C}$$",
-      "final_output": "T_m = 3500 °C"
+      "final_output": "3500°C"
     },
     {
       "problem_id": "151",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "mistralai/mistral-nemo",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "I",
-      "final_output": "I, J"
+      "final_output": "Sentiment"
     },
     {
       "problem_id": "152",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 3,
+      "steps_taken": 4,
       "expected_answer": "Erika Jayne",
       "final_output": "Erika Jayne"
     },
@@ -2071,49 +2073,49 @@
       "problem_id": "153",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 7,
+      "steps_taken": 3,
       "expected_answer": "$\\boxed{12:13}$",
-      "final_output": "24:26"
+      "final_output": "B"
     },
     {
       "problem_id": "154",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-nemo",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 7,
       "expected_answer": "$$m=m_0\\sqrt{\\frac{c-v}{c+v}}$$",
-      "final_output": "m = m0 / (gamma*(1+beta))"
+      "final_output": "m = \\frac{m_0}{\\gamma + \\gamma \\beta + \\frac{1}{\\gamma}}"
     },
     {
       "problem_id": "155",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "$$u=\\frac{c+n v}{n+\\frac{v}{c}}$$",
-      "final_output": "u = (c/n + v) / (1 + (v/(n c)))"
+      "final_output": "u = \\frac{\\frac{c}{n} + v}{1 + \\frac{v}{nc}}"
     },
     {
       "problem_id": "156",
-      "is_correct": 1,
-      "final_status": "success",
+      "is_correct": 0,
+      "final_status": "failure",
       "answer_model": "mistralai/mistral-nemo",
       "used_models": [
         "google/gemma-3-27b-it",
@@ -2122,58 +2124,56 @@
       ],
       "steps_taken": 3,
       "expected_answer": "E",
-      "final_output": "E"
+      "final_output": "B"
     },
     {
       "problem_id": "157",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
-      ],
-      "steps_taken": 7,
-      "expected_answer": "$$\n\\vec{E}_2=\\vec{E}_0+\\frac{\\varepsilon-\\varepsilon_0}{\\varepsilon+2\\varepsilon_0}R^3\\left[\\frac{3\\left(\\vec{E}_0\\cdot\\vec{r}\\right)\\vec{r}}{r^5}-\\frac{\\vec{E}_0}{r^3}\\right]\n$$",
-      "final_output": "E_1(r) = - (3E_0 R)/(2ε) cosθ hat{r} + (3E_0 R)/(2ε) (sinθ)/r hat{θ}, \nE_2(r) = E_0 hat{r} + (3E_0 R^3)/(2ε_0 r^3) (2cosθ hat{r} + sinθ hat{θ}) - (3E_0 R^3)/(2ε_0 r^3) (cosθ hat{r} - (1/2) sinθ hat{θ}) \n= E_0 hat{r} + (3E_0 R^3)/(2ε_0 r^3) (cosθ hat{r} + sinθ hat{θ}) \n= E_0 r̂ + (3E_0 R^3)/(2ε_0 r^3) (r̂ cosθ + θ̂ sinθ) \nHowever, given the equation from Node 6, \nE_2 = E_0 r̂ + (3E_0 R^3)/(2r^3) (r̂ cos^2θ - (1/2) sin^2θ) + (C/r^3) (2cosθ r̂ + sinθ θ̂), \nand since ε = 2ε_0, \nE_2(r) = E_0 r̂ + (3E_0 R^3)/(2r^3) (2cosθ r̂ + sinθ θ̂) \n= E_0 r̂ + (3E_0 R^3)/(2ε_0 r^3) (ε_0/ε_0) (2cosθ r̂ + sinθ θ̂) \n= E_0 r̂ + (3E_0 R^3)/(2ε_0 r^3) (2cosθ r̂ + sinθ θ̂)."
-    },
-    {
-      "problem_id": "158",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 5,
-      "expected_answer": "$$P_{-}(t)=\\frac{1}{2}\\left(1-\\sin\\frac{\\mu_0 B t}{\\hbar}\\right)$$",
-      "final_output": "P(s_y = +1/2) = 1/2, P(s_y = -1/2) = 1/2"
-    },
-    {
-      "problem_id": "159",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it"
       ],
-      "steps_taken": 4,
+      "steps_taken": 1,
+      "expected_answer": "$$\n\\vec{E}_2=\\vec{E}_0+\\frac{\\varepsilon-\\varepsilon_0}{\\varepsilon+2\\varepsilon_0}R^3\\left[\\frac{3\\left(\\vec{E}_0\\cdot\\vec{r}\\right)\\vec{r}}{r^5}-\\frac{\\vec{E}_0}{r^3}\\right]\n$$",
+      "final_output": "E₁(\\vec{r}) = E₀ [ (2ε₀) / (ε + ε₀)] \\hat{z}  (r < R)\nE₂(\\vec{r}) = E₀ [1 + 3 * (ε - ε₀) / (ε + ε₀) * cos²(θ)]  \\hat{r} - 3 * (ε - ε₀) / (ε + ε₀) * E₀ * cos(θ)sin(θ) \\hat{θ} (r > R)"
+    },
+    {
+      "problem_id": "158",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "used_models": [
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$P_{-}(t)=\\frac{1}{2}\\left(1-\\sin\\frac{\\mu_0 B t}{\\hbar}\\right)$$",
+      "final_output": "The Hamiltonian for the system is given by $H = -\\vec{\\mu} \\cdot \\vec{B} = -\\mu_0 \\vec{s} \\cdot (B \\hat{x}) = -\\mu_0 B s_x$.\nIn the $(s^2, s_x)$ representation, the basis vectors are the eigenstates of $s_x$, denoted as $|+\\rangle_x$ and $|-\\rangle_x$ with eigenvalues $+1/2$ and $-1/2$ respectively. In this basis, the operator $s_x$ is diagonal:\n$$ s_x = \\frac{1}{2} \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix} $$\nThus, the Hamiltonian is:\n$$ H = -\\frac{\\mu_0 B}{2} \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix} $$\nThe eigenvalues of $H$ are $E_+ = -\\frac{\\mu_0 B}{2}$ and $E_- = \\frac{\\mu_0 B}{2}$.\n\nAt $t=0$, the particle is in the state with $s_z = +1/2$, which is the eigenstate $|+\\rangle_z$. We express this state in the $s_x$ basis. The transformation between the $s_z$ and $s_x$ bases gives:\n$$ |+\\rangle_z = \\frac{1}{\\sqrt{2}} (|+\\rangle_x + |-\\rangle_x) \\implies \\psi(0) = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} $$\nThe time evolution of the state is given by $\\psi(t) = e^{-iHt/\\hbar} \\psi(0)$. Since $H$ is diagonal in this basis:\n$$ \\psi(t) = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} e^{-i E_+ t / \\hbar} \\\\ e^{-i E_- t / \\hbar} \\end{pmatrix} = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} e^{i \\frac{\\mu_0 B}{2\\hbar} t} \\\\ e^{-i \\frac{\\mu_0 B}{2\\hbar} t} \\end{pmatrix} $$\nLet $\\omega = \\frac{\\mu_0 B}{\\hbar}$. Then $\\psi(t) = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} e^{i \\omega t / 2} \\\\ e^{-i \\omega t / 2} \\end{pmatrix}$.\n\nTo find the probabilities of measuring $s_y = \\pm 1/2$, we need the eigenstates of $s_y$ in the $s_x$ basis. The operator $s_y$ in the $s_x$ basis is:\n$$ s_y = \\frac{1}{2} \\begin{pmatrix} 0 & i \\\\ -i & 0 \\end{pmatrix} $$\nThe normalized eigenvectors for eigenvalues $+1/2$ and $-1/2$ are:\n$$ |+\\rangle_y = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} i \\\\ 1 \\end{pmatrix}, \\quad |-\\rangle_y = \\frac{1}{\\sqrt{2}} \\begin{pmatrix} -i \\\\"
+    },
+    {
+      "problem_id": "159",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
       "expected_answer": "1999",
-      "final_output": "1991"
+      "final_output": "1992"
     },
     {
       "problem_id": "160",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
+        "google/gemma-3-27b-it",
         "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "Sacred Planet",
       "final_output": "Sacred Planet"
     },
@@ -2181,11 +2181,11 @@
       "problem_id": "161",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
+        "google/gemma-3-27b-it",
         "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "A",
@@ -2193,87 +2193,77 @@
     },
     {
       "problem_id": "162",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 5,
+      "steps_taken": 1,
       "expected_answer": "A",
-      "final_output": "A"
+      "final_output": "-48.3 kcal/mol"
     },
     {
       "problem_id": "163",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 8,
+      "steps_taken": 4,
       "expected_answer": "$$r_k=\\frac{4}{k}\\unit{m}$$",
-      "final_output": "1) a_first_max = 0.1 m\n2) a_second_min ≈ 0.1414 m\n3) r_1 = (0.1414^2) / 0.01 ≈ 2.000 m\n   r_2 = (0.1414^2) / 0.02 ≈ 1.000 m\n   r_3 = (0.1414^2) / 0.03 ≈ 0.6667 m\n   r_4 = (0.1414^2) / 0.04 ≈ 0.5000 m\n   r_5 = (0.1414^2) / 0.05 ≈ 0.4000 m\n   r_6 = (0.1414^2) / 0.06 ≈ 0.3333 m\n   r_7 = (0.1414^2) / 0.07 ≈ 0.2857 m\n   r_8 = (0.1414^2) / 0.08 ≈ 0.2500 m"
+      "final_output": "First maximum aperture radius = 0.1 m. Second minimum aperture radius = sqrt(0.02) m ≈ 0.1414 m. At aperture radius = sqrt(0.02) m, on-axis maxima occur at distances r = 2/k m for odd k: k=1 -> 2 m, k=3 -> 2/3 m, k=5 -> 0.4 m, etc. Minima occur at r = 2/k m for even k: k=2 -> 1 m, k=4 -> 0.5 m, k=6 -> 1/3 m, etc."
     },
     {
       "problem_id": "164",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 6,
+      "steps_taken": 3,
       "expected_answer": "J",
-      "final_output": "G"
+      "final_output": "J"
     },
     {
       "problem_id": "165",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "google/gemma-3-27b-it",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 3,
       "expected_answer": "$\\boxed{\\frac{81^{10}}{82^{10}}}$.",
-      "final_output": "q^2 / [q^2 + (1-q)^2]"
+      "final_output": "1/2"
     },
     {
       "problem_id": "166",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "G",
-      "final_output": "G"
+      "final_output": "To match the computed result from Node 2, which is 113.5%, to the full options list, we look for the option that exactly matches this percentage. \n\nThe options provided are:\nA. 110%\nB."
     },
     {
       "problem_id": "167",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "G",
@@ -2283,16 +2273,15 @@
       "problem_id": "168",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "$$\\vec{E}=\\frac{Q\\vec{r}}{4\\pi\\varepsilon_0 R^3}$$",
-      "final_output": "vec{E}_out = (1/(4πε₀)) * (Q / r²) * (vec{r}/r)\nvec{E}_in = (1/(4πε₀)) * (Q * (r/R)³ / r²) * (vec{r}/r)"
+      "final_output": "For $r > R$: $\\vec{E} = \\frac{1}{4\\pi \\epsilon_0} \\frac{Q}{r^2} \\frac{\\vec{r}}{r}$\nFor $r < R$: $\\vec{E} = \\frac{1}{4\\pi \\epsilon_0} \\frac{Q r}{R^3} \\frac{\\vec{r}}{r}$"
     },
     {
       "problem_id": "169",
@@ -2301,96 +2290,97 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "Portal A Interactive",
-      "final_output": "YouTube Rewind"
+      "final_output": "AwesomenessTV"
     },
     {
       "problem_id": "170",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "google/gemma-3-27b-it",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 5,
       "expected_answer": "$$\nW=\\frac{2 \\rho^2 R_1^5}{45 \\varepsilon_0}\n$$",
-      "final_output": "W = (2/3) * pi * epsilon_0 * rho^2 * R1^5; phi(0) = rho*R1^3 / (6*epsilon_0)"
+      "final_output": "\\phi(0) = \\frac{\\rho R_1^2}{6\\varepsilon_0}, \\quad W = \\frac{2\\pi\\rho^2 R_1^5}{45\\varepsilon_0}"
     },
     {
       "problem_id": "171",
-      "is_correct": 0,
-      "final_status": "failure",
+      "is_correct": 1,
+      "final_status": "success",
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "\\boxed{820}.",
-      "final_output": "101"
+      "final_output": "820"
     },
     {
       "problem_id": "172",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 5,
+      "steps_taken": 4,
       "expected_answer": "B",
-      "final_output": "B. Ribosomal assembly"
+      "final_output": "B"
     },
     {
       "problem_id": "173",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
       "used_models": [
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 5,
       "expected_answer": "$$T_N = 52 \\unit{K}$$",
-      "final_output": "T_N = 60.0 K, A = 0, ε = 1."
+      "final_output": "No radiative assumptions about Neptune's surface and atmosphere are provided in the problem statement.\n59.1"
     },
     {
       "problem_id": "174",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 3,
       "expected_answer": "$$\\frac{dp}{dT} = \\frac{L}{T(V_1 - V_2)}$$",
-      "final_output": "dp/dT = L / [T (V₁ - V₂)]"
+      "final_output": "\\frac{dp}{dT} = \\frac{L}{T(V_1 - V_2)}"
     },
     {
       "problem_id": "175",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "answer_model": "mistralai/mistral-nemo",
       "used_models": [
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 1,
+      "steps_taken": 7,
       "expected_answer": "$$a=\\frac{g}{7}$$",
-      "final_output": "\\[ a = g \\eta \\]"
+      "final_output": "g - (6η ρ₂)/(4ρ₁)"
     },
     {
       "problem_id": "176",
@@ -2398,23 +2388,24 @@
       "final_status": "success",
       "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 1,
+      "steps_taken": 8,
       "expected_answer": "\\boxed{\\sqrt{19}}",
-      "final_output": "\\sqrt{19}"
+      "final_output": "√19"
     },
     {
       "problem_id": "177",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 6,
+      "steps_taken": 2,
       "expected_answer": "\\boxed{\\frac{1}{1006}}",
       "final_output": "1/1006"
     },
@@ -2422,10 +2413,10 @@
       "problem_id": "178",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
       "steps_taken": 2,
       "expected_answer": "Oldham County",
@@ -2433,30 +2424,33 @@
     },
     {
       "problem_id": "179",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "mistralai/mistral-nemo",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "meta-llama/llama-3.3-70b-instruct",
+        "google/gemma-3-27b-it"
+      ],
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 8,
+      "steps_taken": 6,
       "expected_answer": "$$E_b = \\frac{m V_0^2}{2 \\hbar^2}$$",
-      "final_output": "E_b = m V_0^2/(2 ħ^2)"
+      "final_output": "V_0 < 0\nE_b = \\frac{m V_0^2}{2 \\hbar^2}"
     },
     {
       "problem_id": "180",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 2,
+      "steps_taken": 3,
       "expected_answer": "H",
       "final_output": "H"
     },
@@ -2464,16 +2458,11 @@
       "problem_id": "181",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "mistralai/mistral-nemo",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 7,
+      "steps_taken": 1,
       "expected_answer": "\\boxed{\\text{No such positive integer }n\\text{ exists}}.",
       "final_output": "Yes"
     },
@@ -2481,84 +2470,93 @@
       "problem_id": "182",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
       "steps_taken": 1,
       "expected_answer": "\\boxed{\\tfrac23}",
-      "final_output": "1/2"
+      "final_output": "3/16"
     },
     {
       "problem_id": "183",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.3-70b-instruct",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo"
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "G",
-      "final_output": "A"
+      "final_output": "C"
     },
     {
       "problem_id": "184",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
-      "steps_taken": 4,
+      "steps_taken": 2,
       "expected_answer": "Peter Hall",
-      "final_output": "Cannot be determined."
+      "final_output": "Ken Russell"
     },
     {
       "problem_id": "185",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
-      "used_models": [
-        "qwen/qwen-2.5-7b-instruct"
+      "answer_model": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 1,
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct"
+      ],
+      "steps_taken": 5,
       "expected_answer": "$$R_{p/o}\\to\\infty$$",
-      "final_output": "R_{p/o} = 3:4, A_{p:o} = 3:4"
+      "final_output": "1:2\nR_p/o → 0 as T → 0 K."
     },
     {
       "problem_id": "186",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct"
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 1,
+      "steps_taken": 2,
       "expected_answer": "\\boxed{120}",
-      "final_output": "The final answer is: $\\boxed{4}$"
+      "final_output": "120"
     },
     {
       "problem_id": "187",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.1-8b-instruct"
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 1,
+      "steps_taken": 6,
       "expected_answer": "$$W = n \\big( k T / 2 \\pi M \\big)^{1/2} \\exp\\big( - M v_T^2 / 2 k T \\big)$$",
-      "final_output": "$$\nW = \\frac{p}{\\sqrt{2 \\pi M k T}} \\exp\\left(-\\frac{M v_T^2}{2 k T}\\right)\n$$"
+      "final_output": ":\nWe are given the expression for W from Node 4:\nW = n / √(2πkT) ∫_{v_T}^{∞} v_x dv_x\n\nAnd the result of the integral from Node 5:\n∫_{v_T}^{∞} v_x exp(-M v_x^2/(2kT)) dv_x = \\sqrt{2} \\frac{kT}{M} \\left( \\sqrt{\\pi} - \\sqrt{\\pi} \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\n\nHowever, the integral in Node 4 is incorrect. It should be:\nW = n ∫_{v_T}^{∞} v_x P(v_x) dv_x = n ∫_{v_T}^{∞} v_x (M/(2πkT))^(1/2) exp(-M v_x^2/(2kT)) dv_x\nW = n (M/(2πkT))^(1/2) ∫_{v_T}^{∞} v_x exp(-M v_x^2/(2kT)) dv_x\n\nSubstituting the result from Node 5:\nW = n (M/(2πkT))^(1/2) * \\sqrt{2} \\frac{kT}{M} \\left( \\sqrt{\\pi} - \\sqrt{\\pi} \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n (M/(2πkT))^(1/2) * \\sqrt{2} \\frac{kT}{M} \\sqrt{\\pi} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\sqrt{\\frac{M}{2πkT}} * \\sqrt{2} \\frac{kT}{M} \\sqrt{\\pi} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\sqrt{\\frac{M}{2πkT}} * \\sqrt{2} \\frac{kT}{M} \\sqrt{\\pi} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\sqrt{\\frac{M}{2kT}} \\frac{\\sqrt{2} kT \\sqrt{\\pi}}{M \\sqrt{\\pi}} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\sqrt{\\frac{M}{2kT}} \\sqrt{\\frac{2kT}{M}} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\sqrt{\\frac{2MkT}{2MkT}} \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\nW = n \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v_T^2}{2kT}}\\right) \\right)\n\n<answer>W = n \\left( 1 - \\text{erf}\\left(\\sqrt{\\frac{M v"
     },
     {
       "problem_id": "188",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
         "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 3,
@@ -2569,56 +2567,51 @@
       "problem_id": "189",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
         "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "located in Olathe, Kansas",
-      "final_output": "University of Virginia, Charlottesville, Virginia, United States."
+      "final_output": "Davidson, North Carolina, USA"
     },
     {
       "problem_id": "190",
-      "is_correct": 1,
-      "final_status": "success",
-      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.1-8b-instruct",
-        "qwen/qwen-2.5-7b-instruct"
+        "google/gemma-3-27b-it"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "comparable to the seven Wonders of the World",
-      "final_output": "The Houston Astrodome earned its nickname as the Eighth Wonder of the World due to its pioneering features such as being the first fully enclosed, air-conditioned stadium, the first with artificial turf, and its massive scale and futuristic design at the time."
+      "final_output": "The Houston Astrodome earned subjective recognition as the Eighth Wonder of the World due to its groundbreaking, innovative design as the first fully enclosed, air-conditioned stadium, its immense scale which dwarfed previous venues, and its profound impact on the future of sports and entertainment by enabling year-round events and pioneering new fan experiences."
     },
     {
       "problem_id": "191",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
       "used_models": [
         "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "mistralai/mistral-small-3.2-24b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "paracyclist",
-      "final_output": "Soccer"
+      "final_output": "hand cycling"
     },
     {
       "problem_id": "192",
       "is_correct": 0,
       "final_status": "failure",
-      "answer_model": "mistralai/mistral-nemo",
+      "answer_model": "google/gemma-3-27b-it",
       "used_models": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-nemo",
-        "qwen/qwen3.5-flash-02-23"
+        "google/gemma-3-27b-it"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Organizations could come together to address global issues",
-      "final_output": "International"
+      "final_output": "State Council"
     },
     {
       "problem_id": "193",
@@ -2626,11 +2619,12 @@
       "final_status": "success",
       "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
+        "google/gemma-3-27b-it",
         "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Battle of Guam",
-      "final_output": "Battle of Guam."
+      "final_output": "Battle of Guam"
     },
     {
       "problem_id": "194",
@@ -2639,41 +2633,70 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct"
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo"
       ],
-      "steps_taken": 4,
+      "steps_taken": 6,
       "expected_answer": "D",
-      "final_output": "A"
+      "final_output": "G"
     },
     {
       "problem_id": "195",
       "is_correct": 1,
       "final_status": "success",
-      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "answer_model": "meta-llama/llama-3.3-70b-instruct",
       "used_models": [
-        "google/gemma-3-27b-it",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen3.5-flash-02-23"
+        "meta-llama/llama-3.3-70b-instruct"
       ],
-      "steps_taken": 3,
+      "steps_taken": 2,
       "expected_answer": "Gerard \"Gerry\" Adams",
-      "final_output": "Gerry Adams."
+      "final_output": "Gerry Adams"
     },
     {
       "problem_id": "196",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "meta-llama/llama-3.1-8b-instruct"
       ],
       "steps_taken": 3,
       "expected_answer": "impresario",
-      "final_output": "Producer."
+      "final_output": "impresario"
     },
     {
       "problem_id": "197",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "H",
+      "final_output": "H"
+    },
+    {
+      "problem_id": "198",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 11,
+      "expected_answer": "$$F_{\\text{brick}}=1.87\\times 10^{-27} \\unit{N}$$",
+      "final_output": "8.456e-13 N, along the beam direction"
+    },
+    {
+      "problem_id": "199",
       "is_correct": 0,
       "final_status": "failure",
       "answer_model": "meta-llama/llama-3.1-8b-instruct",
@@ -2681,43 +2704,9 @@
         "google/gemma-3-27b-it",
         "meta-llama/llama-3.1-8b-instruct"
       ],
-      "steps_taken": 2,
-      "expected_answer": "H",
-      "final_output": "J"
-    },
-    {
-      "problem_id": "198",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": [
-        "meta-llama/llama-3.3-70b-instruct",
-        "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
-      ],
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "mistralai/mistral-small-3.2-24b-instruct",
-        "qwen/qwen-2.5-7b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 10,
-      "expected_answer": "$$F_{\\text{brick}}=1.87\\times 10^{-27} \\unit{N}$$",
-      "final_output": "E_l = (√2) * (8.9133096 × 10⁻²⁸ kg) * (3e8 m/s)² = 4.716 × 10⁻¹¹ J or 2.623 × 10⁻²² kg * c² = 2.623 × 10⁻²² kg * (3e8)² = 2.355 × 10⁻³ J/kg * (3e8)² / (c²) = 4.716 × 10⁻¹¹ J or 2.623 × 10⁻²² kg * (3e8)² = 4.716 × 10⁻¹¹ J \nE_l = 4.716 × 10⁻¹¹ J\n7.07944 × 10⁻²⁷ J\n|F_brick| = 1.4954406 × 10⁻¹³ N, opposite to F_beam"
-    },
-    {
-      "problem_id": "199",
-      "is_correct": 0,
-      "final_status": "failure",
-      "answer_model": "google/gemma-3-27b-it",
-      "used_models": [
-        "google/gemma-3-27b-it",
-        "meta-llama/llama-3.3-70b-instruct",
-        "qwen/qwen3.5-flash-02-23"
-      ],
-      "steps_taken": 6,
+      "steps_taken": 3,
       "expected_answer": "$$p(x) = \\frac{1}{\\pi} \\sqrt{\\frac{k}{2E - k x^2}}$$",
-      "final_output": "$p(x) = \\frac{1}{\\pi \\sqrt{l^2 - x^2}}$, for $|x| ≤ l$\n$p(x) = 0$, for $|x| > l$"
+      "final_output": "\\frac{1}{\\pi \\sqrt{l^2 - x^2}}"
     },
     {
       "problem_id": "200",
@@ -2726,11 +2715,12 @@
       "answer_model": "google/gemma-3-27b-it",
       "used_models": [
         "google/gemma-3-27b-it",
-        "qwen/qwen-2.5-7b-instruct"
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen3.5-flash-02-23"
       ],
       "steps_taken": 6,
       "expected_answer": "$$\n\\varphi_2(r)=\\frac{Q}{4\\pi \\varepsilon_0 r}\n$$",
-      "final_output": "E(r) = { ρr / 3ε₀  for r ≤ R,  Q / (4πε₀r²) for r ≥ R }\nφ(r) = { Q / (4πε₀R) - (ρr²/6ε₀) for r ≤ R,  Q / (4πε₀r) for r ≥ R }"
+      "final_output": "E(r) = \\begin{cases}\n\\frac{Qr}{4\\pi\\epsilon_0 R^3} & r \\le R \\\\\n\\frac{Q}{4\\pi\\epsilon_0 r^2} & r > R\n\\end{cases}\n\\\\\n\\phi(r) = \\begin{cases}\n\\frac{Q}{8\\pi\\epsilon_0 R^3} (R^2 - r^2) & r \\le R \\\\\n\\frac{Q}{4\\pi\\epsilon_0 r} & r > R\n\\end{cases}"
     }
   ]
 }
