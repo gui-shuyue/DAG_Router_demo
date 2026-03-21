@@ -34,3 +34,8 @@ Thumbs.db
 
 data_process/
 data_process/**
+
+record/*.pt
+record/execution_records*.json
+
+.ipynb_checkpoints/
