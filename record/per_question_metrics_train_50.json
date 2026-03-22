@@ -1,0 +1,2549 @@
+{
+  "config": {
+    "dataset_path": "../data/final_evaluation_dataset_500.json",
+    "train_size": 200,
+    "use_previous_params": false,
+    "state_file": "e:\\code\\321\\DAG_Router_demo-gui\\record\\ucb_model_state_latest.pt",
+    "raw_record_file": "e:\\code\\321\\DAG_Router_demo-gui\\record\\execution_records_train_50.json",
+    "generated_at": "2026-03-21T21:39:56"
+  },
+  "summary": {
+    "total_questions": 200,
+    "correct_questions": 47,
+    "accuracy": 0.235
+  },
+  "per_question": [
+    {
+      "problem_id": "1",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Unbreakable",
+      "final_output": "The Siege"
+    },
+    {
+      "problem_id": "2",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "A",
+      "final_output": "C"
+    },
+    {
+      "problem_id": "3",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "J",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "4",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "E",
+      "final_output": "26.0"
+    },
+    {
+      "problem_id": "5",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Am Rong",
+      "final_output": "Not enough information provided for Am Rong's birthdate."
+    },
+    {
+      "problem_id": "6",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "San Luis Obispo, California",
+      "final_output": "San Luis Obispo, California"
+    },
+    {
+      "problem_id": "7",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 11,
+      "expected_answer": "$$\nB_{min} \\approx 35 \\unit{G}\n$$",
+      "final_output": "E_{min} = 29.89 \\times (m c^2) \\text{ (in Joules)}\nB_{min} = 1.6 \\times 10^{-4} \\text{ T} (or 1.6 G)\nThe Earth's surface magnetic field is sufficient."
+    },
+    {
+      "problem_id": "8",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "G",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "9",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{-2}.",
+      "final_output": "-2"
+    },
+    {
+      "problem_id": "10",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Roberta Vinci",
+      "final_output": "Not enough information provided."
+    },
+    {
+      "problem_id": "11",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "$\\boxed{8/17}$",
+      "final_output": "177100\n\\(\\frac{1}{3}\\)"
+    },
+    {
+      "problem_id": "12",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "1964",
+      "final_output": "Reynolds v. Sims"
+    },
+    {
+      "problem_id": "13",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Princess Jessica",
+      "final_output": "Maggie"
+    },
+    {
+      "problem_id": "14",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$\n\\Delta_{max} = 3 \\times 10^{-4}\\unit{cm}\n$$",
+      "final_output": "3125 nm"
+    },
+    {
+      "problem_id": "15",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen3.5-flash-02-23",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen3.5-flash-02-23"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Ann",
+      "final_output": "Marie"
+    },
+    {
+      "problem_id": "16",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "A",
+      "final_output": "D"
+    },
+    {
+      "problem_id": "17",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$E = \\frac{e \\hbar H_z}{2 m c}$$",
+      "final_output": "To solve this problem, we need to consider the evolution of the electron spin under the influence of both the static \\(H_z\\) and the time-varying \\(H_x\\) fields. Given the assumption \\(H_x/H_z \\ll 1\\), we can approximate the Hamiltonian during the period when \\(H_x\\) is being turned on as:\n\n\\[ \\hat{H}(t) = \\frac{e}{m c} \\mathbf{s} \\cdot \\mathbf{H}(t) = \\frac{e}{m c} \\left( s_x H_x(t) + s_z H_z \\right) \\]\n\nwhere \\(H_x(t) = H_x t / T\\) for \\(0 \\leq t \\leq T\\).\n\nThe initial state of the electron spin is \\(|+\\rangle = |+1/2\\rangle\\). We need to find the state at \\(t = T\\). The time evolution operator \\(U(T, 0)\\) is given by:\n\n\\[ U(T, 0) = \\exp\\left(-i \\int_0^T \\hat{H}(t) dt\\right) \\]\n\nSince \\(H_x(t)\\) changes linearly, we can split the integral into two parts:\n\n\\[ U(T, 0) = \\exp\\left(-i \\int_0^T \\frac{e}{m c} s_z H_z dt\\right) \\exp\\left(-i \\int_0^T \\frac{e}{m c} s_x H_x(t) dt\\right) \\]\n\nGiven \\(H_x(t) = H_x t / T\\), the second integral becomes:\n\n\\[ \\int_0^T \\frac{e}{m c} s_x H_x(t) dt = \\frac{e}{m c} \\frac{H_x}{T} \\int_0^T s_x t dt = \\frac{e}{m c} \\frac{H_x}{T} \\left[ \\frac{t^2}{2} s_x \\right]_0^T = \\frac{e H_x}{2 m c} T s_x \\]\n\nThe first integral is straightforward:\n\n\\[ \\int_0^T \\frac{e}{m c} s_z H_z dt = \\frac{e H_z}{m c} T s_z \\]\n\nThus, the time evolution operator becomes:\n\n\\[ U(T, 0) = \\exp\\left(-i \\frac{e H_z}{m c} T s_z\\right) \\exp\\left(-i \\frac{e H_x}{2 m c} T s_x\\right) \\]\n\nUsing the properties of Pauli matrices, we can simplify the exponentials. For small \\(H_x / H_z\\), the term involving \\(s_x\\) can be approximated using the Baker-Campbell-Hausdorff formula:\n\n\\[ \\exp\\left(-i \\frac{e H_x}{2 m c} T s_x\\right) \\approx I - i \\frac{e H_x}{2 m c} T s_x \\]\n\nTherefore, the state at \\(t = T\\) is approximately:\n\n\\[ |\\psi(T)\\rangle = \\left( I - i \\frac{e H_x}{2 m c} T s_x \\right) \\exp\\left(-i \\frac{e H_z}{m c} T s_z\\right) |+\\rangle \\]\n\nSince \\(|+\\rangle = |+1/2\\rangle\\), we have:\n\n\\[ |\\psi(T)\\rangle \\approx \\left( I - i \\frac{e H_x}{2 m c} T s_x"
+    },
+    {
+      "problem_id": "18",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "C",
+      "final_output": "N/A"
+    },
+    {
+      "problem_id": "19",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "$\\boxed{41}$",
+      "final_output": "Bill and Karl must either both be in the committee or both be excluded from the committee.\nAlice and Jane cannot both be on the committee.\n40"
+    },
+    {
+      "problem_id": "20",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "yes",
+      "final_output": "No"
+    },
+    {
+      "problem_id": "21",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "\\boxed{6}",
+      "final_output": "8"
+    },
+    {
+      "problem_id": "22",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "E",
+      "final_output": "E"
+    },
+    {
+      "problem_id": "23",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "I",
+      "final_output": "I"
+    },
+    {
+      "problem_id": "24",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{32}.",
+      "final_output": "To find the final value of the expression $(5 \\nabla 1) + (4 \\nabla 1)$, we add the results from Node 2 and Node 3:\n\n\\[(5 \\nabla 1) + (4 \\nabla 1) = 20 + 12 = 32\\]\n\nSo, the final value of the expression is $\\boxed{32}$."
+    },
+    {
+      "problem_id": "25",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$\\boxed{45/14}$",
+      "final_output": "2"
+    },
+    {
+      "problem_id": "26",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$\nans=10^{18}\n$$",
+      "final_output": "C"
+    },
+    {
+      "problem_id": "27",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 12,
+      "expected_answer": "A",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "28",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{1076}",
+      "final_output": "Let the $8 \\times 8$ grid be denoted by $a_{i,j}$, where $1 \\le i, j \\le 8$.\nWe are given that every $2 \\times 2$ square contains the letters $H, M, M, T$ in some order.\nConsider a $2 \\times 2$ square with entries $a_{i,j}, a_{i,j+1}, a_{i+1,j}, a_{i+1,j+1}$. The letters in this square must be $H, M, M, T$ in some order.\nLet's consider the first row. We can choose the first entry $a_{1,1}$ to be $H, M,$ or $T$.\nIf $a_{1,1} = H$, then $a_{1,2}$ can be $M$ or $T$.\nIf $a_{1,1} = M$, then $a_{1,2}$ can be $H, M,$ or $T$.\nIf $a_{1,1} = T$, then $a_{1,2}$ can be $H$ or $M$.\nHowever, we are given that every $2 \\times 2$ square contains $H, M, M, T$ in some order.\nConsider the $2 \\times 2$ square with entries $a_{1,1}, a_{1,2}, a_{2,1}, a_{2,2}$.\nThe possible arrangements of $H, M, M, T$ are:\n$HM MT, HMTM, HTMM, MHTM, MHMT, MTHM, MT HM, MMT H, THMM, TMHM, TMMH, TMHM$.\nLet's consider the first row. We can choose $a_{1,1}$ to be $H, M,$ or $T$.\nIf $a_{1,1} = H$, then $a_{1,2}$ can be $M$ or $T$.\nIf $a_{1,1} = M$, then $a_{1,2}$ can be $H, M,$ or $T$.\nIf $a_{1,1} = T$, then $a_{1,2}$ can be $H$ or $M$.\nConsider the first two rows and first two columns.\n$a_{1,1} a_{1,2}$\n$a_{2,1} a_{2,2}$\nThe entries must be $H, M, M, T$ in some order.\nIf $a_{1,1} = H$, then $a_{1,2}$ can be $M$ or $T$.\nIf $a_{1,2} = M$, then $a_{2,1}$ can be $M$ or $T$.\nIf $a_{2,1} = M$, then $a_{2,2} = T$.\nIf $a_{2,1} = T$, then $a_{2,2} = M$.\nIf $a_{1,2} = T$, then $a_{2,1}$ can be $M$ or $H$.\nIf $a_{2,1} = M$, then $a_{2,2} = M$. This is not possible.\nIf $a_{2,1} = H$, then $a_{2,2} = M$.\nConsider the first row. We can choose $a_{1,1}$ to be $H, M, T$.\nIf $a_{"
+    },
+    {
+      "problem_id": "29",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "E",
+      "final_output": "E"
+    },
+    {
+      "problem_id": "30",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$E_b = \\frac{m V_0^2}{2 \\hbar^2}$$",
+      "final_output": "To obtain the binding energy \\(E_b\\) in terms of \\(m\\), \\(V_0\\), and \\(\\hbar\\), we start by solving the time-independent Schrödinger equation for the given potential:\n\n\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} + V(x)\\psi(x) = E\\psi(x) \\]\n\nGiven \\(V(x) = -V_0 \\delta(x)\\) and \\(E < 0\\), we can write the Schrödinger equation as:\n\n\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} - V_0 \\delta(x) \\psi(x) = E\\psi(x) \\]\n\nThis equation must hold for \\(x \\neq 0\\) and at \\(x = 0\\). For \\(x \\neq 0\\), the equation simplifies to:\n\n\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} = E\\psi(x) \\]\n\nSince \\(E < 0\\), let \\(E = -k^2 \\hbar^2 / (2m)\\), where \\(k = \\sqrt{-2mE/\\hbar^2}\\). Thus, the equation becomes:\n\n\\[ \\frac{d^2 \\psi(x)}{dx^2} = k^2 \\psi(x) \\]\n\nThe general solution to this differential equation is:\n\n\\[ \\psi(x) = A e^{ikx} + B e^{-ikx} \\]\n\nFor \\(x < 0\\), we have:\n\n\\[ \\psi(x) = A e^{ikx} + B e^{-ikx} \\]\n\nFor \\(x > 0\\), we have:\n\n\\[ \\psi(x) = C e^{ikx} + D e^{-ikx} \\]\n\nAt \\(x = 0\\), the wavefunction must be continuous, so:\n\n\\[ \\psi(0^-) = \\psi(0^+) \\]\n\nThis gives us:\n\n\\[ A + B = C + D \\]\n\nNext, we consider the discontinuity in the first derivative due to the Dirac delta function. Integrating the Schrödinger equation from \\(-\\varepsilon\\) to \\(\\varepsilon\\) and taking the limit as \\(\\varepsilon \\to 0\\):\n\n\\[ \\int_{-\\varepsilon}^{\\varepsilon} \\left( -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} - V_0 \\delta(x) \\psi(x) \\right) dx = \\int_{-\\varepsilon}^{\\varepsilon} E \\psi(x) dx \\]\n\nThe integral involving the second derivative gives:\n\n\\[ -\\frac{\\hbar^2}{2m} \\left[ \\frac{d \\psi(x)}{dx} \\right]_{-\\varepsilon}^{\\varepsilon} = E \\left[ \\psi(x) \\right]_{-\\varepsilon}^{\\varepsilon} \\]\n\nSince \\(\\psi(x)\\) is continuous at \\(x = 0\\), the right-hand side vanishes. The left-hand side simplifies to:\n\n\\[ -\\frac{\\hbar^2}{2m} \\left( ik(C - A) - ik(B - D) \\right) = -V_0 (C - A) \\]\n\nSimplifying further:\n\n\\[ \\frac{\\hbar^2 k"
+    },
+    {
+      "problem_id": "31",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "C",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "32",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Ogallala Aquifer",
+      "final_output": "High Plains Aquifer"
+    },
+    {
+      "problem_id": "33",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$\n[\\hat v_i, \\hat v_j] = \\frac{i \\hbar q}{m^2 c} \\sum_{k=1}^3 \\varepsilon_{i j k} B_k\n$$",
+      "final_output": "[\\hat v_i, \\hat v_j] = \\frac{q}{m c} \\varepsilon_{ijk} B_k"
+    },
+    {
+      "problem_id": "34",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "\\boxed{(1,1,1,1) \\text{ and } (-1,-1,-1,-1)}",
+      "final_output": "If \\(x = y = z = w\\), the system of equations is consistent. If \\(x \\neq y\\), the system may have multiple solutions depending on the specific equations involved.\n\nThe complete set of solutions for the system of equations, based on the given conditions, is:\n1. \\(x = y = z = w\\)\n2. Multiple solutions if \\(x \\neq y\\)"
+    },
+    {
+      "problem_id": "35",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "I",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "36",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "D",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "37",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$c_1=\\frac{Nk\\ln 2}{1-\\ln 2}$$",
+      "final_output": "\\[ c_1 = \\frac{Nk \\ln 2}{2 - \\frac{2T_{1/2}}{T_1} - \\ln \\left( \\frac{T_1}{T_{1/2}} \\right)} \\]"
+    },
+    {
+      "problem_id": "38",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Arrowhead Stadium",
+      "final_output": "Municipal Stadium"
+    },
+    {
+      "problem_id": "39",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "\\boxed{5}.",
+      "final_output": "5"
+    },
+    {
+      "problem_id": "40",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Waimea Bay",
+      "final_output": "Waimea Bay"
+    },
+    {
+      "problem_id": "41",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{13}",
+      "final_output": "14"
+    },
+    {
+      "problem_id": "42",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "signing free agent Chauncey Billups",
+      "final_output": "Unknown"
+    },
+    {
+      "problem_id": "43",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "104",
+      "final_output": "Let $P(7)$ be the probability that 7 is the last number rolled.\nThe possible outcomes of a roll are 1, 2, 3, 4, 5, 6, 7, 7.\nThe probability of rolling a 7 is $\\frac{2}{8} = \\frac{1}{4}$.\nThe probability of rolling any other number is $\\frac{1}{8}$ each.\nLet $p_i$ be the probability that $i$ is the last number rolled, for $i \\in \\{1, 2, 3, 4, 5, 6, 7\\}$.\nWe want to find $p_7$.\nIf the first roll is 7, then 7 is the last number rolled. The probability of this is $\\frac{1}{4}$.\nIf the first roll is not 7, say $i \\in \\{1, 2, 3, 4, 5, 6\\}$, then we are back to the original problem. The probability of this is $\\frac{6}{8} = \\frac{3}{4}$.\nSo, $p_7 = \\frac{1}{4} + \\frac{3}{4} p_7$.\n$p_7 - \\frac{3}{4} p_7 = \\frac{1}{4}$\n$\\frac{1}{4} p_7 = \\frac{1}{4}$\n$p_7 = 1$.\nThis is incorrect.\n\nLet $P(7)$ be the probability that 7 is the last number rolled.\nThe possible outcomes are 1, 2, 3, 4, 5, 6, 7, 7.\nThe probability of rolling a 7 is $\\frac{2}{8} = \\frac{1}{4}$.\nThe probability of rolling any other number is $\\frac{1}{8}$ each.\nIf the first roll is 7, then 7 is the last number rolled. The probability of this is $\\frac{1}{4}$.\nIf the first roll is $i \\in \\{1, 2, 3, 4, 5, 6\\}$, then we are back to the original problem. The probability of this is $\\frac{6}{8} = \\frac{3}{4}$.\nSo, $P(7) = \\frac{1}{4} + \\frac{3}{4} P(7)$.\nThis is incorrect.\n\nLet $P$ be the probability that 7 is the last number rolled.\nIf the first roll is 7, then 7 is the last number rolled. The probability of this is $\\frac{2}{8} = \\frac{1}{4}$.\nIf the first roll is $i \\in \\{1, 2, 3, 4, 5, 6\\}$, then we are back to the original problem. The probability of this is $\\frac{6}{8} = \\frac{3}{4}$.\nSo, $P = \\frac{1}{4} + \\frac{3}{4} P$.\nThis is incorrect.\n\nLet $P(7)$ be the probability that 7 is the last number rolled.\nIf the first roll is 7, then 7 is the last number rolled. The probability of this is $\\frac{2}{8} = \\frac{1}{4}$.\nIf the first roll is $i \\in \\{1, 2, 3, 4, 5, 6\\}$, then we are back to the original problem."
+    },
+    {
+      "problem_id": "44",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 13,
+      "expected_answer": "J",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "45",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$$ v = 8\\times 10^{-5}\\unit{m/s}$$",
+      "final_output": "v = (N * t) / (c * m)"
+    },
+    {
+      "problem_id": "46",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "$$\n\\sigma = 100 \\unit{dyn/cm}\n$$",
+      "final_output": "1.0E-4 erg/cm^2"
+    },
+    {
+      "problem_id": "47",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{20}",
+      "final_output": "20"
+    },
+    {
+      "problem_id": "48",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "$$V_2 = \\frac{C_1}{C_2} V_1$$",
+      "final_output": "V_2 = \\frac{C_1 V_1}{C_2}"
+    },
+    {
+      "problem_id": "49",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Tea Moderna",
+      "final_output": "Neither Hänt Extra nor Tea Moderna is a Macedonian weekly publication."
+    },
+    {
+      "problem_id": "50",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$B = -\\frac{1}{\\sqrt{2}}$$",
+      "final_output": "Given the expression for \\(\\langle x \\rangle\\) from Node 2:\n\\[\n\\langle x \\rangle = A^2\\langle \\psi_0 | x | \\psi_0 \\rangle + 2AB\\langle \\psi_0 | x | \\psi_1 \\rangle + B^2\\langle \\psi_1 | x | \\psi_1 \\rangle\n\\]\nwith the constraint \\(A^2 + B^2 = 1\\), we need to find the values of \\(A\\) and \\(B\\) that maximize and minimize \\(\\langle x \\rangle\\).\n\n### Maximizing \\(\\langle x \\rangle\\):\nFrom Node 4, we found that the maximum occurs when \\(A = \\pm 1\\) and \\(B = 0\\). Therefore, the values that maximize \\(\\langle x \\rangle\\) are:\n\\[\nA = 1, B = 0 \\quad \\text{or} \\quad A = -1, B = 0\n\\]\n\n### Minimizing \\(\\langle x \\rangle\\):\nFrom Node 5, we found that the minimum occurs when \\(A = 0\\) and \\(B = \\pm 1\\). Therefore, the values that minimize \\(\\langle x \\rangle\\) are:\n\\[\nA = 0, B = 1 \\quad \\text{or} \\quad A = 0, B = -1\n\\]\n\nIn summary:\n- The values of \\(A\\) and \\(B\\) that maximize \\(\\langle x \\rangle\\) are \\(A = 1, B = 0\\) or \\(A = -1, B = 0\\).\n- The values of \\(A\\) and \\(B\\) that minimize \\(\\langle x \\rangle\\) are \\(A = 0, B = 1\\) or \\(A = 0, B = -1\\).\n\n\\(\\langle x \\rangle\\) is generally non-zero because \\(\\langle \\psi_0 | x | \\psi_1 \\rangle\\) and \\(\\langle \\psi_1 | x | \\psi_1 \\rangle\\) are generally non-zero for a harmonic oscillator."
+    },
+    {
+      "problem_id": "51",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$\nT\\approx5\\times10^3 \\unit{K}\n$$",
+      "final_output": "5800 K"
+    },
+    {
+      "problem_id": "52",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$B=2A$$",
+      "final_output": "B = A, n = 3"
+    },
+    {
+      "problem_id": "53",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$\nR \\approx 4.2 \\times 10^4 \\unit{km}\n$$",
+      "final_output": "Geostationary orbit\nGeostationary orbit\n4.216 × 10^7 m"
+    },
+    {
+      "problem_id": "54",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Nebo Zovyot",
+      "final_output": "Nebo Zovyot"
+    },
+    {
+      "problem_id": "55",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$E_n=\\big[h\\alpha (\\beta+1) n E_0^{\\beta}\\big]^{\\frac{1}{1+\\beta}}$$",
+      "final_output": "To compute the quantum energy levels \\( E_n \\) using the Bohr correspondence principle, we follow these steps:\n\n1. **Classical Frequency and Action Variable**:\n   The classical radiation frequency is given by:\n   \\[\n   \\nu_{\\text{cl}}(E) = \\alpha \\left( \\frac{E}{E_0} \\right)^{-\\beta}\n   \\]\n   The action variable \\( J \\) is related to the energy \\( E \\) by:\n   \\[\n   J = \\oint p \\, dq\n   \\]\n   For a harmonic oscillator, \\( J \\) is proportional to the energy \\( E \\), but here we consider the general case where \\( J \\) is a function of \\( E \\).\n\n2. **Quantum Transition Frequency**:\n   The quantum transition frequency between levels \\( n \\) and \\( m \\) (with \\( n > m \\)) is:\n   \\[\n   \\nu_{\\text{qu}}(n, m) = \\frac{E_n - E_m}{h}\n   \\]\n   For large quantum numbers \\( n \\) and \\( m \\), the difference \\( \\tau = n - m \\) is small compared to \\( n \\) and \\( m \\). The Bohr correspondence principle states that for large \\( n \\), the quantum transition frequency approaches the classical frequency:\n   \\[\n   \\nu_{\\text{qu}}(n, n - \\tau) \\approx \\nu_{\\text{cl}}(E_n)\n   \\]\n   For adjacent levels (\\( \\tau = 1 \\)):\n   \\[\n   \\nu_{\\text{qu}}(n, n - 1) = \\frac{E_n - E_{n-1}}{h} \\approx \\alpha \\left( \\frac{E_n}{E_0} \\right)^{-\\beta}\n   \\]\n\n3. **Energy Level Spacing**:\n   The energy difference between adjacent levels is:\n   \\[\n   E_n - E_{n-1} \\approx h \\alpha \\left( \\frac{E_n}{E_0} \\right)^{-\\beta}\n   \\]\n   For large \\( n \\), \\( E_n \\) is approximately continuous, so we can write:\n   \\[\n   \\frac{dE_n}{dn} \\approx h \\alpha \\left( \\frac{E_n}{E_0} \\right)^{-\\beta}\n   \\]\n   This is a differential equation for \\( E_n \\).\n\n4. **Solving the Differential Equation**:\n   Let \\( E_n = E_0 \\left( \\frac{n}{n_0} \\right)^{k} \\), where \\( k \\) is a constant to be determined. Substituting into the differential equation:\n   \\[\n   \\frac{dE_n}{dn} = E_0 k \\left( \\frac{n}{n_0} \\right)^{k-1} \\frac{1}{n_0} = h \\alpha \\left( \\frac{E_0 \\left( \\frac{n}{n_0} \\right)^{k}}{E_0} \\right)^{-\\beta} = h \\alpha \\left( \\frac{n}{n_0} \\right)^{-k \\beta}\n   \\]\n   Equating the exponents of \\( n \\):\n   \\[\n   k - 1 = -k \\beta \\implies k (1 + \\beta) = 1 \\implies k = \\frac{1}{1 + \\beta}\n   \\]\n   Thus:\n   \\[\n   E_n = E_0 \\left( \\frac{n}{n_0} \\right)^{\\frac{1}{1 + \\beta}}\n   \\]\n   To find \\( n_0 \\), we use the condition that for large \\( n \\), the"
+    },
+    {
+      "problem_id": "56",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$\\left. \\frac{d\\sigma}{d\\Omega} \\right|_{\\theta = 0} = \\frac{A^2 m^2 e^2}{9 \\hbar^4}$$",
+      "final_output": "To solve this problem, we need to use the first Born approximation for the scattering amplitude and then compute the differential cross section in the forward direction.\n\nThe first Born approximation for the scattering amplitude is given by\n\n$$\nf(\\theta) = -\\frac{2m}{\\hbar^2} \\int \\frac{e^{i\\mathbf{q}\\cdot\\mathbf{r}}{4\\pi r} U(\\mathbf{r}) d^3x\n$$\n\nwhere U(r) is the electrostatic potential generated by the charge density ρ(r).\n\nWe can rewrite the electrostatic potential U(r) in terms of the charge density ρ(r) using Poisson's equation:\n\n$$\n\\nabla^2 U(r) = -4\\pi \\rho(r)\n$$\n\nTaking the Fourier transform of both sides, we get\n\n$$\n\\int \\nabla^2 U(r) e^{i\\mathbf{q}\\cdot\\mathbf{r}} d^3x = -4\\pi \\int \\rho(r) e^{i\\mathbf{q}\\cdot\\mathbf{r}} d^3x\n$$\n\nUsing the fact that the Fourier transform of the Laplacian is related to the Fourier transform of the function itself, we get\n\n$$\n-q^2 \\int U(r) e^{i\\mathbf{q}\\cdot\\mathbf{r}} d^3x = -4\\pi F(q)\n$$\n\nwhere F(q) is the Fourier transform of the charge density.\n\nNow, we can substitute this expression for U(r) into the first Born approximation for the scattering amplitude:\n\n$$\nf(\\theta) = -\\frac{2m}{\\hbar^2} \\int \\frac{e^{i\\mathbf{q}\\cdot\\mathbf{r}}{4\\pi r} (-4\\pi F(q)) d^3x\n$$\n\nSimplifying, we get\n\n$$\nf(\\theta) = \\frac{2m}{\\hbar^2} F(q)\n$$\n\nThe differential cross section in the forward direction (θ = 0) is given by\n\n$$\n\\frac{d\\sigma}{d\\Omega} = |f(0)|^2\n$$\n\nSubstituting the expression for f(0), we get\n\n$$\n\\frac{d\\sigma}{d\\Omega} = \\left(\\frac{2m}{\\hbar^2}\\right)^2 |F(q)|^2\n$$\n\nNow, we need to express F(q) in terms of the second radial moment of the charge density A.\n\nUsing the definition of F(q), we can write\n\n$$\nF(q) = \\int \\rho(r) e^{i\\mathbf{q}\\cdot\\mathbf{r}} d^3x\n$$\n\nSince the charge density is spherically symmetric, we can write\n\n$$\nF(q) = \\int \\rho(r) e^{iqr \\cos\\theta} 4\\pi r^2 dr\n$$\n\nwhere θ is the angle between q and r.\n\nUsing the definition of the second radial moment A, we can write\n\n$$\nA = \\int r^2 \\rho(r) d^3x\n$$\n\nWe can rewrite this as\n\n$$\nA = \\int r^2 \\rho(r) 4\\pi r^2 dr\n$$\n\nNow, we can substitute this expression for A into the expression for F(q):\n\n$$\nF(q) = \\frac{A}{q^2}\n$$\n\nSubstituting this expression into the expression for the differential cross section, we"
+    },
+    {
+      "problem_id": "57",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Canadian professional ice hockey centre",
+      "final_output": "Center"
+    },
+    {
+      "problem_id": "58",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$\\boxed{No}$",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "59",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "I",
+      "final_output": "I"
+    },
+    {
+      "problem_id": "60",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "B",
+      "final_output": "G"
+    },
+    {
+      "problem_id": "61",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 10,
+      "expected_answer": "\\boxed{c}",
+      "final_output": "c is the greatest among a, b, c, d, e"
+    },
+    {
+      "problem_id": "62",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.3-70b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "I",
+      "final_output": "I"
+    },
+    {
+      "problem_id": "63",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.3-70b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$\n\\sigma = \\pi R^2 \\left(1 + \\frac{2 G M}{v_0^2 R}\\right)\n$$",
+      "final_output": "\\sigma = \\pi \\left(R^2 \\left(1 + \\frac{2 G M}{v_0^2 R}\\right)\\right)^2"
+    },
+    {
+      "problem_id": "64",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "$$v_{\\text{roll}} = \\frac{5}{7} v_0$$",
+      "final_output": "\\( f = \\mu_d m g \\)\nv_roll = v_0 - \\(\\mu_d g t\\)"
+    },
+    {
+      "problem_id": "65",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "USS Essex",
+      "final_output": "USS Essex (CV-9)"
+    },
+    {
+      "problem_id": "66",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$\\boxed{6}$",
+      "final_output": "2"
+    },
+    {
+      "problem_id": "67",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "C",
+      "final_output": "72"
+    },
+    {
+      "problem_id": "68",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "B",
+      "final_output": "I"
+    },
+    {
+      "problem_id": "69",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "meta-llama/llama-3.1-8b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "D",
+      "final_output": "...C..."
+    },
+    {
+      "problem_id": "70",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\frac{2^{n+1}+(-1)^{n}}{3}",
+      "final_output": "3^n"
+    },
+    {
+      "problem_id": "71",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$$E_{\\text{shift}} = \\frac{\\mu_B B}{\\hbar} g_J J_z$$",
+      "final_output": "\\Delta E = g_J \\mu_B M_J B\ng_J = 1 + \\frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}"
+    },
+    {
+      "problem_id": "72",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "2",
+      "final_output": "185042"
+    },
+    {
+      "problem_id": "73",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{6}",
+      "final_output": "Let the bug start at vertex $A$. A cube has 8 vertices and 12 edges. A healthy path starts and ends at the same vertex, uses no edge multiple times, and uses at most two edges adjacent to any particular face.\nSince the path starts and ends at the same vertex, the path must be a cycle.\nLet's consider the degree of each vertex. Each vertex has degree 3.\nA healthy path is a cycle that starts and ends at the same vertex, uses no edge multiple times, and uses at most two edges adjacent to any particular face.\nWe are looking for the number of cycles that start and end at a given vertex, use no edge multiple times, and use at most two edges adjacent to any particular face.\n\nConsider a path of length 3. This is a triangle. There are no triangles in a cube.\nConsider a path of length 4. This is a square. There are 6 faces, and each face has 4 cycles of length 4. So there are 6 cycles of length 4.\nConsider a path of length 5.\nConsider a path of length 6. This is a hexagon.\nThe bug starts at a corner, say $A$.\nThe bug can travel along the edges of the cube.\nA healthy path must return to the starting vertex.\nThe path must not use any edge more than once.\nThe path must use at most two edges adjacent to any particular face.\n\nLet's consider the possible paths.\nA path of length 4 is a square. There are 6 faces, so there are 6 such paths.\nA path of length 6 can be found by going around a square and then taking two more edges.\nConsider a path of length 6. We can go around a square, and then go to an adjacent vertex and back.\nThere are 6 faces. For each face, there are 4 cycles of length 4.\nFor each vertex, there are 3 edges.\nLet's consider the vertex $A$. The adjacent vertices are $B, C, D$.\nWe can go $A \\to B \\to C \\to D \\to A$. This is a path of length 4.\nWe can go $A \\to B \\to E \\to A$. This is a path of length 3.\nWe can go $A \\to B \\to C \\to F \\to E \\to A$. This is a path of length 6.\nWe can go $A \\to B \\to C \\to G \\to H \\to A$. This is a path of length 6.\n\nThere are 6 cycles of length 4.\nThere are 12 cycles of length 6.\nTotal number of healthy paths is 6 + 12 = 18.\nHowever, we are looking for the number of healthy paths starting at a specific corner.\nThere are 6 cycles of length 4.\nThere are 3 cycles of length 6.\nTotal number of healthy paths is 6 + 3 = 9.\n\nThe number of healthy paths is 6 + 6 = 12.\nThere are 6 cycles of length 4.\nThere are 6 cycles of length 6.\nTotal number of healthy paths is 6 + 6 = 12.\n\nThere are 6 cycles of length 4.\nThere are 6 cycles of length 6.\nTotal number of healthy paths is 6 + 6 = 12.\n\nThere are 6 cycles of length 4.\nThere are 6 cycles of"
+    },
+    {
+      "problem_id": "74",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "\\boxed{2004}",
+      "final_output": "2004"
+    },
+    {
+      "problem_id": "75",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Royal Governor Lord Dunmore",
+      "final_output": "Thomas Gage"
+    },
+    {
+      "problem_id": "76",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "J",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "77",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Keith Bostic",
+      "final_output": "Jerry Glanville"
+    },
+    {
+      "problem_id": "78",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{3633}.",
+      "final_output": "5000"
+    },
+    {
+      "problem_id": "79",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Erinsborough",
+      "final_output": "Erinsborough"
+    },
+    {
+      "problem_id": "80",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Shanghai",
+      "final_output": "Shanghai"
+    },
+    {
+      "problem_id": "81",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$\\boxed{\\frac{1}{2n}+\\frac{1}{3n}+\\frac{1}{6n}}$.",
+      "final_output": "Decompose $\\frac{1}{n}$ into other unit fractions by summing its divisors, each divided by $n$."
+    },
+    {
+      "problem_id": "82",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Wendell Berry",
+      "final_output": "Wendell Berry"
+    },
+    {
+      "problem_id": "83",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{9}",
+      "final_output": "15"
+    },
+    {
+      "problem_id": "84",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$\\boxed{96}$",
+      "final_output": "144"
+    },
+    {
+      "problem_id": "85",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Charmed",
+      "final_output": "Charmed"
+    },
+    {
+      "problem_id": "86",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "B",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "87",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 10,
+      "expected_answer": "D",
+      "final_output": "D"
+    },
+    {
+      "problem_id": "88",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "G",
+      "final_output": "G"
+    },
+    {
+      "problem_id": "89",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "44",
+      "final_output": "0"
+    },
+    {
+      "problem_id": "90",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "Pavel Sergeyevich Alexandrov",
+      "final_output": "Neither"
+    },
+    {
+      "problem_id": "91",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "A",
+      "final_output": "A, D"
+    },
+    {
+      "problem_id": "92",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "E",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "93",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "J",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "94",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{\\frac{4035^{\\frac{1}{1024}}-1}{2}}",
+      "final_output": "Let $z_0 = z$ and $z_{n+1} = 2z_n^2 + 2z_n$ for $n \\geq 0$. We are given that $z_{10} = 2017$. We want to find the minimum possible value of $|z|$.\nWe can rewrite the recurrence relation as $z_{n+1} = 2z_n(z_n+1)$.\nLet $w_n = z_n + 1$. Then $z_n = w_n - 1$, so $w_{n+1} - 1 = 2(w_n - 1)w_n = 2w_n^2 - 2w_n$.\nThus, $w_{n+1} = 2w_n^2 - 2w_n + 1$.\nWe have $z_{10} = 2017$, so $w_{10} = z_{10} + 1 = 2018$.\nWe want to find $z_0 = z = w_0 - 1$.\nWe have $w_{n+1} = 2w_n^2 - 2w_n + 1$.\nWe can rewrite this as $w_{n+1} - 1 = 2w_n(w_n - 1)$.\nLet $v_n = w_n - 1$. Then $v_{n+1} = 2(v_n+1)v_n$.\nSince $w_{10} = 2018$, we have $v_{10} = w_{10} - 1 = 2017$.\nWe want to find $v_0 = w_0 - 1 = z$.\nWe have $v_{n+1} = 2(v_n+1)v_n$.\n$v_9 = \\frac{v_{10}}{2(v_9+1)} = \\frac{2017}{2(v_9+1)}$.\n$2v_9^2 + 2v_9 - 2017 = 0$.\n$v_9 = \\frac{-2 \\pm \\sqrt{4 - 4(2)(-2017)}}{4} = \\frac{-2 \\pm \\sqrt{4 + 16136}}{4} = \\frac{-2 \\pm \\sqrt{16140}}{4} = \\frac{-1 \\pm \\sqrt{4035}}{2}$.\nSince $v_n$ is real, we must have $v_9 = \\frac{-1 + \\sqrt{4035}}{2} \\approx \\frac{-1 + 63.52}{2} \\approx 31.26$.\nWe want to minimize $|z| = |v_0|$.\nWe have $v_{n+1} = 2v_n(v_n+1)$.\nIf $v_n$ is small, then $v_{n+1} \\approx 2v_n$.\nThen $v_n \\approx 2^n v_0$.\n$v_{10} \\approx 2^{10} v_0 = 1024 v_0$.\n$2017 \\approx 1024 v_0$, so $v_0 \\approx \\frac{20"
+    },
+    {
+      "problem_id": "95",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$x_{(1)}=A' \\sin(\\omega t)+\\frac{\\lambda A^2}{\\omega^2}\\left[\\frac{1}{2}-\\frac{2}{3} \\cos(\\omega t)+\\frac{1}{6} \\cos(2 \\omega t)\\right]$$",
+      "final_output": "Here's the solution to the problem, following the perturbative approach outlined:\n\nFirst, let's find the equation of motion:\n\n$$m \\frac{d^2 x}{d t^2} = -\\frac{d}{dx} \\left(\\frac{k x^2}{2} - \\frac{m \\lambda x^3}{3}\\right) = -kx + m \\lambda x^2$$\n\n**Zeroth Order (λ = 0):**\n\n$$m \\frac{d^2 x_{(0)}}{d t^2} = -kx_{(0)}$$\n$$\\frac{d^2 x_{(0)}}{d t^2} + \\omega^2 x_{(0)} = 0$$\nThe solution is given as $x_{(0)} = A \\sin(\\omega t + \\varphi)$.  Since $x(0) = 0$, we have $A \\sin(\\varphi) = 0$, which implies $\\varphi = 0$ (assuming $A \\neq 0$). Thus, $x_{(0)} = A \\sin(\\omega t)$.\n\n**First Order (O(λ)):**\n\nWe have $x_{(1)} = x_{(0)} + \\lambda x_1$, so $x = A \\sin(\\omega t) + \\lambda x_1$.  Substituting this into the equation of motion:\n\n$$m \\frac{d^2}{dt^2} (A \\sin(\\omega t) + \\lambda x_1) = -k(A \\sin(\\omega t) + \\lambda x_1) + m \\lambda (A \\sin(\\omega t) + \\lambda x_1)^2$$\n\n$$m \\omega^2 A \\sin(\\omega t) + m \\lambda \\frac{d^2 x_1}{dt^2} = -kA \\sin(\\omega t) - k \\lambda x_1 + m \\lambda (A^2 \\sin^2(\\omega t) + 2A \\lambda \\sin(\\omega t) x_1 + \\lambda^2 x_1^2)$$\n\nSince $m \\omega^2 = k$, the first term cancels with the second term on the right-hand side.  We are left with:\n\n$$m \\lambda \\frac{d^2 x_1}{dt^2} = -k \\lambda x_1 + m \\lambda (A^2 \\sin^2(\\omega t) + 2A \\lambda \\sin(\\omega t) x_1 + \\lambda^2 x_1^2)$$\n\nDividing by $\\lambda$:\n\n$$m \\frac{d^2 x_1}{dt^2} = -k x_1 + m A^2 \\sin^2(\\omega t) + 2mA \\lambda \\sin(\\omega t) x_1 + m \\lambda^2 x_1^2$$\n\nWe can ignore terms of $O(\\lambda^2)$ and higher.  Thus:\n\n$$m \\frac{d^2 x_1}{dt^2} + k x_1 = m A^2 \\sin^2(\\omega t)$$\n\nNow, we solve for $x_1$.  We are given a particular integral of the form $x_1^p = B + C \\cos(2 \\omega t)$.  Then $\\frac{d x_1^p}{dt} = -2 \\omega C \\sin(2 \\omega t)$ and $\\frac{d^2 x_1^p}{dt^2} = -4 \\omega^2 C \\cos("
+    },
+    {
+      "problem_id": "96",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "$$N_{attractive}=1$$",
+      "final_output": "N_repulsive = 3\nN_attractive = 1"
+    },
+    {
+      "problem_id": "97",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "D",
+      "final_output": "The furniture store will recover $25,000 from the employee."
+    },
+    {
+      "problem_id": "98",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "E",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "99",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "no",
+      "final_output": "No"
+    },
+    {
+      "problem_id": "100",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "A",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "101",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "C",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "102",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 14,
+      "expected_answer": "$$ r \\cosh \\Big( \\sqrt{ \\frac{m k}{b^2} - 1 } (\\theta - \\theta_0) \\Big) = r_0$$",
+      "final_output": "r(1 + (k/(2mω))^2 * cos(2theta) - (mω/k)^2 * cosh(2theta)) = r_0"
+    },
+    {
+      "problem_id": "103",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Oregon",
+      "final_output": "Oregon"
+    },
+    {
+      "problem_id": "104",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Awake",
+      "final_output": "Robin Hood (2010)"
+    },
+    {
+      "problem_id": "105",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "F",
+      "final_output": "200 m/s"
+    },
+    {
+      "problem_id": "106",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{\\frac{1}{3}}",
+      "final_output": "\\(\\frac{1}{9}\\)"
+    },
+    {
+      "problem_id": "107",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Bill Murray",
+      "final_output": "The information provided does not specify a particular episode of 'The Hard Easy'. Therefore, it is not possible to determine who the younger brother is among the guest stars without additional context."
+    },
+    {
+      "problem_id": "108",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "Mondelez International, Inc.",
+      "final_output": "No information about the company selling the 'Handi-Snacks' product line or its location in Illinois is available. Please provide more details to confirm the company's location."
+    },
+    {
+      "problem_id": "109",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "\\boxed{\\frac{1}{2}}.",
+      "final_output": "\\(\\frac{1}{5}\\)\n\\(\\frac{1}{2}\\)\n\\(\\frac{1}{2}\\)\nE"
+    },
+    {
+      "problem_id": "110",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$\\boxed{35}$.",
+      "final_output": "2042"
+    },
+    {
+      "problem_id": "111",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "A",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "112",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{563}",
+      "final_output": "563"
+    },
+    {
+      "problem_id": "113",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "I",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "114",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Lush Ltd.",
+      "final_output": "Insufficient information to determine the retailer."
+    },
+    {
+      "problem_id": "115",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "$$T=\\frac{27}{128}$$",
+      "final_output": "\\(\\frac{27}{128}\\)"
+    },
+    {
+      "problem_id": "116",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "no",
+      "final_output": "No"
+    },
+    {
+      "problem_id": "117",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "$$P=\\frac{1}{2}$$",
+      "final_output": "\\(\\frac{1}{8}\\)"
+    },
+    {
+      "problem_id": "118",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "The Conversation",
+      "final_output": "The Citizen"
+    },
+    {
+      "problem_id": "119",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "$$\nv_{max} \\approx 12.2 \\unit{m/s}\n$$",
+      "final_output": "12.25 m/s"
+    },
+    {
+      "problem_id": "120",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "J",
+      "final_output": "J"
+    },
+    {
+      "problem_id": "121",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Langston Hughes",
+      "final_output": "Langston Hughes"
+    },
+    {
+      "problem_id": "122",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "$$\n\\sigma(\\theta) = \\frac{3 \\varepsilon_0 (\\varepsilon - \\varepsilon_0)}{\\varepsilon + 2 \\varepsilon_0} E_0 \\cos \\theta\n$$",
+      "final_output": "A magnetic field is produced, with field lines forming closed loops around the rotating sphere."
+    },
+    {
+      "problem_id": "123",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$E\\approx 1.92\\times 10^3\\unit{GeV}$$",
+      "final_output": "7875.5 GeV"
+    },
+    {
+      "problem_id": "124",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Dan Lin, Roy Lee, Phil Lord and Christopher Miller",
+      "final_output": "Not specified"
+    },
+    {
+      "problem_id": "125",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "a family member",
+      "final_output": "No specific entity or concept is mentioned as being heralded by the VMAQT-1 logo."
+    },
+    {
+      "problem_id": "126",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "E",
+      "final_output": "E. diaphragm, parietal pleura, pericardium and heart."
+    },
+    {
+      "problem_id": "127",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "3",
+      "final_output": "To find the smallest positive integer \\( n \\) such that the last four digits of the sum \\( a_1! + a_2! + \\cdots + a_n! \\) are 2001, we need to consider the properties of factorials and their last four digits.\n\nFirst, observe the last four digits of factorials for numbers up to 15:\n- \\( 1! = 1 \\)\n- \\( 2! = 2 \\)\n- \\( 3! = 6 \\)\n- \\( 4! = 24 \\)\n- \\( 5! = 120 \\)\n- \\( 6! = 720 \\)\n- \\( 7! = 5040 \\)\n- \\( 8! = 40320 \\)\n- \\( 9! = 362880 \\)\n- \\( 10! = 3628800 \\)\n- \\( 11! = 39916800 \\)\n- \\( 12! = 479001600 \\)\n- \\( 13! = 6227020800 \\)\n- \\( 14! = 87178291200 \\)\n- \\( 15! = 1307674368000 \\)\n\nFor \\( k \\geq 10 \\), \\( k! \\) ends in at least four zeros, so we only need to consider the factorials of numbers from 1 to 9.\n\nWe need to find a combination of these factorials that sum to a number ending in 2001. Let's start by checking the sum of the factorials of the smallest numbers:\n\n- \\( 1! + 2! + 3! + 4! + 5! + 6! + 7! + 8! + 9! = 1 + 2 + 6 + 24 + 120 + 720 + 5040 + 40320 + 362880 = 408813 \\)\n\nThe last four digits of 408813 are 813, which is not 2001. We need to adjust the sum to get the last four digits as 2001.\n\nLet's try to find a smaller combination:\n- \\( 8! + 3! + 2! + 1! = 40320 + 6 + 2 + 1 = 40329 \\)\n\nThe last four digits of 40329 are 329, which is not 2001. We need to add more factorials to get closer to 2001.\n\n- \\( 9! + 2! + 1! = 362880 + 2 + 1 = 362883 \\)\n\nThe last four digits of 362883 are 883, which is not 2001. We need to add more factorials.\n\n- \\( 8! + 7! + 2! + 1! = 40320 + 5040 + 2 + 1 = 45363 \\)\n\nThe last four digits of 45363 are 363, which is not 2001. We need to add more factorials.\n\n- \\("
+    },
+    {
+      "problem_id": "128",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{28}",
+      "final_output": "To determine the distinct heights of the towers that Augustin can make with his six \\(1 \\times 2 \\times \\pi\\) bricks, we need to consider the possible orientations for each brick. Each brick can be oriented in three different ways, affecting its height contribution to the tower:\n\n1. Orientation 1: Height = 1\n2. Orientation 2: Height = 2\n3. Orientation 3: Height = \\(\\pi\\)\n\nSince each brick can independently be in any of these three orientations, the total height of the tower is the sum of the heights of the individual bricks. The minimum height occurs when all bricks are in the shortest orientation (height = 1), which gives a total height of \\(6 \\times 1 = 6\\).\n\nThe maximum height occurs when all bricks are in the tallest orientation (height = \\(\\pi\\)), which gives a total height of \\(6 \\times \\pi = 6\\pi\\).\n\nTo find the distinct possible heights, we need to consider all combinations of the three orientations. Let's denote the number of bricks in the shortest orientation by \\(a\\), in the middle orientation by \\(b\\), and in the tallest orientation by \\(c\\). We have the equation:\n\\[ a + b + c = 6 \\]\nand the height of the tower is:\n\\[ h = a \\cdot 1 + b \\cdot 2 + c \\cdot \\pi \\]\n\nWe need to find all possible values of \\(h\\). Since \\(a\\), \\(b\\), and \\(c\\) are non-negative integers, we can vary \\(a\\) from 0 to 6, and for each value of \\(a\\), vary \\(b\\) from 0 to \\(6 - a\\), and then \\(c\\) is determined as \\(c = 6 - a - b\\).\n\nLet's list the possible heights:\n- If \\(a = 6\\), \\(b = 0\\), \\(c = 0\\), then \\(h = 6 \\times 1 + 0 \\times 2 + 0 \\times \\pi = 6\\).\n- If \\(a = 5\\), \\(b = 1\\), \\(c = 0\\), then \\(h = 5 \\times 1 + 1 \\times 2 + 0 \\times \\pi = 7\\).\n- If \\(a = 4\\), \\(b = 2\\), \\(c = 0\\), then \\(h = 4 \\times 1 + 2 \\times 2 + 0 \\times \\pi = 8\\).\n- If \\(a = 3\\), \\(b = 3\\), \\(c = 0\\), then \\(h = 3 \\times 1 + 3 \\times 2 + 0 \\times \\pi = 9\\).\n- If \\(a = 2\\), \\(b = 4\\), \\(c = 0\\), then \\(h = 2 \\times 1 + 4 \\times 2 + 0 \\times \\pi = 10\\).\n- If \\(a = 1\\), \\(b = 5\\), \\(c = 0\\), then \\(h = 1 \\times 1 + 5 \\times 2 + 0 \\times \\pi = 11\\).\n- If \\(a = 0\\), \\(b = 6\\), \\(c = 0\\), then \\(h = 0 \\times 1 + 6 \\times 2 + 0 \\times \\pi = 12\\).\n\n- If \\(a = 0\\), \\(b ="
+    },
+    {
+      "problem_id": "129",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "I",
+      "final_output": "I. Railroad construction"
+    },
+    {
+      "problem_id": "130",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "D",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "131",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "meta-llama/llama-3.1-8b-instruct"
+      ],
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 11,
+      "expected_answer": "$\\boxed{0}$",
+      "final_output": "3\n0"
+    },
+    {
+      "problem_id": "132",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "final_output": "Max Martin, Shellback, Ryan Tedder, Greg Kurstin, Steve Mac, Wayne Hector, Ali Payami, Iain James, Noel Zancanella, Mattias Larsson, Robin Fredriksson, Julia Michaels, Justin Tranter, James Napier, Oscar Holter, Jonny Lattimer, Chris Braide, Daniel Lopatin"
+    },
+    {
+      "problem_id": "133",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "$$\\frac{p(0)}{p(R_0)} = \\exp\\left(-\\frac{M R_0 g}{2 R T}\\right)$$",
+      "final_output": "p(0)/p(R_0) = exp(-(M * g * R_0) / (2 * R * T))"
+    },
+    {
+      "problem_id": "134",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "José Echegaray y Eizaguirre",
+      "final_output": "José Echegaray y Eizaguirre"
+    },
+    {
+      "problem_id": "135",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 13,
+      "expected_answer": "A",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "136",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{592/969}.",
+      "final_output": "Given the summand from the partial fraction decomposition:\n\\[ \\frac{n^2 + n + 1}{n(n-1)(n+1)(n+2)} = -\\frac{1}{2n} + \\frac{1}{2(n-1)} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} \\]\n\nWe aim to express this as \\( f(n) - f(n+k) \\). From the decomposition, we can see that:\n\\[ \\frac{n^2 + n + 1}{n(n-1)(n+1)(n+2)} = \\frac{1}{2(n-1)} - \\frac{1}{2n} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} \\]\n\nWe can group the terms to identify \\( f(n) \\):\n\\[ \\frac{1}{2(n-1)} - \\frac{1}{2n} + \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} = \\left( \\frac{1}{2(n-1)} - \\frac{1}{2n} \\right) + \\left( \\frac{1}{2(n+1)} - \\frac{1}{2(n+2)} \\right) \\]\n\nThus, we can set:\n\\[ f(n) = \\frac{1}{2(n-1)} - \\frac{1}{2n} \\]\nand\n\\[ f(n+2) = \\frac{1}{2n} - \\frac{1}{2(n+2)} \\]\n\nSo the summand can be written as:\n\\[ f(n) - f(n+2) \\]\n\nNow, applying the telescoping sum property to the sum:\n\\[ \\sum_{n=2}^{17} \\left( f(n) - f(n+2) \\right) \\]\n\nThe intermediate terms will cancel out, leaving:\n\\[ f(2) + f(3) - f(19) - f(18) \\]\n\nSubstituting the expressions for \\( f(n) \\):\n\\[ \\left( \\frac{1}{2(2-1)} - \\frac{1}{2 \\cdot 2} \\right) + \\left( \\frac{1}{2(3-1)} - \\frac{1}{2 \\cdot 3} \\right) - \\left( \\frac{1}{2 \\cdot 18} - \\frac{1}{2 \\cdot 19} \\right) - \\left( \\frac{1}{2 \\cdot 17} - \\frac{1}{2 \\cdot 18} \\right) \\]\n\nSimplifying each term:\n\\[ \\left( \\frac{1}{2} - \\frac{1}{4} \\right) + \\left( \\frac{1}{4} - \\frac{1}{6} \\right) - \\left( \\frac{1}{36} - \\frac{1}{38} \\right) - \\left( \\frac{1}{34} - \\frac{1}{36} \\right) \\]\n\nMost terms cancel out:\n\\[ \\frac{1}{2} - \\frac{1}{36} - \\frac{1}{34} \\]\n\nCombining these fractions:\n\\[ \\frac{1}{2} - \\left( \\frac{1}{36} + \\frac{1}{34} \\right) \\]\n\nFinding a common denominator for the last two terms:\n\\[ \\frac{1"
+    },
+    {
+      "problem_id": "137",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "\\boxed{5/9}",
+      "final_output": "5/9"
+    },
+    {
+      "problem_id": "138",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "4044",
+      "final_output": "4043"
+    },
+    {
+      "problem_id": "139",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 8,
+      "expected_answer": "B",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "140",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "B",
+      "final_output": "F"
+    },
+    {
+      "problem_id": "141",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "\\boxed{26}.",
+      "final_output": "26"
+    },
+    {
+      "problem_id": "142",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 5,
+      "expected_answer": "16",
+      "final_output": "16"
+    },
+    {
+      "problem_id": "143",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Greenwich Village, New York City",
+      "final_output": "Toronto"
+    },
+    {
+      "problem_id": "144",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "\\boxed{1,\\frac{1}{2}+\\frac{i\\sqrt{3}}{2},\\frac{1}{2}-\\frac{i\\sqrt{3}}{2},\\frac{3}{2}+\\frac{i\\sqrt{3}}{2},\\frac{3}{2}-\\frac{i\\sqrt{3}}{2}}",
+      "final_output": "1, 3"
+    },
+    {
+      "problem_id": "145",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{3025}",
+      "final_output": "To determine the number of functions \\( f: \\{1, 2, \\ldots, 9\\} \\rightarrow \\{1, 2, \\ldots, 9\\} \\) such that \\( f^5(x) = x \\) for all \\( x \\in \\{1, 2, \\ldots, 9\\} \\), we analyze the possible cycle structures of the function \\( f \\).\n\n1. **Cycle Decomposition**: The condition \\( f^5(x) = x \\) implies that the cycles in the permutation induced by \\( f \\) must have lengths that divide 5. Since 5 is a prime number, the only possible cycle lengths are 1 and 5.\n\n2. **Possible Cycle Structures**:\n   - **Fixed Points (Cycle Length 1)**: These are elements \\( x \\) such that \\( f(x) = x \\).\n   - **5-Cycles (Cycle Length 5)**: These are cycles of length 5 where \\( f^5(x) = x \\).\n\n3. **Counting Functions**:\n   - **Fixed Points**: For each of the 9 elements, it can either be a fixed point or part of a 5-cycle.\n   - **5-Cycles**: The number of ways to partition the 9 elements into 5-cycles and fixed points is constrained by the fact that 9 must be expressible as \\( 5k + m \\), where \\( k \\) is the number of 5-cycles and \\( m \\) is the number of fixed points. The possible partitions are:\n     - \\( 5 \\times 1 + 4 \\times 1 \\) (one 5-cycle and four fixed points)\n     - \\( 1 \\times 1 + 8 \\times 1 \\) (one 5-cycle and eight fixed points) — but this is not possible since \\( 5 + 4 = 9 \\) is the only valid partition.\n\n   However, upon closer inspection, the only feasible partition is:\n   - **One 5-cycle and four fixed points**: This is the only way to partition 9 elements into cycles of length 5 and fixed points.\n\n4. **Calculating the Number of Functions**:\n   - **Choosing the 5-cycle**: There are \\( \\binom{9}{5} \\) ways to choose 5 elements out of 9 to form the 5-cycle. The number of distinct 5-cycles on these 5 elements is \\( 4! = 24 \\) (since a 5-cycle can be rotated in 5 ways, but we consider it as one cycle, hence \\( (5-1)! = 24 \\)).\n   - **Assigning Fixed Points**: The remaining 4 elements must be fixed points, and there's only 1 way to assign them as fixed points.\n\n   Therefore, the total number of such functions is:\n   \\[\n   \\binom{9}{5} \\times 4! \\times 1 = 126 \\times 24 = 3024\n   \\]\n\nHowever, let's verify the calculation:\n\n- **Number of ways to choose 5 elements out of 9**: \\( \\binom{9}{5} = 126 \\).\n- **Number of distinct 5-cycles on these 5 elements**: \\( 4! = 24 \\).\n- **Number of ways to assign the remaining 4 elements as fixed points**: \\( 1 \\).\n\nThus, the total number of functions is:\n\\[\n126 \\times 24 = 3024\n\\]\n\nBut wait, there's another possible partition:\n- **Two 5-c"
+    },
+    {
+      "problem_id": "146",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$\\omega_f=\\frac{\\omega_i}{3\\sqrt{2}}$$",
+      "final_output": "\\(\\omega_f = \\omega_i \\left(\\frac{1}{2}\\right)^{\\frac{1}{3}}\\)"
+    },
+    {
+      "problem_id": "147",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Richmond",
+      "final_output": "Richmond River"
+    },
+    {
+      "problem_id": "148",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "\\boxed{256}",
+      "final_output": "256"
+    },
+    {
+      "problem_id": "149",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Sonic",
+      "final_output": "Bernadette"
+    },
+    {
+      "problem_id": "150",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$T_m=3500\\unit{^\\circ C}$$",
+      "final_output": "B"
+    },
+    {
+      "problem_id": "151",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "I",
+      "final_output": "I"
+    },
+    {
+      "problem_id": "152",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Erika Jayne",
+      "final_output": "Unable to determine who was born first without the birthdates."
+    },
+    {
+      "problem_id": "153",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 9,
+      "expected_answer": "$\\boxed{12:13}$",
+      "final_output": "480:613"
+    },
+    {
+      "problem_id": "154",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$m=m_0\\sqrt{\\frac{c-v}{c+v}}$$",
+      "final_output": "m = m_0 \\sqrt{\\frac{1 + \\beta}{1 - \\beta}}"
+    },
+    {
+      "problem_id": "155",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "$$u=\\frac{c+n v}{n+\\frac{v}{c}}$$",
+      "final_output": "u' = \\(\\frac{c}{n}\\)"
+    },
+    {
+      "problem_id": "156",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "E",
+      "final_output": "B"
+    },
+    {
+      "problem_id": "157",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$$\n\\vec{E}_2=\\vec{E}_0+\\frac{\\varepsilon-\\varepsilon_0}{\\varepsilon+2\\varepsilon_0}R^3\\left[\\frac{3\\left(\\vec{E}_0\\cdot\\vec{r}\\right)\\vec{r}}{r^5}-\\frac{\\vec{E}_0}{r^3}\\right]\n$$",
+      "final_output": "The electric field inside the sphere is given by:\n\n\\[\n\\vec{E}_1(\\vec{r}) = \\left( \\frac{\\varepsilon}{\\varepsilon + 1} E_0 \\right) \\hat{z}\n\\]\n\nThe electric field outside the sphere is given by:\n\n\\[\n\\vec{E}_2(\\vec{r}) = \\frac{E_0}{\\varepsilon_0} \\left( \\varepsilon - 1 \\right) \\frac{R^3}{r^3} \\hat{z} + E_0 \\hat{z}\n\\]"
+    },
+    {
+      "problem_id": "158",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$P_{-}(t)=\\frac{1}{2}\\left(1-\\sin\\frac{\\mu_0 B t}{\\hbar}\\right)$$",
+      "final_output": "Here's the solution:\n\nThe Hamiltonian for a spin-1/2 particle in a magnetic field B along the x-axis is given by:\n\nH = -μ ⋅ B = -μ_0 s_x B = - (μ_0 B / 2) σ_x\n\nIn the (s², s_x) basis, the spin operators are:\n\ns² = (ħ²/4) * I, where I is the 2x2 identity matrix.\ns_x = (ħ/2) σ_x = (ħ/2) * [[1, 0], [0, -1]]\ns_y = (ħ/2) σ_y = (ħ/2) * [[0, -i], [i, 0]]\ns_z = (ħ/2) σ_z = (ħ/2) * [[1, 0], [0, -1]]\n\nThe time evolution of the spinor is governed by the time-dependent Schrödinger equation:\n\niħ d/dt ψ(t) = H ψ(t)\n\nSince H = - (μ_0 B / 2) σ_x, the equation becomes:\n\niħ d/dt ψ(t) = - (μ_0 B / 2) s_x ψ(t)\n\nThe initial condition is s_z = +1/2. In the (s², s_x) basis, the eigenvector corresponding to s_z = +1/2 is (1, 0)^T.  Therefore, ψ(0) = (1, 0)^T.\n\nThe solution to the time-dependent Schrödinger equation is:\n\nψ(t) = exp(-i H t / ħ) ψ(0) = exp(i (μ_0 B / 2ħ) s_x t) (1, 0)^T\n\nSince s_x = (ħ/2) σ_x, we have:\n\nψ(t) = exp(i (μ_0 B / 2ħ) (ħ/2) σ_x t) (1, 0)^T = exp(i (μ_0 B / 4) σ_x t) (1, 0)^T\n\nexp(i (μ_0 B / 4) σ_x t) = cos((μ_0 B / 4) t) I + i sin((μ_0 B / 4) t) σ_x = [[cos(θ), -i sin(θ)], [-i sin(θ), cos(θ)]] where θ = (μ_0 B / 4) t\n\nψ(t) = [[cos(θ), -i sin(θ)], [-i sin(θ), cos(θ)]] [[1], [0]] = [cos(θ), -i sin(θ)]^T\n\nNow, we want to find the probabilities of measuring s_y = ±1/2.  The eigenvectors of s_y are (1/√2, 1/√2)^T and (1/√2, -1/√2)^T.\n\nP(s_y = +1/2) = |< (1/√2, 1/√2) | ψ(t) >|² = |(1/√2) cos(θ) + (1/√2) (-i sin(θ))|^2 = |(cos(θ) - i sin(θ)) / √2|^2 = (cos²(θ) + sin²(θ)) / 2 = 1/2\n\nP(s_y = -1"
+    },
+    {
+      "problem_id": "159",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "1999",
+      "final_output": "1994"
+    },
+    {
+      "problem_id": "160",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Sacred Planet",
+      "final_output": "Release dates not provided."
+    },
+    {
+      "problem_id": "161",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "A",
+      "final_output": "C, D, E, F, G, H, I"
+    },
+    {
+      "problem_id": "162",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "A",
+      "final_output": "To solve this problem, we need to use the given heats of reaction and the heat of combustion to find the heat of hydrogenation and the heat of formation of ethylcyclohexane (ethylbenzene).\n\n### Part (a): Heat of Hydrogenation of Styrene to Ethylbenzene\n\nThe heat of hydrogenation can be calculated using the difference in heats of formation between the products and reactants. Styrene (C_8H_8) and ethylcyclohexane (C_8H_16) are related by the following reaction:\n\n\\[ \\text{C}_8\\text{H}_8(\\text{l}) + 4\\text{H}_2(\\text{g}) \\rightarrow \\text{C}_8\\text{H}_16(\\text{l}) \\]\n\nThe heat of hydrogenation (\\(\\Delta H_{\\text{hydrogenation}}\\)) is the difference between the heat of formation of ethylcyclohexane and the heat of formation of styrene plus the heat of formation of 4 moles of hydrogen gas. However, the heat of formation of hydrogen gas is zero (since it is in its standard state), so we only need to consider the heat of formation of ethylcyclohexane and styrene.\n\nGiven:\n\\[ \\Delta H_298^\\circ\\text{K}(\\text{C}_8\\text{H}_8 + 4\\text{H}_2 \\rightarrow \\text{C}_8\\text{H}_16) = -74.65 \\text{ kcal} \\]\n\nThis is the heat of formation of ethylcyclohexane (C_8H_16) from styrene (C_8H_8) and 4 moles of hydrogen gas. Therefore, the heat of hydrogenation of styrene to ethylcyclohexane is \\(-74.65 \\text{ kcal}\\).\n\nHowever, the question asks for the heat of hydrogenation of styrene to ethylbenzene, which is a different reaction. We need to use the given heat of combustion of ethylcyclohexane and the heats of formation of water vapor and CO_2 to find the heat of hydrogenation of styrene to ethylbenzene.\n\nThe heat of combustion of ethylcyclohexane (C_8H_16) is given as \\(-1238.23 \\text{ kcal/mole}\\). The heats of formation of water vapor (H_2O) and CO_2 are \\(-58.32 \\text{ kcal/mole}\\) and \\(-94.05 \\text{ kcal/mole}\\) respectively.\n\nThe heat of combustion can be expressed as:\n\\[ \\Delta H_{\\text{combustion}} = \\Delta H_{\\text{formation of products}} - \\Delta H_{\\text{formation of reactants}} \\]\n\nFor the combustion of ethylcyclohexane:\n\\[ -1238.23 = \\Delta H_{\\text{formation of CO}_2} + \\Delta H_{\\text{formation of H}_2\\text{O}} - \\Delta H_{\\text{formation of C}_8\\text{H}_{16}} \\]\n\\[ -1238.23 = 3(-94.05) + n(-58.32) - (-74.65) \\]\n\\[ -1238.23 = -282.15 - 58.32n +"
+    },
+    {
+      "problem_id": "163",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 10,
+      "expected_answer": "$$r_k=\\frac{4}{k}\\unit{m}$$",
+      "final_output": "Aperture radius for first maximum: 0.0707 m. Aperture radius for second minimum after first maximum: 0.2857 m. On-axis positions at 0.2857 m: r_k = k * 0.2857 m."
+    },
+    {
+      "problem_id": "164",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "J",
+      "final_output": "B"
+    },
+    {
+      "problem_id": "165",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$\\boxed{\\frac{81^{10}}{82^{10}}}$.",
+      "final_output": "1/2"
+    },
+    {
+      "problem_id": "166",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "G",
+      "final_output": "G"
+    },
+    {
+      "problem_id": "167",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "G",
+      "final_output": "M"
+    },
+    {
+      "problem_id": "168",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "$$\\vec{E}=\\frac{Q\\vec{r}}{4\\pi\\varepsilon_0 R^3}$$",
+      "final_output": "\\[\n\\vec{E}(r) = \n\\begin{cases} \n\\frac{Q}{4\\pi \\epsilon_0 r^2} & \\text{for } r > R \\\\\n\\frac{\\rho r}{3 \\epsilon_0} & \\text{for } r < R \n\\end{cases}\n\\]"
+    },
+    {
+      "problem_id": "169",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Portal A Interactive",
+      "final_output": "Not specified"
+    },
+    {
+      "problem_id": "170",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 10,
+      "expected_answer": "$$\nW=\\frac{2 \\rho^2 R_1^5}{45 \\varepsilon_0}\n$$",
+      "final_output": "E(r) = 0 for \\( R_1 < r < R_2 \\)\n\\(\\varphi(r) = \\frac{\\rho R_1^3}{3 \\epsilon_0} \\left( \\frac{1}{R_2} - \\frac{1}{r} \\right) \\)\n\\[\nW = -\\frac{4 \\rho^2 R_1^5}{45 \\epsilon_0}, \\quad \\varphi(0) = \\frac{\\rho R_1^2}{6 \\epsilon_0}\n\\]"
+    },
+    {
+      "problem_id": "171",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{820}.",
+      "final_output": "To solve the problem, we need to determine the probability that the point \\((3x + 2y, x + 4y)\\) lies within the unit square \\(S = \\{(x, y) \\mid 0 \\leq x \\leq 1, 0 \\leq y \\leq 1\\}\\) when \\((x, y)\\) is uniformly selected from \\(S\\).\n\n### Step-by-Step Solution:\n\n1. **Define the Transformation:**\n   Let \\(u = 3x + 2y\\) and \\(v = x + 4y\\). We need to find the conditions under which \\(0 \\leq u \\leq 1\\) and \\(0 \\leq v \\leq 1\\).\n\n2. **Express \\(x\\) and \\(y\\) in Terms of \\(u\\) and \\(v\\):**\n   Solve the system of equations:\n   \\[\n   \\begin{cases}\n   u = 3x + 2y \\\\\n   v = x + 4y\n   \\end{cases}\n   \\]\n   The solution is:\n   \\[\n   x = \\frac{4u - 2v}{10}, \\quad y = \\frac{3v - u}{10}\n   \\]\n\n3. **Determine the Constraints:**\n   For \\((x, y)\\) to be in \\(S\\), we must have:\n   \\[\n   0 \\leq x \\leq 1 \\quad \\text{and} \\quad 0 \\leq y \\leq 1\n   \\]\n   Substituting the expressions for \\(x\\) and \\(y\\):\n   \\[\n   0 \\leq \\frac{4u - 2v}{10} \\leq 1 \\quad \\text{and} \\quad 0 \\leq \\frac{3v - u}{10} \\leq 1\n   \\]\n   Simplifying:\n   \\[\n   0 \\leq 4u - 2v \\leq 10 \\quad \\text{and} \\quad 0 \\leq 3v - u \\leq 10\n   \\]\n   Which further simplifies to:\n   \\[\n   2v \\leq 4u \\leq 2v + 10 \\quad \\text{and} \\quad u \\leq 3v \\leq u + 10\n   \\]\n\n4. **Find the Feasible Region:**\n   The feasible region for \\((u, v)\\) is the intersection of the following inequalities:\n   \\[\n   0 \\leq u \\leq 1, \\quad 0 \\leq v \\leq 1\n   \\]\n   \\[\n   v \\leq 2u \\quad \\text{and} \\quad 4u - 2v \\leq 10\n   \\]\n   \\[\n   u \\leq 3v \\quad \\text{and} \\quad 3v - u \\leq 10\n   \\]\n\n   However, since \\(u\\) and \\(v\\) are already constrained to \\([0, 1]\\), the inequalities simplify to:\n   \\[\n   v \\leq 2u \\quad \\text{and} \\quad u \\leq 3v\n   \\]\n\n   The feasible region is the area within the unit square where \\(v \\leq 2u\\) and \\(u \\leq 3v\\).\n\n5. **Calculate the Area of the Feasible Region:**\n   The intersection of \\(v \\leq 2u\\) and \\(u \\leq 3v\\) within the unit square forms a polygon with vertices at:\n   - \\((0, 0)\\)\n   - \\((0.5, 0.5)\\) (intersection of \\(v = 2u\\) and \\(u = 3v\\)"
+    },
+    {
+      "problem_id": "172",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "B",
+      "final_output": "B. Ribosomal assembly"
+    },
+    {
+      "problem_id": "173",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "$$T_N = 52 \\unit{K}$$",
+      "final_output": "58.5 K"
+    },
+    {
+      "problem_id": "174",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$\\frac{dp}{dT} = \\frac{L}{T(V_1 - V_2)}$$",
+      "final_output": "dp/dT = (L / (V_1 - V_2)) / T"
+    },
+    {
+      "problem_id": "175",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$a=\\frac{g}{7}$$",
+      "final_output": "To find the asymptotic acceleration \\( a \\) of the droplet as \\( t \\to \\infty \\), we analyze the dynamics of the system under the given assumptions.\n\n1. **Mass Conservation**:\n   The mass of the droplet increases as it sweeps up the fog. The rate of change of mass is given by:\n   \\[\n   \\dot{M} = \\rho_2 \\frac{dV}{dt},\n   \\]\n   where \\( \\frac{dV}{dt} \\) is the rate at which the volume of the droplet increases. Since the droplet remains spherical, \\( V = \\frac{4}{3}\\pi R^3 \\), so:\n   \\[\n   \\frac{dV}{dt} = 4\\pi R^2 \\dot{R}.\n   \\]\n   Thus:\n   \\[\n   \\dot{M} = 4\\pi \\rho_2 R^2 \\dot{R}.\n   \\]\n\n2. **Mass of the Droplet**:\n   The mass of the droplet is \\( M = \\rho_1 V = \\frac{4}{3}\\pi \\rho_1 R^3 \\). Differentiating with respect to time:\n   \\[\n   \\dot{M} = 4\\pi \\rho_1 R^2 \\dot{R}.\n   \\]\n   Equating the two expressions for \\( \\dot{M} \\):\n   \\[\n   4\\pi \\rho_1 R^2 \\dot{R} = 4\\pi \\rho_2 R^2 \\dot{R} \\implies \\rho_1 \\dot{R} = \\rho_2 \\dot{R}.\n   \\]\n   This implies \\( \\rho_1 = \\rho_2 \\), which contradicts the definition of \\( \\eta = \\rho_1 / \\rho_2 \\). Therefore, we must consider the mass of the droplet and the collected fog separately.\n\n3. **Correct Mass Conservation**:\n   The total mass \\( M \\) is the sum of the initial mass of the droplet and the mass of the fog collected:\n   \\[\n   M = \\frac{4}{3}\\pi \\rho_1 R^3 + \\frac{4}{3}\\pi \\rho_2 (R^3 - R_0^3),\n   \\]\n   where \\( R_0 \\) is the initial radius. For large \\( t \\), \\( R \\gg R_0 \\), so:\n   \\[\n   M \\approx \\frac{4}{3}\\pi R^3 (\\rho_1 + \\rho_2).\n   \\]\n   Differentiating:\n   \\[\n   \\dot{M} = 4\\pi R^2 (\\rho_1 + \\rho_2) \\dot{R}.\n   \\]\n   Equating with the rate of mass collection:\n   \\[\n   4\\pi R^2 (\\rho_1 + \\rho_2) \\dot{R} = 4\\pi \\rho_2 R^2 \\dot{R} \\implies \\rho_1 + \\rho_2 = \\rho_2 \\implies \\rho_1 = 0,\n   \\]\n   which is not possible. This suggests a different approach.\n\n4. **Alternative Approach**:\n   The droplet's mass increases due to the fog it collects. The rate of mass increase is:\n   \\[\n   \\dot{M} = \\rho_2 \\frac{dV}{dt} = 4\\pi \\rho_2 R^2 \\dot{R}.\n   \\]\n   The mass of the droplet is \\( M = \\rho_1 V = \\frac{4}{3}\\pi \\rho_1 R^3 \\). Differentiating:\n   \\[\n   \\dot{M} = 4\\pi \\rho_1 R^2 \\dot{R"
+    },
+    {
+      "problem_id": "176",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{\\sqrt{19}}",
+      "final_output": "To find \\( k \\), we start by analyzing the given equations for \\( w, x, y, \\) and \\( z \\):\n\n1. \\( 3 \\tan w = k(1 + \\sec w) \\)\n2. \\( 4 \\tan x = k(1 + \\sec x) \\)\n3. \\( 5 \\tan y = k(1 + \\sec y) \\)\n4. \\( 6 \\tan z = k(1 + \\sec z) \\)\n\nWe can rewrite each equation in terms of \\( \\tan \\) and \\( \\sec \\):\n\n\\[\n3 \\tan w = k \\left( \\frac{1}{\\cos w} + 1 \\right)\n\\]\n\n\\[\n4 \\tan x = k \\left( \\frac{1}{\\cos x} + 1 \\right)\n\\]\n\n\\[\n5 \\tan y = k \\left( \\frac{1}{\\cos y} + 1 \\right)\n\\]\n\n\\[\n6 \\tan z = k \\left( \\frac{1}{\\cos z} + 1 \\right)\n\\]\n\nLet's denote \\( \\sec w = \\frac{1}{\\cos w} \\), \\( \\sec x = \\frac{1}{\\cos x} \\), \\( \\sec y = \\frac{1}{\\cos y} \\), and \\( \\sec z = \\frac{1}{\\cos z} \\). Then the equations become:\n\n\\[\n3 \\tan w = k \\left( \\sec w + 1 \\right)\n\\]\n\n\\[\n4 \\tan x = k \\left( \\sec x + 1 \\right)\n\\]\n\n\\[\n5 \\tan y = k \\left( \\sec y + 1 \\right)\n\\]\n\n\\[\n6 \\tan z = k \\left( \\sec z + 1 \\right)\n\\]\n\nWe know that \\( \\tan w = \\frac{\\sin w}{\\cos w} \\) and \\( \\sec w = \\frac{1}{\\cos w} \\). Therefore, we can rewrite the first equation as:\n\n\\[\n3 \\frac{\\sin w}{\\cos w} = k \\left( \\frac{1}{\\cos w} + 1 \\right)\n\\]\n\nMultiplying both sides by \\( \\cos w \\):\n\n\\[\n3 \\sin w = k (1 + \\cos w)\n\\]\n\nSimilarly, for the other equations:\n\n\\[\n4 \\sin x = k (1 + \\cos x)\n\\]\n\n\\[\n5 \\sin y = k (1 + \\cos y)\n\\]\n\n\\[\n6 \\sin z = k (1 + \\cos z)\n\\]\n\nWe now have a system of equations:\n\n\\[\n3 \\sin w = k (1 + \\cos w)\n\\]\n\n\\[\n4 \\sin x = k (1 + \\cos x)\n\\]\n\n\\[\n5 \\sin y = k (1 + \\cos y)\n\\]\n\n\\[\n6 \\sin z = k (1 + \\cos z)\n\\]\n\nGiven that \\( 2\\pi = w + x + y + z \\), we need to find a common \\( k \\) that satisfies all these equations. Let's assume \\( w, x, y, \\) and \\( z \\) are such that \\( \\cos w = \\cos x = \\cos y = \\cos z \\). This assumption simplifies the problem significantly.\n\nLet \\( \\cos w = \\cos x = \\cos y = \\cos z = c \\). Then:\n\n\\[\n3 \\sin w = k (1 + c)\n\\]\n\n\\[\n4 \\sin x = k (1 +"
+    },
+    {
+      "problem_id": "177",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "\\boxed{\\frac{1}{1006}}",
+      "final_output": "2011! + 2010 \\cdot 2010!"
+    },
+    {
+      "problem_id": "178",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Oldham County",
+      "final_output": "Oldham County"
+    },
+    {
+      "problem_id": "179",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$E_b = \\frac{m V_0^2}{2 \\hbar^2}$$",
+      "final_output": "To show that there exists a bound state when \\( V_0 < 0 \\) and to find the binding energy, we need to solve the time-independent Schrödinger equation for the given potential \\( V(x) = V_0 \\delta(x) \\).\n\nThe time-independent Schrödinger equation is:\n\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} + V_0 \\delta(x) \\psi(x) = E \\psi(x). \\]\n\nFor \\( x \\neq 0 \\), the potential is zero, so the wavefunction satisfies the free particle equation:\n\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} = E \\psi(x). \\]\nThis gives us two linearly independent solutions:\n\\[ \\psi_{\\pm}(x) = A e^{\\pm kx}, \\]\nwhere \\( k = \\sqrt{-2mE/\\hbar^2} \\).\n\nAt \\( x = 0 \\), the wavefunction must be continuous, but the derivative has a discontinuity due to the delta function. Integrating the Schrödinger equation from \\(-\\epsilon\\) to \\(\\epsilon\\) and taking the limit as \\(\\epsilon \\to 0\\), we get:\n\\[ -\\frac{\\hbar^2}{2m} \\left[ \\frac{d\\psi(x)}{dx} \\right]_{-\\epsilon}^{\\epsilon} + V_0 \\psi(0) = 0. \\]\nThis simplifies to:\n\\[ -\\frac{\\hbar^2}{2m} \\left( \\lim_{\\epsilon \\to 0} \\left[ \\frac{d\\psi(x)}{dx} \\right]_{-\\epsilon}^{\\epsilon} \\right) + V_0 \\psi(0) = 0. \\]\nSince \\(\\psi(x)\\) is continuous at \\(x=0\\), we have:\n\\[ -\\frac{\\hbar^2}{2m} \\left( \\psi'(0^+) - \\psi'(0^-) \\right) + V_0 \\psi(0) = 0. \\]\nThis implies:\n\\[ \\psi'(0^+) - \\psi'(0^-) = \\frac{2mV_0}{\\hbar^2} \\psi(0). \\]\n\nAssuming a bound state solution, \\( E < 0 \\), we can write:\n\\[ \\psi(x) = \\begin{cases} \nA e^{kx} & \\text{for } x < 0, \\\\\nB e^{-kx} & \\text{for } x > 0.\n\\end{cases} \\]\nHere, \\( k = \\sqrt{-2mE/\\hbar^2} \\).\n\nApplying the continuity condition at \\( x = 0 \\):\n\\[ \\psi(0^-) = \\psi(0^+), \\]\nwhich gives:\n\\[ A = B. \\]\n\nApplying the jump condition for the derivative:\n\\[ \\psi'(0^+) - \\psi'(0^-) = \\frac{2mV_0}{\\hbar^2} \\psi(0), \\]\nwe get:\n\\[ -kA - kA = \\frac{2mV_0}{\\hbar^2} A, \\]\nor:\n\\[ -2kA = \\frac{2mV_0}{\\hbar^2} A. \\]\nSince \\( A \\neq 0 \\), we can divide both sides by"
+    },
+    {
+      "problem_id": "180",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "H",
+      "final_output": "H"
+    },
+    {
+      "problem_id": "181",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{\\text{No such positive integer }n\\text{ exists}}.",
+      "final_output": "Yes, there must exist some positive integer \\( n \\) such that \\((f(1), f(2), \\ldots, f(n))\\) is a permutation of \\((1, 2, \\ldots, n)\\)."
+    },
+    {
+      "problem_id": "182",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "\\boxed{\\tfrac23}",
+      "final_output": "1/3"
+    },
+    {
+      "problem_id": "183",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "G",
+      "final_output": "A"
+    },
+    {
+      "problem_id": "184",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "Peter Hall",
+      "final_output": "Ken Russell"
+    },
+    {
+      "problem_id": "185",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "$$R_{p/o}\\to\\infty$$",
+      "final_output": "1:3"
+    },
+    {
+      "problem_id": "186",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "\\boxed{120}",
+      "final_output": "60"
+    },
+    {
+      "problem_id": "187",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 6,
+      "expected_answer": "$$W = n \\big( k T / 2 \\pi M \\big)^{1/2} \\exp\\big( - M v_T^2 / 2 k T \\big)$$",
+      "final_output": "\\(\\frac{n \\sqrt{\\frac{M}{2\\pi k T}} \\exp\\left(-\\frac{M v_T^2}{2k T}\\right)}{k T}\\)"
+    },
+    {
+      "problem_id": "188",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "G",
+      "final_output": "E. non-interference"
+    },
+    {
+      "problem_id": "189",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "located in Olathe, Kansas",
+      "final_output": "Based on the available information, the specific school Tyler Kalinoski attended and its location cannot be determined without additional details."
+    },
+    {
+      "problem_id": "190",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "comparable to the seven Wonders of the World",
+      "final_output": "The subjective criteria that could qualify the Houston Astrodome to be called the Eighth Wonder of the World include its innovative design as the world's first domed, air-conditioned stadium, its significant impact on sports and entertainment by allowing year-round play and events, and its architectural and engineering marvel, which was a major advancement in stadium construction technology at the time of its opening."
+    },
+    {
+      "problem_id": "191",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "paracyclist",
+      "final_output": "Michael Schumacher"
+    },
+    {
+      "problem_id": "192",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 1,
+      "expected_answer": "Organizations could come together to address global issues",
+      "final_output": "Mikhail Gorbachev, Perestroika"
+    },
+    {
+      "problem_id": "193",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 4,
+      "expected_answer": "Battle of Guam",
+      "final_output": "The Battle of Guam"
+    },
+    {
+      "problem_id": "194",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "meta-llama/llama-3.1-8b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 9,
+      "expected_answer": "D",
+      "final_output": "C"
+    },
+    {
+      "problem_id": "195",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "mistralai/mistral-nemo",
+      "used_models": [
+        "mistralai/mistral-nemo"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "Gerard \"Gerry\" Adams",
+      "final_output": "Gerry Adams"
+    },
+    {
+      "problem_id": "196",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct"
+      ],
+      "steps_taken": 2,
+      "expected_answer": "impresario",
+      "final_output": "producer"
+    },
+    {
+      "problem_id": "197",
+      "is_correct": 1,
+      "final_status": "success",
+      "answer_model": "google/gemma-3-27b-it",
+      "used_models": [
+        "google/gemma-3-27b-it"
+      ],
+      "steps_taken": 3,
+      "expected_answer": "H",
+      "final_output": "H"
+    },
+    {
+      "problem_id": "198",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "mistralai/mistral-nemo"
+      ],
+      "used_models": [
+        "google/gemma-3-27b-it",
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 12,
+      "expected_answer": "$$F_{\\text{brick}}=1.87\\times 10^{-27} \\unit{N}$$",
+      "final_output": "5√2 × 10^8 eV\n7.07106781186154 × 10^8 eV\n3.5 × 10⁻⁷ N (opposite to the beam's motion)"
+    },
+    {
+      "problem_id": "199",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "mistralai/mistral-small-3.2-24b-instruct",
+      "used_models": [
+        "mistralai/mistral-nemo",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "$$p(x) = \\frac{1}{\\pi} \\sqrt{\\frac{k}{2E - k x^2}}$$",
+      "final_output": "p(x) = \\frac{\\sqrt{k}}{2\\pi \\sqrt{2E - \\frac{1}{2}kx^2}}"
+    },
+    {
+      "problem_id": "200",
+      "is_correct": 0,
+      "final_status": "failure",
+      "answer_model": "qwen/qwen-2.5-7b-instruct",
+      "used_models": [
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qwen/qwen-2.5-7b-instruct"
+      ],
+      "steps_taken": 7,
+      "expected_answer": "$$\n\\varphi_2(r)=\\frac{Q}{4\\pi \\varepsilon_0 r}\n$$",
+      "final_output": "To consolidate the expressions for the electric field \\(\\vec{E}\\) and electrostatic potential \\(\\varphi\\) for all points in space:\n\nFor points inside the sphere (\\(r \\leq R\\)):\n\\[\n\\vec{E}_1(r) = \\frac{Q r}{4\\pi \\varepsilon_0 R^3} \\hat{r}\n\\]\nThe electrostatic potential \\(\\varphi_1(r)\\) can be derived from \\(\\vec{E}_1(r)\\):\n\\[\n\\varphi_1(r) = -\\int_{\\infty}^{r} \\vec{E}_1(\\rho) \\cdot d\\vec{r} = -\\int_{\\infty}^{R} \\vec{E}_2(\\rho) \\cdot d\\vec{r} - \\int_{R}^{r} \\vec{E}_1(\\rho) \\cdot d\\vec{r}\n\\]\nGiven \\(\\vec{E}_2(R) = \\frac{Q}{4\\pi \\varepsilon_0 R^2} \\hat{r}\\), we have:\n\\[\n\\varphi_1(r) = -\\left( \\frac{Q}{4\\pi \\varepsilon_0 R^2} (R - \\infty) + \\frac{Q r^2}{8\\pi \\varepsilon_0 R^3} \\right) = \\frac{Q}{4\\pi \\varepsilon_0 R^2} + \\frac{Q r^2}{8\\pi \\varepsilon_0 R^3}\n\\]\nSimplifying, we get:\n\\[\n\\varphi_1(r) = \\frac{Q}{4\\pi \\varepsilon_0} \\left( \\frac{1}{R^2} - \\frac{2r}{R^3} \\right)\n\\]\n\nFor points outside the sphere (\\(r \\geq R\\)):\n\\[\n\\vec{E}_2(r) = \\frac{Q}{4\\pi \\varepsilon_0 r^2} \\hat{r}\n\\]\nThe electrostatic potential \\(\\varphi_2(r)\\) can be derived from \\(\\vec{E}_2(r)\\):\n\\[\n\\varphi_2(r) = -\\int_{\\infty}^{r} \\vec{E}_2(\\rho) \\cdot d\\vec{r} = -\\int_{\\infty}^{r} \\frac{Q}{4\\pi \\varepsilon_0 \\rho^2} d\\rho = \\frac{Q}{4\\pi \\varepsilon_0 r}\n\\]\n\nThus, the final concise results are:\n<answer>\n\\[\n\\vec{E}(r) = \n\\begin{cases} \n\\frac{Q r}{4\\pi \\varepsilon_0 R^3} \\hat{r} & \\text{for } r \\leq R \\\\\n\\frac{Q}{4\\pi \\varepsilon_0 r^2} \\hat{r} & \\text{for } r \\geq R \n\\end{cases}\n\\]\n\\[\n\\varphi(r) = \n\\begin{cases} \n\\frac{Q}{4\\pi \\varepsilon_0} \\left( \\frac{1}{R^2} - \\frac{2r}{R^3} \\right) & \\text{for } r \\leq R \\\\\n\\frac{Q}{4\\pi \\varepsilon_0 r} & \\"
+    }
+  ]
+}
